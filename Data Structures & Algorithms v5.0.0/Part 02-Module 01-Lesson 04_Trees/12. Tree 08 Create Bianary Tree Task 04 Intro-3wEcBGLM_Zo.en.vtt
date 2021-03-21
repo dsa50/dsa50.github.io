@@ -1,0 +1,46 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:05.850
+Next, let's add some setters and getters for assigning left and right childs.
+
+00:00:05.850 --> 00:00:08.205
+So define a function, set_left_child,
+
+00:00:08.205 --> 00:00:10.095
+and a function, set_right_child.
+
+00:00:10.095 --> 00:00:15.045
+Each function takes in a node that it assigns as the left or right child, respectively.
+
+00:00:15.045 --> 00:00:18.110
+Now, that we can assume that this will replace an existing node if
+
+00:00:18.110 --> 00:00:21.285
+it's already assigned as a left or right child.
+
+00:00:21.285 --> 00:00:24.525
+Also, define the get_left and get_right_child functions.
+
+00:00:24.525 --> 00:00:25.920
+One note for you is,
+
+00:00:25.920 --> 00:00:29.110
+you may wondering why you're starting from a blank cell every time.
+
+00:00:29.110 --> 00:00:30.450
+I think for coding interviews,
+
+00:00:30.450 --> 00:00:34.310
+it's good practice because you'll usually not be given any scaffolding code.
+
+00:00:34.310 --> 00:00:38.285
+You'll just be starting from a blank sheet of paper, not even a computer.
+
+00:00:38.285 --> 00:00:40.775
+So I do encourage you to try this out,
+
+00:00:40.775 --> 00:00:44.400
+but don't worry I'll be coding a solutions with you.
+

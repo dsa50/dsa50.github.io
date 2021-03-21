@@ -1,0 +1,364 @@
+<!-- udacimak v1.4.4 -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>
+   Problem 2: File Recursion
+  </title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../assets/css/plyr.css" rel="stylesheet"/>
+  <link href="../assets/css/katex.min.css" rel="stylesheet"/>
+  <link href="../assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+  <link href="../assets/css/styles.css" rel="stylesheet"/>
+  <link href="../assets/img/udacimak.png" rel="shortcut icon" type="image/png">
+  </link>
+ </head>
+ <body>
+  <div class="wrapper">
+   <nav id="sidebar">
+    <div class="sidebar-header">
+     <h3>
+      Show Me the Data Structures
+     </h3>
+    </div>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled components">
+     <li class="">
+      <a href="01. Introduction to the Project.html">
+       01. Introduction to the Project
+      </a>
+     </li>
+     <li class="">
+      <a href="02. Problem 1 LRU Cache.html">
+       02. Problem 1: LRU Cache
+      </a>
+     </li>
+     <li class="">
+      <a href="03. Problem 2 File Recursion.html">
+       03. Problem 2: File Recursion
+      </a>
+     </li>
+     <li class="">
+      <a href="04. Problem 3 Huffman Coding.html">
+       04. Problem 3: Huffman Coding
+      </a>
+     </li>
+     <li class="">
+      <a href="05. Problem 4 Active Directory.html">
+       05. Problem 4: Active Directory
+      </a>
+     </li>
+     <li class="">
+      <a href="06. Problem 5 Blockchain.html">
+       06. Problem 5: Blockchain
+      </a>
+     </li>
+     <li class="">
+      <a href="07. Problem 6 Union and Intersection.html">
+       07. Problem 6: Union and Intersection
+      </a>
+     </li>
+     <li class="">
+      <a href="Project Description - Show Me the Data Structures.html">
+       Project Description - Show Me the Data Structures
+      </a>
+     </li>
+     <li class="">
+      <a href="Project Rubric - Show Me the Data Structures.html">
+       Project Rubric - Show Me the Data Structures
+      </a>
+     </li>
+    </ul>
+    <ul class="sidebar-list list-unstyled CTAs">
+     <li>
+      <a class="article" href="../index.html">
+       Back to Home
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <div id="content">
+    <header class="container-fluild header">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <div class="align-items-middle">
+         <button class="btn btn-toggle-sidebar" id="sidebarCollapse" type="button">
+          <div>
+          </div>
+          <div>
+          </div>
+          <div>
+          </div>
+         </button>
+         <h1 style="display: inline-block">
+          03. Problem 2: File Recursion
+         </h1>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <main class="container">
+     <div class="row">
+      <div class="col-12">
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h1 id="finding-files">
+          Finding Files
+         </h1>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          For this problem, the goal is to write code for finding all files under a directory (and all directories beneath it) that end with ".c"
+         </p>
+         <p>
+          Here is an example of a test directory listing, which can be downloaded
+          <a href="https://s3.amazonaws.com/udacity-dsand/testdir.zip" rel="noopener noreferrer" target="_blank">
+           here
+          </a>
+          :
+         </p>
+         <pre><code>./testdir
+./testdir/subdir1
+./testdir/subdir1/a.c
+./testdir/subdir1/a.h
+./testdir/subdir2
+./testdir/subdir2/.gitkeep
+./testdir/subdir3
+./testdir/subdir3/subsubdir1
+./testdir/subdir3/subsubdir1/b.c
+./testdir/subdir3/subsubdir1/b.h
+./testdir/subdir4
+./testdir/subdir4/.gitkeep
+./testdir/subdir5
+./testdir/subdir5/a.c
+./testdir/subdir5/a.h
+./testdir/t1.c
+./testdir/t1.h</code></pre>
+         <p>
+          Python's
+          <code>
+           os
+          </code>
+          module will be useful—in particular, you may want to use the following resources:
+         </p>
+         <p>
+          <a href="https://docs.python.org/3.7/library/os.path.html#os.path.isdir" rel="noopener noreferrer" target="_blank">
+           os.path.isdir(path)
+          </a>
+         </p>
+         <p>
+          <a href="https://docs.python.org/3.7/library/os.path.html#os.path.isfile" rel="noopener noreferrer" target="_blank">
+           os.path.isfile(path)
+          </a>
+         </p>
+         <p>
+          <a href="https://docs.python.org/3.7/library/os.html#os.listdir" rel="noopener noreferrer" target="_blank">
+           os.listdir(directory)
+          </a>
+         </p>
+         <p>
+          <a href="https://docs.python.org/3.7/library/os.path.html#os.path.join" rel="noopener noreferrer" target="_blank">
+           os.path.join(…)
+          </a>
+         </p>
+         <p>
+          <strong>
+           Note:
+          </strong>
+          <code>
+           os.walk()
+          </code>
+          is a handy Python method which can achieve this task very easily. However, for this problem you are not allowed to use
+          <code>
+           os.walk()
+          </code>
+          .
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <p>
+          Here is some code for the function to get you started:
+         </p>
+         <pre><code class="python language-python">def find_files(suffix, path):
+    """
+    Find all files beneath path with file name suffix.
+
+    Note that a path may contain further subdirectories
+    and those subdirectories may also contain further subdirectories.
+
+    There are no limit to the depth of the subdirectories can be.
+
+    Args:
+      suffix(str): suffix if the file name to be found
+      path(str): path of the file system
+
+    Returns:
+       a list of paths
+    """
+    return None</code></pre>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+       <div class="ud-atom">
+        <h3>
+        </h3>
+        <div>
+         <h1 id="os-module-exploration-code">
+          OS Module Exploration Code
+         </h1>
+         <p>
+          ```python
+         </p>
+         <h2 id="locally-save-and-call-this-file-expy">
+          Locally save and call this file ex.py
+         </h2>
+         <h1 id="code-to-demonstrate-the-use-of-some-of-the-os-modules-in-python">
+          Code to demonstrate the use of some of the OS modules in python
+         </h1>
+         <p>
+          import os
+         </p>
+         <h1 id="let-us-print-the-files-in-the-directory-in-which-you-are-running-this-script">
+          Let us print the files in the directory in which you are running this script
+         </h1>
+         <p>
+          print (os.listdir("."))
+         </p>
+         <h1 id="let-us-check-if-this-file-is-indeed-a-file">
+          Let us check if this file is indeed a file!
+         </h1>
+         <p>
+          print (os.path.isfile("./ex.py"))
+         </p>
+         <h1 id="does-the-file-end-with-py">
+          Does the file end with .py?
+         </h1>
+         <p>
+          print ("./ex.py".endswith(".py"))
+          <br/>
+          ```
+         </p>
+        </div>
+       </div>
+       <div class="divider">
+       </div>
+      </div>
+      <div class="col-12">
+       <p class="text-right">
+        <a class="btn btn-outline-primary mt-4" href="04. Problem 3 Huffman Coding.html" role="button">
+         Next Concept
+        </a>
+       </p>
+      </div>
+     </div>
+    </main>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+       <div class="col-12">
+        <p class="text-center">
+         udacity2.0 If you need the newest courses Plase add me wechat: udacity6
+        </p>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="../assets/js/jquery-3.3.1.min.js">
+  </script>
+  <script src="../assets/js/plyr.polyfilled.min.js">
+  </script>
+  <script src="../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script src="../assets/js/katex.min.js">
+  </script>
+  <script>
+   // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('03. Problem 2: File Recursion')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+ </body>
+</html>

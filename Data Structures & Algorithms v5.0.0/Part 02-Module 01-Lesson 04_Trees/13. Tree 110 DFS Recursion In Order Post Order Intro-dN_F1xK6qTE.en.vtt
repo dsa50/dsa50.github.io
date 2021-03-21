@@ -1,0 +1,31 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.210
+Okay. Now the next two are going to be quite similar to what we already did.
+
+00:00:03.210 --> 00:00:05.175
+We're going to do in-order traversal.
+
+00:00:05.175 --> 00:00:08.175
+So that's means traverse the left subtree,
+
+00:00:08.175 --> 00:00:09.450
+then visit the node,
+
+00:00:09.450 --> 00:00:11.250
+and then traverse the right subtree.
+
+00:00:11.250 --> 00:00:15.750
+After you do that something also very similar is post-order traversal,
+
+00:00:15.750 --> 00:00:17.865
+which means traverse the left subtree,
+
+00:00:17.865 --> 00:00:19.845
+then traverse the right subtree,
+
+00:00:19.845 --> 00:00:22.090
+and then visit the node.
+

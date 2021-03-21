@@ -1,0 +1,142 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:05.595
+Now let's see how we can define pre-order traversal taking advantage of recursion.
+
+00:00:05.595 --> 00:00:08.910
+We're going to start out by defining a list called visit order,
+
+00:00:08.910 --> 00:00:11.565
+and this is what we actually want to return in the end.
+
+00:00:11.565 --> 00:00:15.390
+We're also going to start traversing the tree from the root.
+
+00:00:15.390 --> 00:00:18.770
+So from the root then we're going to make
+
+00:00:18.770 --> 00:00:22.280
+a recursive call to a function that will have yet to define,
+
+00:00:22.280 --> 00:00:24.770
+traverse, but we're going to start at the root.
+
+00:00:24.770 --> 00:00:29.255
+So let's see what the traverse recursive function looks like.
+
+00:00:29.255 --> 00:00:33.620
+It's going to traverse a node and it's going to do three things.
+
+00:00:33.620 --> 00:00:35.200
+It's going to visit the node,
+
+00:00:35.200 --> 00:00:37.580
+it's going to traverse left,
+
+00:00:37.580 --> 00:00:41.570
+and it's going to traverse right. So how do we do that?
+
+00:00:41.570 --> 00:00:48.450
+So to visit, we just say visit order dot append and that node.
+
+00:00:48.450 --> 00:00:51.270
+Let's just get the value of a node.
+
+00:00:51.270 --> 00:00:53.750
+We're also going to traverse left.
+
+00:00:53.750 --> 00:00:57.140
+So after we visit, we traverse left.
+
+00:00:57.140 --> 00:01:02.300
+We don't want to just pass a node itself because it's just going to cause a loop.
+
+00:01:02.300 --> 00:01:05.825
+But instead we're going to get the left child.
+
+00:01:05.825 --> 00:01:13.085
+Similarly after that, we can check the right child and traverse that.
+
+00:01:13.085 --> 00:01:16.280
+So there's going to be a few bugs.
+
+00:01:16.280 --> 00:01:18.470
+Let's see what those errors are.
+
+00:01:18.470 --> 00:01:20.180
+If we try to run this,
+
+00:01:20.180 --> 00:01:25.385
+we can see an error that the local variable traverse is referenced before assignment.
+
+00:01:25.385 --> 00:01:30.620
+So that just means that before we call the function traverse,
+
+00:01:30.620 --> 00:01:32.785
+we need to define it.
+
+00:01:32.785 --> 00:01:36.330
+So let's just call this after we define it.
+
+00:01:37.430 --> 00:01:40.775
+So now there's going to be another error. Let's take a look at that.
+
+00:01:40.775 --> 00:01:45.725
+We can see that it says NoneType object has no attribute get value.
+
+00:01:45.725 --> 00:01:51.650
+So what's happening here is that we're probably passing in a none and then we're trying
+
+00:01:51.650 --> 00:01:57.955
+to get the value and also get the left child, get the right child.
+
+00:01:57.955 --> 00:02:03.545
+So all we need to check is make sure that this node object is not none.
+
+00:02:03.545 --> 00:02:07.850
+So if node is not none, that's what this is saying.
+
+00:02:07.850 --> 00:02:11.090
+If node is something other than none,
+
+00:02:11.090 --> 00:02:14.525
+then we can go ahead and get the value,
+
+00:02:14.525 --> 00:02:21.200
+push it onto the stack call the a left get left child and call the get right child.
+
+00:02:21.200 --> 00:02:26.000
+So how this works too is that notice when you get close to the leaf node,
+
+00:02:26.000 --> 00:02:29.830
+let's say this parent doesn't actually have a left child.
+
+00:02:29.830 --> 00:02:31.295
+So this is actually none.
+
+00:02:31.295 --> 00:02:34.175
+So it's actually calling traverse passing in none.
+
+00:02:34.175 --> 00:02:39.110
+So it's calling traverse passing in none and that's okay because it's going to check,
+
+00:02:39.110 --> 00:02:42.995
+it has to be not none and then it can continue traversing.
+
+00:02:42.995 --> 00:02:44.870
+But otherwise, it doesn't do anything.
+
+00:02:44.870 --> 00:02:48.455
+It just pops this recursive call off the stack.
+
+00:02:48.455 --> 00:02:50.770
+So now if we run this,
+
+00:02:50.770 --> 00:02:53.644
+we can see that we get pre-order traversal,
+
+00:02:53.644 --> 00:02:56.370
+apple, banana, dates, and cherry.
+

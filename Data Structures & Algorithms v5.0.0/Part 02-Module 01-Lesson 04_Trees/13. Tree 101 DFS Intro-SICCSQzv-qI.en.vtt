@@ -1,0 +1,79 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.295
+Now we're going to look at tree traversal.
+
+00:00:02.295 --> 00:00:05.550
+So traversing a tree means we're walking through it in
+
+00:00:05.550 --> 00:00:09.405
+some way so that we're visiting all the nodes once.
+
+00:00:09.405 --> 00:00:12.210
+So traversing is used for searching for a value,
+
+00:00:12.210 --> 00:00:15.555
+inserting a value, or deleting a value from the tree.
+
+00:00:15.555 --> 00:00:20.340
+There are two types: Depth-first search, and Breadth-first search.
+
+00:00:20.340 --> 00:00:23.430
+For Depth-first search, there's three sub types;
+
+00:00:23.430 --> 00:00:26.355
+pre-order, in-order, and post-order.
+
+00:00:26.355 --> 00:00:30.240
+We're going to look at pre-order traversal in detail.
+
+00:00:30.240 --> 00:00:33.900
+In pre-order traversal, we start at the root,
+
+00:00:33.900 --> 00:00:36.795
+we visit it, then we check if there is a left child.
+
+00:00:36.795 --> 00:00:39.820
+If so, we go down to the left child.
+
+00:00:39.820 --> 00:00:45.515
+So now we're in B, we visit it and then we check if there's a left child.
+
+00:00:45.515 --> 00:00:47.960
+If so, we'll visit it.
+
+00:00:47.960 --> 00:00:51.140
+So now we're going to visit D. So now we're in
+
+00:00:51.140 --> 00:00:54.515
+D. We visited D and now we're going to check if there's a left child.
+
+00:00:54.515 --> 00:00:56.930
+No. So then we'll check if there's a right child.
+
+00:00:56.930 --> 00:00:59.120
+No. So then we'll go back up,
+
+00:00:59.120 --> 00:01:00.990
+check if there's a right child.
+
+00:01:00.990 --> 00:01:03.095
+In this case, no. Go back to A,
+
+00:01:03.095 --> 00:01:04.320
+check if there's a right child.
+
+00:01:04.320 --> 00:01:08.480
+Yes. So now let's go here and now we visit C. Again,
+
+00:01:08.480 --> 00:01:09.500
+check if there's a left child.
+
+00:01:09.500 --> 00:01:11.510
+No. So then we go to right child.
+
+00:01:11.510 --> 00:01:16.360
+No. Then we visited all the nodes.
+

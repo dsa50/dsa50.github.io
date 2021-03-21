@@ -1,0 +1,189 @@
+{
+  "data": {
+    "lesson": {
+      "id": 825829,
+      "key": "fc19ea19-8491-4073-a615-b0f0021e6085",
+      "title": "Greedy Algorithms",
+      "semantic_type": "Lesson",
+      "is_public": true,
+      "version": "1.0.0",
+      "locale": "en-us",
+      "summary": "Get familiar with and practice greedy algorithms. ",
+      "lesson_type": "Classroom",
+      "display_workspace_project_only": false,
+      "resources": null,
+      "project": null,
+      "lab": null,
+      "concepts": [
+        {
+          "id": 847351,
+          "key": "120a4cfd-a6cd-413f-8f14-50b71873a9a6",
+          "title": "Introduction",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "120a4cfd-a6cd-413f-8f14-50b71873a9a6",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 847352,
+              "key": "230ccd8c-32cd-4282-aa39-21af5aa34a62",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r818024c831558xJUPYTERbo7otze1",
+              "pool_id": "jupyter",
+              "view_id": "jupyter-kofgd",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/greed/greedy_introduction.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 1022364,
+          "key": "be3a26a7-d25a-464f-bc46-1fcd7735fdb2",
+          "title": "Dijkstras Algorithm",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "be3a26a7-d25a-464f-bc46-1fcd7735fdb2",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1022366,
+              "key": "2a836472-c21e-4349-99c6-d3be0d7fd56d",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r818024c831558xJUPYTERbo7otze1",
+              "pool_id": "jupyter",
+              "view_id": "jupyter-ch4x8",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/greed/Dijkstras_Shortest_Path_Algorithm.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 847353,
+          "key": "2c12fe92-7666-4436-816d-972a93c6d4fa",
+          "title": "Min Platforms Exercise",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "2c12fe92-7666-4436-816d-972a93c6d4fa",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 847354,
+              "key": "00d6bd97-a6b1-4010-836a-62cb28b3ea34",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r818024c831558xJUPYTERbo7otze1",
+              "pool_id": "jupyter",
+              "view_id": "jupyter-fldae",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/greed/min_platforms.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 831558,
+          "key": "d94eb46c-3314-4942-a552-b909cfa42aee",
+          "title": "Min Operations",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "d94eb46c-3314-4942-a552-b909cfa42aee",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 843097,
+              "key": "669d62de-820c-4c85-b1cc-84f72d614f7d",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r818024c831558xJUPYTERbo7otze1",
+              "pool_id": "jupyter",
+              "view_id": "jupyter-k5q9q",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/greed/Min_Operations.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

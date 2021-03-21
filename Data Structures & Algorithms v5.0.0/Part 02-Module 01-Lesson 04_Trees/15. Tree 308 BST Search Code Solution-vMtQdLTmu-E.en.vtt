@@ -1,0 +1,103 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.835
+Now let's take a look at the solution for our search.
+
+00:00:02.835 --> 00:00:04.560
+We're searching for this value,
+
+00:00:04.560 --> 00:00:06.330
+and we'll start at the root.
+
+00:00:06.330 --> 00:00:08.850
+So the current node is going to be the root,
+
+00:00:08.850 --> 00:00:12.120
+and we'll also wrap the value inside a node object.
+
+00:00:12.120 --> 00:00:14.580
+So we'll call this the search node,
+
+00:00:14.580 --> 00:00:18.170
+and we'll use a loop to traverse the tree.
+
+00:00:18.170 --> 00:00:22.670
+We'll do a comparison of the node and the new value,
+
+00:00:22.670 --> 00:00:26.790
+if they're equal, then we found it, return true.
+
+00:00:26.790 --> 00:00:30.320
+Otherwise, if the new value is less than the current node,
+
+00:00:30.320 --> 00:00:33.920
+then if the node has a left child,
+
+00:00:33.920 --> 00:00:35.870
+then we'll traverse left.
+
+00:00:35.870 --> 00:00:39.800
+Then we'll continue on with traversing down the tree using the loop.
+
+00:00:39.800 --> 00:00:42.965
+Otherwise, if there's no left child,
+
+00:00:42.965 --> 00:00:46.025
+then we know that the node isn't there,
+
+00:00:46.025 --> 00:00:47.705
+the value that we're looking for isn't there,
+
+00:00:47.705 --> 00:00:49.475
+so it will return false.
+
+00:00:49.475 --> 00:00:54.830
+Similarly, when the value is greater than the current node's value,
+
+00:00:54.830 --> 00:00:56.845
+then we'll traverse right.
+
+00:00:56.845 --> 00:00:58.620
+If there's a right child,
+
+00:00:58.620 --> 00:01:00.645
+then we'll continue traversing right,
+
+00:01:00.645 --> 00:01:04.340
+and then here this node goes back up to another while loop.
+
+00:01:04.340 --> 00:01:06.440
+Otherwise, if it's none,
+
+00:01:06.440 --> 00:01:10.955
+then we return false because we know that the node isn't there,
+
+00:01:10.955 --> 00:01:13.070
+the value we're looking for isn't there.
+
+00:01:13.070 --> 00:01:16.520
+So let's try this out, if we create a tree,
+
+00:01:16.520 --> 00:01:18.535
+we insert a couple of things,
+
+00:01:18.535 --> 00:01:21.215
+and then we search for eight,
+
+00:01:21.215 --> 00:01:22.995
+and search for two.
+
+00:01:22.995 --> 00:01:28.200
+Let's see what happens. So eight is not there in the tree,
+
+00:01:28.200 --> 00:01:31.655
+we did not have an eight in the tree, so it's false.
+
+00:01:31.655 --> 00:01:33.620
+Two is in the tree,
+
+00:01:33.620 --> 00:01:36.300
+so we find it and we return true.
+

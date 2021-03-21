@@ -1,0 +1,94 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.770
+So now, we're going to look at this with more detail because what's going on is we're
+
+00:00:04.770 --> 00:00:09.525
+actually going to use a Stack to help us track what doors we visited.
+
+00:00:09.525 --> 00:00:11.670
+Again, we're starting at the root node.
+
+00:00:11.670 --> 00:00:15.075
+So we visit it, we checked if it has a left child,
+
+00:00:15.075 --> 00:00:20.025
+and because it does, we add B to the stack,
+
+00:00:20.025 --> 00:00:23.910
+and now we're here, and also we visit B.
+
+00:00:23.910 --> 00:00:28.680
+So now, we check if B has a left child, and it does.
+
+00:00:28.680 --> 00:00:30.705
+So we add D to the Stack.
+
+00:00:30.705 --> 00:00:33.870
+Once we get to D, we also visit it,
+
+00:00:33.870 --> 00:00:36.300
+and then we check if has a left child.
+
+00:00:36.300 --> 00:00:38.480
+No. Right child, no.
+
+00:00:38.480 --> 00:00:40.205
+So now what happens is,
+
+00:00:40.205 --> 00:00:43.340
+we're done with D, we're actually going to pop it off the Stack.
+
+00:00:43.340 --> 00:00:46.580
+So you can see D is going to disappear now from the Stack.
+
+00:00:46.580 --> 00:00:50.970
+Now we have B, we check if it has a right child, no.
+
+00:00:50.970 --> 00:00:52.760
+So actually, we're done with B,
+
+00:00:52.760 --> 00:00:55.645
+and we're going to pop B off the Stack.
+
+00:00:55.645 --> 00:00:58.320
+Now we're back at A in the root node,
+
+00:00:58.320 --> 00:01:01.185
+we're going to check if it as a right child, and it does.
+
+00:01:01.185 --> 00:01:03.510
+So now, we're going to add C to the Stack.
+
+00:01:03.510 --> 00:01:06.135
+When we get to C, we're going to visit it.
+
+00:01:06.135 --> 00:01:10.935
+So now, the visit order is A, B, D,
+
+00:01:10.935 --> 00:01:13.470
+and then C. Now,
+
+00:01:13.470 --> 00:01:15.090
+we check for C's left child,
+
+00:01:15.090 --> 00:01:16.920
+no, right child, no.
+
+00:01:16.920 --> 00:01:19.065
+That means we're done with node C,
+
+00:01:19.065 --> 00:01:21.045
+and we can pop it off the stack.
+
+00:01:21.045 --> 00:01:26.805
+Now we're at A, we've already visited A left subtree and right subtree,
+
+00:01:26.805 --> 00:01:29.040
+so we pop it off the stack as well.
+
+00:01:29.040 --> 00:01:32.830
+Great. So now, we've visited all the nodes.
+

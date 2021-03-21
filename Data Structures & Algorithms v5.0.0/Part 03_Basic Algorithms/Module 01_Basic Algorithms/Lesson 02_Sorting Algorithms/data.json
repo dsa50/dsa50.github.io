@@ -1,0 +1,569 @@
+{
+  "data": {
+    "lesson": {
+      "id": 825823,
+      "key": "902b8515-a2ef-485b-9543-f9a9aad9843f",
+      "title": "Sorting Algorithms",
+      "semantic_type": "Lesson",
+      "is_public": true,
+      "version": "1.0.0",
+      "locale": "en-us",
+      "summary": "Learn about the most common sorting algorithms. ",
+      "lesson_type": "Classroom",
+      "display_workspace_project_only": false,
+      "resources": {
+        "files": [
+          {
+            "name": "Videos Zip File",
+            "uri": "https://zips.udacity-data.com/902b8515-a2ef-485b-9543-f9a9aad9843f/825823/1556779979035/Sorting+Algorithms+Videos.zip"
+          },
+          {
+            "name": "Transcripts Zip File",
+            "uri": "https://zips.udacity-data.com/902b8515-a2ef-485b-9543-f9a9aad9843f/825823/1556779974442/Sorting+Algorithms+Subtitles.zip"
+          }
+        ],
+        "google_plus_link": null,
+        "career_resource_center_link": null,
+        "coaching_appointments_link": null,
+        "office_hours_link": null,
+        "aws_provisioning_link": null
+      },
+      "project": null,
+      "lab": null,
+      "concepts": [
+        {
+          "id": 825852,
+          "key": "226072b6-6bb8-4a1a-96a8-9e2037df718d",
+          "title": "Intro to Sorting",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "226072b6-6bb8-4a1a-96a8-9e2037df718d",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 825989,
+              "key": "7939e10e-f2b6-45a3-a2e8-e7a877f8f4ca",
+              "title": "Introdução a classificação",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "Z6yuIen71zM",
+                "china_cdn_id": "Z6yuIen71zM.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 825853,
+          "key": "a9b065af-74fc-4786-882f-8ed9db3d1c25",
+          "title": "Bubble Sort",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "a9b065af-74fc-4786-882f-8ed9db3d1c25",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 825991,
+              "key": "c49495b4-850c-4515-b174-42d89b91e16f",
+              "title": "Ordenação por flutuação",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "h_osLG3GmjE",
+                "china_cdn_id": "h_osLG3GmjE.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 825854,
+          "key": "bce251eb-c191-41b8-a84c-553dd3b897f2",
+          "title": "Efficiency of Bubble Sort",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "bce251eb-c191-41b8-a84c-553dd3b897f2",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 825993,
+              "key": "ea68f6c0-ed03-44b6-919e-621d43f1a126",
+              "title": "Eficiência da ordenação por flutuação",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "KddkHygi7is",
+                "china_cdn_id": "KddkHygi7is.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 843126,
+          "key": "0fb17539-2e8e-4696-ba59-72ccb8d7f7a0",
+          "title": "Practice: Bubble Sort",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "0fb17539-2e8e-4696-ba59-72ccb8d7f7a0",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 843129,
+              "key": "fc4ef4c6-b270-4cf0-96c8-c28b94bf0c83",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r818024c842668xJUPYTERhd5czuc5",
+              "pool_id": "jupyter",
+              "view_id": "jupyter-1y1pz",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/sort/bubble_sort_exercises.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 825857,
+          "key": "99a40929-fcf5-4e16-8d4d-a0869b2b9bd0",
+          "title": "Merge Sort",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "99a40929-fcf5-4e16-8d4d-a0869b2b9bd0",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 825995,
+              "key": "a6adcaf6-1252-48f1-a19c-bbdb7c8c3bff",
+              "title": "Ordenação por mistura",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "K916wfSzKxE",
+                "china_cdn_id": "K916wfSzKxE.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 825858,
+          "key": "8b2f86f2-7321-4a24-bfad-23c3724bb4a4",
+          "title": "Efficiency of Merge Sort",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "8b2f86f2-7321-4a24-bfad-23c3724bb4a4",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 825997,
+              "key": "842a52c5-ccc8-40be-9712-5121496637b3",
+              "title": "Eficiência da ordenação por mistura",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "HKiK5Y-YSkk",
+                "china_cdn_id": "HKiK5Y-YSkk.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 843132,
+          "key": "50d8c2cc-7ac3-41c3-a9dd-4e407bb6e8e0",
+          "title": "Merge Sort Walkthrough",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "50d8c2cc-7ac3-41c3-a9dd-4e407bb6e8e0",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 843133,
+              "key": "d1f57a32-26f8-41a7-af05-c55804bd72d9",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r818024c842668xJUPYTERhd5czuc5",
+              "pool_id": "jupyter",
+              "view_id": "jupyter-3wnpq",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/sort/merge_sort_walkthrough.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 847749,
+          "key": "325ff45d-5c7b-447e-9b09-a3ad8de07c32",
+          "title": "Merge Sort: Counting Inversions",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "325ff45d-5c7b-447e-9b09-a3ad8de07c32",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 848004,
+              "key": "9db1d5ef-020b-4b38-b1b9-168352dd00b8",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r818024c842668xJUPYTERhd5czuc5",
+              "pool_id": "jupyter",
+              "view_id": "jupyter-aey12",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/sort/Counting Inversions.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 847748,
+          "key": "1220736c-7f31-4436-9616-7bef9732ccb2",
+          "title": "Case Specific Sorting of Strings",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "1220736c-7f31-4436-9616-7bef9732ccb2",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 848016,
+              "key": "af7883fa-cc55-468d-a750-2a1776e29084",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r818024c842668xJUPYTERhd5czuc5",
+              "pool_id": "jupyter",
+              "view_id": "jupyter-qnly6",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/sort/Case Specific Sorting of Strings.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 825863,
+          "key": "6e99c520-cb3c-4b55-97ec-4b934ce3978c",
+          "title": "Quicksort",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "6e99c520-cb3c-4b55-97ec-4b934ce3978c",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 825999,
+              "key": "c72363fc-be9d-424f-ae8d-d1f131787469",
+              "title": "Quicksort",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "kUon6854joI",
+                "china_cdn_id": "kUon6854joI.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 825864,
+          "key": "b18e6fc7-70a5-46b5-a709-eb1e609a6707",
+          "title": "Quicksort Efficiency",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "b18e6fc7-70a5-46b5-a709-eb1e609a6707",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 826001,
+              "key": "7d16e43d-b72d-4be1-aade-064d824817ed",
+              "title": "Efficiency Of Quick Sort V2",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "TH5RT5XcdAo",
+                "china_cdn_id": "TH5RT5XcdAo.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 825865,
+          "key": "0e8a1495-67d2-4a96-b854-58e5d8a107a5",
+          "title": "Quick Sort Walkthrough",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "0e8a1495-67d2-4a96-b854-58e5d8a107a5",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 843136,
+              "key": "3207def6-32aa-4e72-af34-a8fede9748bd",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r818024c842668xJUPYTERhd5czuc5",
+              "pool_id": "jupyter",
+              "view_id": "jupyter-snoql",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/sort/QuickSortWalkthough.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 848459,
+          "key": "464b0d25-fadf-43fd-b5f8-369044aaf5f7",
+          "title": "Heapsort",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "464b0d25-fadf-43fd-b5f8-369044aaf5f7",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 848513,
+              "key": "b5c52c6d-9508-4bf9-9b3a-19cc3bacbeac",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r818024c842668xJUPYTERhd5czuc5",
+              "pool_id": "jupyter",
+              "view_id": "jupyter-im0ov",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/basic/HeapSort.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 848460,
+          "key": "69a3f36c-de22-4fce-bbe8-578fccbe17fc",
+          "title": "Pair Sum",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "69a3f36c-de22-4fce-bbe8-578fccbe17fc",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 848514,
+              "key": "d47bad01-50fe-416d-9cc3-1278302240bd",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r818024c842668xJUPYTERhd5czuc5",
+              "pool_id": "jupyter",
+              "view_id": "jupyter-mv17d",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/sort/Pair Sum Problem.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 847750,
+          "key": "a72b7596-67d6-462c-8917-8c5e98c43bed",
+          "title": "Sort 0, 1, 2",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "a72b7596-67d6-462c-8917-8c5e98c43bed",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 848019,
+              "key": "dfba6080-ec5a-46ee-adea-0e4b7b013ff3",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r818024c842668xJUPYTERhd5czuc5",
+              "pool_id": "jupyter",
+              "view_id": "jupyter-c1vmu",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/sort/Sort-0-1-2.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

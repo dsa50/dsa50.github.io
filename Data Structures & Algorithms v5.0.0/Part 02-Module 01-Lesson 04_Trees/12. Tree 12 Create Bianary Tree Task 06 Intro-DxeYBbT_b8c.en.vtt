@@ -1,0 +1,46 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.480
+Now, our next task is to create a tree class.
+
+00:00:03.480 --> 00:00:08.775
+So create a class called Tree that has a root instance variable of type Node.
+
+00:00:08.775 --> 00:00:12.975
+Also define a get_root method that returns the root node.
+
+00:00:12.975 --> 00:00:15.210
+So visually, what I mean is this.
+
+00:00:15.210 --> 00:00:17.685
+A tree is a collection of nodes.
+
+00:00:17.685 --> 00:00:20.190
+We've already been defining the node class.
+
+00:00:20.190 --> 00:00:23.685
+The tree will just need to point to one node,
+
+00:00:23.685 --> 00:00:25.455
+which is the one at the very top,
+
+00:00:25.455 --> 00:00:28.335
+because from there, the root node,
+
+00:00:28.335 --> 00:00:29.925
+we can access all the other nodes.
+
+00:00:29.925 --> 00:00:32.010
+So here, just create a new class.
+
+00:00:32.010 --> 00:00:35.000
+We're not copying over the node class anymore.
+
+00:00:35.000 --> 00:00:36.450
+Create the tree class,
+
+00:00:36.450 --> 00:00:40.230
+and then you can check your solution in the next video.
+

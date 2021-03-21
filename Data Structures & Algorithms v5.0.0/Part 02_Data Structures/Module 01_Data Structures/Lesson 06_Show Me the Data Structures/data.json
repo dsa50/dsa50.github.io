@@ -1,0 +1,428 @@
+{
+  "data": {
+    "lesson": {
+      "id": 825074,
+      "key": "a640374a-90af-40ad-85ff-1c6ce3948219",
+      "title": "Show Me the Data Structures",
+      "semantic_type": "Lesson",
+      "is_public": true,
+      "version": "1.0.0",
+      "locale": "en-us",
+      "summary": "Solve a series of open-ended practice problems. Hone your skills to identify and implement appropriate data structures and corresponding methods that meet given constraints.",
+      "lesson_type": "Classroom",
+      "display_workspace_project_only": false,
+      "resources": null,
+      "project": {
+        "key": "4ed71f6f-8600-4787-a938-13f9f978058e",
+        "version": "1.0.0",
+        "locale": "en-us",
+        "duration": 40320,
+        "semantic_type": "Project",
+        "title": "Show Me the Data Structures",
+        "description": "## Submission Instructions\n\n### What to Submit\n#### Required\n* **Answer all 6 problems** listed in the previous concepts.\n* **Code solutions must be in a separate file like \"problem_1.py\".** You can submit your answers by uploading a single .zip file or connecting to your GitHub repo.\n* For each question, **create a solution in Python (version 3)**. All solutions should be functions named as laid out in the concepts. Feel free to make additional helper functions or classes as needed. \n* In the respective  \"problem_1.py\" files, **include at least 3 test cases for each solution.**\n * For each test case, write the function call with the input you want to test and print it to the console\".\n * On the next line, **comment out the output you expect to see from that function call.** At least 2 of these must be edge cases, testing inputs such as null values, empty inputs, unusually large values, etc.\n* **Write up an explanation for each question** in a single separate text file, PDF or markdown called \"explanation_1.md\".\n * Your paragraph should not be a detailed walkthrough of the code you provided, but provide your reasoning behind decisions made in the code. For example, why did you use that data structure? You also need to explain the efficiency (time and space) of your solution.\n* Compress your one Python and one text file into a .zip, and submit.\n\n**Note:** Time complexity for reading the input will not be considered in the overall complexity of the solution.\n> Please take care to complete these requirements when submitting! If for any reason we are unable to review your submission, we will let you know promptly so you may resubmit. Resubmitting will start a new window for feedback delivery.\n\n#### Want to check your answers before asking for feedback?\n* Compare your answers to the [rubric](https://review.udacity.com/#!/rubrics/2488/view).\n\n## What's Next?\nOnce submitted, an industry professional will provide you with personalized, written feedback based on the [Rubric](https://review.udacity.com/#!/rubrics/2488/view).\n\nThe review will be complete once you have received this feedback.\n\n## Project Submission Checklist\n\n**Before submitting your project, please review and confirm the following items.** \n<input type=\"checkbox\"> I am confident all rubric items have been met and my project will pass as submitted. \n<input type=\"checkbox\"> Project builds correctly without errors and runs.\n<input type=\"checkbox\"> All required functionality exists and my project behaves as expected per the project's specifications.\n\n**Once you have checked all these items, you are ready to submit!**\n",
+        "is_public": true,
+        "summary": null,
+        "forum_path": "",
+        "rubric_id": "2488",
+        "terminal_project_id": null,
+        "resources": null,
+        "image": null
+      },
+      "lab": null,
+      "concepts": [
+        {
+          "id": 825075,
+          "key": "772dd0ac-a06a-4fe7-a853-828b859ec063",
+          "title": "Introduction to the Project",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "772dd0ac-a06a-4fe7-a853-828b859ec063",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 827211,
+              "key": "54cc8548-8bf1-4bf2-83ff-577a39d12cff",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Data Structure Questions\n\nFor this project, you will answer the **six**  questions laid out in the next sections. The questions cover a variety of topics related to the data structures you've learned in this course. You will write up a clean and efficient answer in Python, as well as a text explanation of the efficiency of your code and your design choices.\n\nA qualified reviewer, such as a software or data engineer, will look over your answer and give you detailed, written feedback on areas you're doing very well in and areas that could be improved. For example, is your solution the most efficient one possible? Are you doing a good job of explaining your thoughts? Is your code elegant and easy to read?\n\nFeel free to write this code in your local development environment. In case you do not have the ability to use your local environment or wish to use the classroom to write your code a Jupyter notebook is provided below. \n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 827212,
+              "key": "ed354149-623f-458c-b7dd-56475a87dca8",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r818024c825075xJUPYTER9qy7knv1",
+              "pool_id": "jupyter",
+              "view_id": "jupyter-q32iu",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/Workbook.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 826858,
+          "key": "d4a73c15-f614-4674-80f4-2449ef50abc4",
+          "title": "Problem 1: LRU Cache",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "d4a73c15-f614-4674-80f4-2449ef50abc4",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 827218,
+              "key": "ca169175-227b-433b-a64e-f503912da545",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Least Recently Used Cache",
+              "instructor_notes": ""
+            },
+            {
+              "id": 827217,
+              "key": "a5e8b104-4686-4587-883b-e085ed8aa066",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "We have briefly discussed caching as part of a practice problem while studying hash maps.\n\nThe lookup operation (i.e.,  `get()`) and `put()` / `set()` is supposed to be fast for a cache memory.\n\nWhile doing the `get()` operation, if the entry is found in the cache, it is known as a `cache hit`. If, however, the entry is not found, it is known as a `cache miss`.\n\nWhen designing a cache, we also place an upper bound on the size of the cache. If the cache is full and we want to add a new entry to the cache, we use some criteria to remove an element. After removing an element, we use the `put()` operation to insert the new element. The remove operation should also be fast.\n\nFor our first problem, the goal will be to design a data structure known as a **Least Recently Used (LRU) cache**. An LRU cache is a type of cache in which we remove the least recently used entry when the cache memory reaches its limit. For the current problem, consider both `get` and `set` operations as an `use operation`.\n\nYour job is to use an appropriate data structure(s) to implement the cache. \n\n* In case of a `cache hit`, your `get()` operation should return the appropriate value. \n* In case of a `cache miss`, your `get()` should return -1.\n* While putting an element in the cache, your `put()` / `set()` operation must insert the element. If the cache is full, you must write code that removes the least recently used entry first and then insert the element. \n\nAll operations must take `O(1)` time.\n \nFor the current problem, you can consider the `size of cache = 5`.\n\nHere is some boiler plate code and some example test cases to get you started on this problem:\n\n```\nclass LRU_Cache(object):\n\n    def __init__(self, capacity):\n        # Initialize class variables\n        pass\n\n    def get(self, key):\n        # Retrieve item from provided key. Return -1 if nonexistent. \n        pass\n\n    def set(self, key, value):\n        # Set the value if the key is not present in the cache. If the cache is at capacity remove the oldest item. \n        pass\n\nour_cache = LRU_Cache(5)\n\nour_cache.set(1, 1);\nour_cache.set(2, 2);\nour_cache.set(3, 3);\nour_cache.set(4, 4);\n\t\t\n\nour_cache.get(1)       # returns 1\nour_cache.get(2)       # returns 2\nour_cache.get(9)      # returns -1 because 9 is not present in the cache\n\nour_cache.set(5, 5) \nour_cache.set(6, 6)\n\nour_cache.get(3)      # returns -1 because the cache reached it's capacity and 3 was the least recently used entry\n\n```",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 826859,
+          "key": "63dbfe46-187a-4478-b3d1-c351f829aef4",
+          "title": "Problem 2: File Recursion",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "63dbfe46-187a-4478-b3d1-c351f829aef4",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 827219,
+              "key": "7f83ad02-deae-42df-9e12-e94c079df6fa",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Finding Files",
+              "instructor_notes": ""
+            },
+            {
+              "id": 827221,
+              "key": "4e0d7300-f89a-4d03-a66a-bba88e056be0",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "For this problem, the goal is to write code for finding all files under a directory (and all directories beneath it) that end with \".c\"\n\nHere is an example of a test directory listing, which can be downloaded [here](https://s3.amazonaws.com/udacity-dsand/testdir.zip):\n```\n./testdir\n./testdir/subdir1\n./testdir/subdir1/a.c\n./testdir/subdir1/a.h\n./testdir/subdir2\n./testdir/subdir2/.gitkeep\n./testdir/subdir3\n./testdir/subdir3/subsubdir1\n./testdir/subdir3/subsubdir1/b.c\n./testdir/subdir3/subsubdir1/b.h\n./testdir/subdir4\n./testdir/subdir4/.gitkeep\n./testdir/subdir5\n./testdir/subdir5/a.c\n./testdir/subdir5/a.h\n./testdir/t1.c\n./testdir/t1.h\n```\n\nPython's `os` module will be useful—in particular, you may want to use the following resources:\n\n[os.path.isdir(path)](https://docs.python.org/3.7/library/os.path.html#os.path.isdir)\n\n[os.path.isfile(path)](https://docs.python.org/3.7/library/os.path.html#os.path.isfile)\n\n[os.listdir(directory)](https://docs.python.org/3.7/library/os.html#os.listdir)\n\n[os.path.join(...)](https://docs.python.org/3.7/library/os.path.html#os.path.join)\n\n**Note:** `os.walk()` is a handy Python method which can achieve this task very easily. However, for this problem you are not allowed to use `os.walk()`.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 827220,
+              "key": "2b91bc26-929b-46e1-94fa-c98e095fa312",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Here is some code for the function to get you started: \n```python\n\ndef find_files(suffix, path):\n    \"\"\"\n    Find all files beneath path with file name suffix.\n    \n    Note that a path may contain further subdirectories\n    and those subdirectories may also contain further subdirectories.\n    \n    There are no limit to the depth of the subdirectories can be.\n    \n    Args:\n      suffix(str): suffix if the file name to be found\n      path(str): path of the file system\n    \n    Returns:\n       a list of paths\n    \"\"\"\n    return None\n```",
+              "instructor_notes": ""
+            },
+            {
+              "id": 842621,
+              "key": "6eb35f9e-be01-41b7-b897-abb1bab00a99",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# OS Module Exploration Code\n\n```python \n## Locally save and call this file ex.py ##\n\n# Code to demonstrate the use of some of the OS modules in python\n\nimport os\n\n# Let us print the files in the directory in which you are running this script\nprint (os.listdir(\".\"))\n\n# Let us check if this file is indeed a file!\nprint (os.path.isfile(\"./ex.py\"))\n\n# Does the file end with .py?\nprint (\"./ex.py\".endswith(\".py\"))\n```",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 826860,
+          "key": "b97f3d67-ed9e-4759-8841-d13096f5cdd7",
+          "title": "Problem 3: Huffman Coding",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "b97f3d67-ed9e-4759-8841-d13096f5cdd7",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 827222,
+              "key": "b9a7d997-b6ef-472e-9ca7-50051b899bd1",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Overview - Data Compression\nIn general, a data compression algorithm reduces the amount of memory (bits) required to represent a message (data). The compressed data, in turn, helps to reduce the transmission time from a sender to receiver. The sender encodes the data, and the receiver decodes the encoded data. As part of this problem, you have to implement the logic for both encoding and decoding. \n\nA data compression algorithm could be either ***lossy*** or ***lossless***, meaning that when compressing the data, there is a loss  (lossy) or no loss (lossless) of information. The **Huffman Coding** is a *lossless* data compression algorithm. Let us understand the two phases - encoding and decoding with the help of an example. ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1018093,
+              "key": "69914633-73a6-492f-9cbe-a460a799873a",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## A. Huffman Encoding\nAssume that we have a string message `AAAAAAABBBCCCCCCCDDEEEEEE` comprising of 25 characters to be encoded. The string message can be an unsorted one as well. We will have two phases in encoding - building the Huffman tree (a binary tree), and generating the encoded data. The following steps illustrate the Huffman encoding: \n\n### ** <font color=\"blue\">Phase I - Build the Huffman Tree </font> **<br>\nA Huffman tree is built in a bottom-up approach.\n1. First, determine the frequency of each character in the message. In our example, the following table presents the frequency of each character.\n\n| (Unique) Character | Frequency  |\n|:-------------:|:-------------:|\n| A | 7 | \n| B | 3 | \n| C | 7 | \n| D | 2 | \n| E | 6 | \n\n\n2. Each row in the table above can be represented as a *node* having a character, frequency, left child, and right child. In the next step, we will repeatedly require to pop-out the node having the lowest frequency. Therefore, build and sort a *list* of nodes in the order lowest to highest frequencies. Remember that a *list* preserves the order of elements in which they are appended. \n\n We would need our *list* to work as a **[priority queue](https://en.wikipedia.org/wiki/Priority_queue)**, where a node that has lower frequency should have a higher priority to be popped-out.  The following snapshot will help you visualize the example considered above:\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1018094,
+              "key": "7e018cb8-d6f9-4a7d-86c6-977b32f1f8fe",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/May/5eac5f84_screenshot-2020-04-27-at-5.15.56-pm/screenshot-2020-04-27-at-5.15.56-pm.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/7e018cb8-d6f9-4a7d-86c6-977b32f1f8fe",
+              "caption": "",
+              "alt": "",
+              "width": 1579,
+              "height": 312,
+              "instructor_notes": null
+            },
+            {
+              "id": 1018095,
+              "key": "a021a9fa-2562-4433-a969-213383c7e771",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "\n>Can you come up with other data structures to create a priority queue? How about using a *min-heap* instead of a list? You are free to choose from anyone.\n\n3. Pop-out two nodes with the minimum frequency from the *priority queue* created in the above step. \n\n\n4. Create a new node with a frequency equal to the sum of the two nodes picked in the above step. This new node would become an *internal node* in the Huffman tree, and the two nodes would become the children.  The lower frequency node becomes a left child, and the higher frequency node becomes the right child. Reinsert the newly created node back into the priority queue. <br>\n\n **Do you think that this reinsertion requires the sorting of priority queue again?**  If yes, then a *min-heap* could be a better choice due to the lower complexity of sorting the elements, every time there is an insertion. \n\n\n5. Repeat steps #3 and #4 until there is a single element left in the priority queue. The snapshots below present the building of a Huffman tree. \n\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1018096,
+              "key": "6227bc91-404b-4330-846d-75501c5d98bc",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/May/5eac5fd2_huffman-tree-1/huffman-tree-1.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/6227bc91-404b-4330-846d-75501c5d98bc",
+              "caption": "",
+              "alt": "",
+              "width": 802,
+              "height": 717,
+              "instructor_notes": null
+            },
+            {
+              "id": 1018097,
+              "key": "c7d24b8f-1fc7-464e-9f56-e262e9166a47",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/May/5eac5feb_huffman-tree-2/huffman-tree-2.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/c7d24b8f-1fc7-464e-9f56-e262e9166a47",
+              "caption": "",
+              "alt": "",
+              "width": 799,
+              "height": 713,
+              "instructor_notes": null
+            },
+            {
+              "id": 1018098,
+              "key": "e33c2962-5d9a-4caa-b0ce-85ccedf80660",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "\n 6. For each node, in the Huffman tree, assign a bit `0` for left child and a `1` for right child. See the final Huffman tree for our example:\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1018099,
+              "key": "3135a45a-fbd9-496e-94a6-615e7317e8d8",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2020/May/5eac6028_huffman-tree-3/huffman-tree-3.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/3135a45a-fbd9-496e-94a6-615e7317e8d8",
+              "caption": "",
+              "alt": "",
+              "width": 802,
+              "height": 388,
+              "instructor_notes": null
+            },
+            {
+              "id": 1018100,
+              "key": "f7ccf82b-df11-4f1f-be9b-feadac93860e",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "\n\n### **<font color=\"blue\">Phase II - Generate the Encoded Data</font>**<br>\n7. Based on the Huffman tree, generate unique binary code for each character of our string message. For this purpose, you'd have to traverse the path from root to the leaf node. \n\n| (Unique) Character | Frequency  | Huffman Code  |\n|:-------------:|:-------------:|\n| D | 2 | 000 |\n| B | 3 | 001 |\n| E | 6 | 01 |\n| A | 7 | 10 |\n| C | 7 | 11 |\n\n>**Points to Notice**<br>\n- Notice that the whole code for any character is ***not*** a prefix of any other code. Hence, the Huffman code is called a ***[Prefix code](https://en.wikipedia.org/wiki/Prefix_code)***.\n- Notice that the binary code is shorter for the more frequent character, and vice-versa.\n- The Huffman code is generated in such a way that the entire string message would now require a much lesser amount of memory in binary form. \n- Notice that each node present in the original *priority queue* has become a *leaf node* in the final Huffman tree. \n\nThis way, our encoded data would be `1010101010101000100100111111111111111000000010101010101`\n\n## B. Huffman Decoding\nOnce we have the encoded data, and the (pointer to the root of) Huffman tree, we can easily decode the encoded data using the following steps:\n1. Declare a blank decoded string \n2. Pick a bit from the encoded data, traversing from left to right.\n3. Start traversing the Huffman tree from the root. \n - If the current bit of encoded data is `0`, move to the left child, else move to the right child of the tree if the current bit is `1`.\n - If a leaf node is encountered, append the (alphabetical) character of the leaf node to the decoded string. \n3. Repeat steps #2 and #3 until the encoded data is completely traversed. \n\nYou will have to implement the logic for both encoding and decoding in the following template. Also, you will need to create the sizing schemas to present a summary. ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1018101,
+              "key": "4de617c6-447c-4328-9a9d-a549c5dcb1e0",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "\n```\nimport sys\n\ndef huffman_encoding(data):\n    pass\n\ndef huffman_decoding(data,tree):\n\tpass\n\nif __name__ == \"__main__\":\n\tcodes = {}\n\n\ta_great_sentence = \"The bird is the word\"\n\n\tprint (\"The size of the data is: {}\\n\".format(sys.getsizeof(a_great_sentence)))\n\tprint (\"The content of the data is: {}\\n\".format(a_great_sentence))\n\n\tencoded_data, tree = huffman_encoding(a_great_sentence)\n\n\tprint (\"The size of the encoded data is: {}\\n\".format(sys.getsizeof(int(encoded_data, base=2))))\n\tprint (\"The content of the encoded data is: {}\\n\".format(encoded_data))\n\n\tdecoded_data = huffman_decoding(encoded_data, tree)\n\n\tprint (\"The size of the decoded data is: {}\\n\".format(sys.getsizeof(decoded_data)))\n\tprint (\"The content of the encoded data is: {}\\n\".format(decoded_data))\n```",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1018102,
+              "key": "e335c607-5b05-49e1-96e3-0e829ef13ae7",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "---\n### Visualization Resource\n\nCheck this website to visualize the Huffman encoding for any string message - [Huffman Visualization!](https://people.ok.ubc.ca/ylucet/DS/Huffman.html)\n",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 826861,
+          "key": "f18db339-08f2-4bb1-bd54-cde0adfaa930",
+          "title": "Problem 4: Active Directory",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "f18db339-08f2-4bb1-bd54-cde0adfaa930",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 827224,
+              "key": "21ffed91-118b-49e8-baad-5f1972373a76",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Active Directory\n\nIn Windows Active Directory, a group can consist of user(s) and group(s) themselves. We can construct this hierarchy as such. Where User is represented by str representing their ids. \n\n```\nclass Group(object):\n    def __init__(self, _name):\n        self.name = _name\n        self.groups = []\n        self.users = []\n\n    def add_group(self, group):\n        self.groups.append(group)\n\n    def add_user(self, user):\n        self.users.append(user)\n\n    def get_groups(self):\n        return self.groups\n\n    def get_users(self):\n        return self.users\n    \n    def get_name(self):\n        return self.name\n\n\nparent = Group(\"parent\")\nchild = Group(\"child\")\nsub_child = Group(\"subchild\")\n\nsub_child_user = \"sub_child_user\"\nsub_child.add_user(sub_child_user)\n\nchild.add_group(sub_child)\nparent.add_group(child)\n```  \n\nWrite a function that provides an efficient look up of whether the user is in a group. \n\n```\ndef is_user_in_group(user, group):\n    \"\"\"\n    Return True if user is in the group, False otherwise.\n    \n    Args:\n      user(str): user name/id\n      group(class:Group): group to check user membership against\n    \"\"\"\n    return None\n```\n",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 826862,
+          "key": "24216d22-1e4d-48f5-b224-9191fd5e5941",
+          "title": "Problem 5: Blockchain",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "24216d22-1e4d-48f5-b224-9191fd5e5941",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 827225,
+              "key": "26267aa0-2c6b-4abf-b06f-c1168d74ce64",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Blockchain\n\nA [Blockchain](https://en.wikipedia.org/wiki/Blockchain) is a sequential chain of records, similar to a linked list. Each block contains some information and how it is connected related to the other blocks in the chain. Each block contains a cryptographic hash of the previous block, a timestamp, and transaction data. For our blockchain we will be using a [SHA-256](https://en.wikipedia.org/wiki/SHA-2) hash, the [Greenwich Mean Time](https://en.wikipedia.org/wiki/Greenwich_Mean_Time) when the block was created, and text strings as the data. \n\nUse your knowledge of linked lists and hashing to create a blockchain implementation. ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 842185,
+              "key": "2e93b11e-fba6-4ff8-a40b-538a4af6ca16",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2019/April/5ca8bd1d_untitled-diagram/untitled-diagram.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/2e93b11e-fba6-4ff8-a40b-538a4af6ca16",
+              "caption": "",
+              "alt": "",
+              "width": 648,
+              "height": 268,
+              "instructor_notes": null
+            },
+            {
+              "id": 842184,
+              "key": "92f3566d-1d78-4b97-8692-f126b14e9f33",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "We can break the blockchain down into three main parts. \n\nFirst is the information hash:\n\n```python\nimport hashlib\n\ndef calc_hash(self):\n      sha = hashlib.sha256()\n\n      hash_str = \"We are going to encode this string of data!\".encode('utf-8')\n\n      sha.update(hash_str)\n\n      return sha.hexdigest()\n```\n\nWe do this for the information we want to store in the block chain such as transaction time, data, and information like the previous chain. \n\nThe next main component is the block on the blockchain:\n\n```\nclass Block:\n\n    def __init__(self, timestamp, data, previous_hash):\n      self.timestamp = timestamp\n      self.data = data\n      self.previous_hash = previous_hash\n      self.hash = self.calc_hash()\n```\n\nAbove is an example of attributes you could find in a `Block` class. \n\n\nFinally you need to link all of this together in a block chain, which you will be doing by implementing it in a linked list. All of this will help you build up to a simple but full blockchain implementation! \n\n ",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 841680,
+          "key": "1b29b6fd-d79e-4079-ab84-341555b7f520",
+          "title": "Problem 6: Union and Intersection",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "1b29b6fd-d79e-4079-ab84-341555b7f520",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 841681,
+              "key": "03af28cb-7353-4232-a468-ff933db53ba2",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Union and Intersection of Two Linked Lists\n\nYour task for this problem is to fill out the union and intersection functions. The union of two sets A and B is the set of elements which are in A, in B, or in both A and B. The intersection of two sets A and B, denoted by A ∩ B, is the set of all objects that are members of both the sets A and B.\n\nYou will take in two linked lists and return a linked list that is composed of either the union or intersection, respectively. Once you have completed the problem you will create your own test cases and perform your own run time analysis on the code. \n\nWe have provided a code template below, you are not required to use it:\n\n```python\nclass Node:\n    def __init__(self, value):\n        self.value = value\n        self.next = None\n\n    def __repr__(self):\n        return str(self.value)\n\n\nclass LinkedList:\n    def __init__(self):\n        self.head = None\n\n    def __str__(self):\n        cur_head = self.head\n        out_string = \"\"\n        while cur_head:\n            out_string += str(cur_head.value) + \" -> \"\n            cur_head = cur_head.next\n        return out_string\n        \n\n    def append(self, value):\n\n        if self.head is None:\n            self.head = Node(value)\n            return\n\n        node = self.head\n        while node.next:\n            node = node.next\n\n        node.next = Node(value)\n\n    def size(self):\n        size = 0\n        node = self.head\n        while node:\n            size += 1\n            node = node.next\n\n        return size\n\ndef union(llist_1, llist_2):\n    # Your Solution Here\n    pass\n\ndef intersection(llist_1, llist_2):\n    # Your Solution Here\n    pass\n\n\n# Test case 1\n\nlinked_list_1 = LinkedList()\nlinked_list_2 = LinkedList()\n\nelement_1 = [3,2,4,35,6,65,6,4,3,21]\nelement_2 = [6,32,4,9,6,1,11,21,1]\n\nfor i in element_1:\n    linked_list_1.append(i)\n\nfor i in element_2:\n    linked_list_2.append(i)\n\nprint (union(linked_list_1,linked_list_2))\nprint (intersection(linked_list_1,linked_list_2))\n\n# Test case 2\n\nlinked_list_3 = LinkedList()\nlinked_list_4 = LinkedList()\n\nelement_1 = [3,2,4,35,6,65,6,4,3,23]\nelement_2 = [1,7,8,9,11,21,1]\n\nfor i in element_1:\n    linked_list_3.append(i)\n\nfor i in element_2:\n    linked_list_4.append(i)\n\nprint (union(linked_list_3,linked_list_4))\nprint (intersection(linked_list_3,linked_list_4))\n\n```\n\n",
+              "instructor_notes": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "_deprecated": [
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    }
+  ]
+}

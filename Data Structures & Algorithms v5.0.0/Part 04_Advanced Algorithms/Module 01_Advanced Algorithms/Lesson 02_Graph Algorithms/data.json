@@ -1,0 +1,548 @@
+{
+  "data": {
+    "lesson": {
+      "id": 825828,
+      "key": "3ea38cc1-e5ac-49b8-9245-64695d21f06b",
+      "title": "Graph Algorithms",
+      "semantic_type": "Lesson",
+      "is_public": true,
+      "version": "1.0.0",
+      "locale": "en-us",
+      "summary": "Learn about the many aspects of graph algorithms!",
+      "lesson_type": "Classroom",
+      "display_workspace_project_only": false,
+      "resources": {
+        "files": [
+          {
+            "name": "Videos Zip File",
+            "uri": "https://zips.udacity-data.com/3ea38cc1-e5ac-49b8-9245-64695d21f06b/825828/1556779957431/Graph+Algorithm+Videos.zip"
+          },
+          {
+            "name": "Transcripts Zip File",
+            "uri": "https://zips.udacity-data.com/3ea38cc1-e5ac-49b8-9245-64695d21f06b/825828/1556779942729/Graph+Algorithm+Subtitles.zip"
+          }
+        ],
+        "google_plus_link": null,
+        "career_resource_center_link": null,
+        "coaching_appointments_link": null,
+        "office_hours_link": null,
+        "aws_provisioning_link": null
+      },
+      "project": null,
+      "lab": null,
+      "concepts": [
+        {
+          "id": 825881,
+          "key": "362765a4-0ced-42c8-b233-608b08abff80",
+          "title": "Graph Introduction",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "362765a4-0ced-42c8-b233-608b08abff80",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 826028,
+              "key": "50747d9d-86b6-4543-82cd-0617db0e79a4",
+              "title": "Introdução",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "DFR8F2Q9lgo",
+                "china_cdn_id": "DFR8F2Q9lgo.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 825882,
+          "key": "50659e71-53bd-49b8-8b60-48512a9f3dd3",
+          "title": "What is a Graph?",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "50659e71-53bd-49b8-8b60-48512a9f3dd3",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 826030,
+              "key": "64a0edde-522b-41ae-b6d1-4aa60afac1cd",
+              "title": "O que é um grafo?",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "p-_DFOyEMV8",
+                "china_cdn_id": "p-_DFOyEMV8.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 825883,
+          "key": "200f6518-9115-424d-879e-c8b3f43ee6c7",
+          "title": "Directions and Cycles",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "200f6518-9115-424d-879e-c8b3f43ee6c7",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 826032,
+              "key": "77e0d0c5-35e1-4ade-987f-b14f57077722",
+              "title": "Direções e ciclos",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "lF0vUktQDPo",
+                "china_cdn_id": "lF0vUktQDPo.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 825884,
+          "key": "66e20cda-f4cc-48fa-be51-dcb1c43ab890",
+          "title": "Connectivity",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "66e20cda-f4cc-48fa-be51-dcb1c43ab890",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 826034,
+              "key": "331c3ceb-afb4-4b91-aa8a-69ba6ed6ece7",
+              "title": "Conectividade",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "4x6u2KtNDg4",
+                "china_cdn_id": "4x6u2KtNDg4.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 825885,
+          "key": "6fd4202b-7eeb-4457-b02c-00ad4385e81f",
+          "title": "Graph Representation",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "6fd4202b-7eeb-4457-b02c-00ad4385e81f",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 826036,
+              "key": "badecc3b-d361-4b32-a530-099d28b1b950",
+              "title": "Representações espaciais",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "uw9u6dtl0WA",
+                "china_cdn_id": "uw9u6dtl0WA.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 825886,
+          "key": "5694cb18-2f86-4eba-abf3-e1405474f70b",
+          "title": "Adjacency Matricies",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "5694cb18-2f86-4eba-abf3-e1405474f70b",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 826038,
+              "key": "9da64295-19af-484e-8c4c-d04fc76f8d95",
+              "title": "Matrizes de adjacência",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "FsFhoTALA1c",
+                "china_cdn_id": "FsFhoTALA1c.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 825888,
+          "key": "5a58ec42-3909-4e7f-bd14-b3d3cd915b0d",
+          "title": "Graph Traversal",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "5a58ec42-3909-4e7f-bd14-b3d3cd915b0d",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 826040,
+              "key": "2a9ab13a-c8b9-4c83-8ab1-f681e293a14f",
+              "title": "Travessia de grafos",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "Dkt-XxHZaZE",
+                "china_cdn_id": "Dkt-XxHZaZE.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 825889,
+          "key": "0f0edfe5-bda2-4058-9268-df70114c6bec",
+          "title": "DFS",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "0f0edfe5-bda2-4058-9268-df70114c6bec",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 826042,
+              "key": "81c7aa89-bda8-4742-a55b-ff350edea835",
+              "title": "DFS",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "BC8jEidd2EQ",
+                "china_cdn_id": "BC8jEidd2EQ.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 825890,
+          "key": "1537d1a1-9711-4fc0-945b-2cdcbc60cbdd",
+          "title": "Implement DFS — Iterative Solution",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "1537d1a1-9711-4fc0-945b-2cdcbc60cbdd",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 843999,
+              "key": "95360ffe-158d-489c-8269-72a1efa9fd0f",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r818024c831558xJUPYTERbo7otze1",
+              "pool_id": "jupyter",
+              "view_id": "jupyter-b8m2p",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/graph/graph_dfs.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 848449,
+          "key": "caf76fdc-9348-4952-b763-12a3c7bb16e6",
+          "title": "Implement DFS — Recursive Solution",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "caf76fdc-9348-4952-b763-12a3c7bb16e6",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 848521,
+              "key": "a9715234-659a-40e4-bb68-e6a5681c2e60",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r818024c831558xJUPYTERbo7otze1",
+              "pool_id": "jupyter",
+              "view_id": "jupyter-hubgw",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/graph/DFS_recursion.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 825892,
+          "key": "775362ca-b4e9-4e06-8860-66e6b1c49611",
+          "title": "BFS",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "775362ca-b4e9-4e06-8860-66e6b1c49611",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 826044,
+              "key": "3bd433e4-d0eb-48e2-997f-33d6d1c24631",
+              "title": "BFS",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "pol4kGNlvJA",
+                "china_cdn_id": "pol4kGNlvJA.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 825893,
+          "key": "9edaadce-1656-46c3-962c-3cd7b4fe7951",
+          "title": "Implement BFS",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "9edaadce-1656-46c3-962c-3cd7b4fe7951",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 844001,
+              "key": "4b26c48f-5ce9-4bab-95e4-01651f577b3b",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r818024c831558xJUPYTERbo7otze1",
+              "pool_id": "jupyter",
+              "view_id": "jupyter-cauqc",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/graph/graph_bfs.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 825894,
+          "key": "7f175bfe-34d2-4039-88d0-447ff0588f4d",
+          "title": "Shortest Path & Diijkstra's Algorithm",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "7f175bfe-34d2-4039-88d0-447ff0588f4d",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 826045,
+              "key": "a747c4e8-9072-453b-9fb4-5bb0b312576f",
+              "title": "Problema do caminho mais curto",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "huKUM97Vve8",
+                "china_cdn_id": "huKUM97Vve8.mp4"
+              }
+            },
+            {
+              "id": 826046,
+              "key": "1eddc9b1-cab5-4263-ba42-484dbd720e8c",
+              "title": "Algoritmo de Dijkstra",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "SoPMK03cOgk",
+                "china_cdn_id": "SoPMK03cOgk.mp4"
+              }
+            },
+            {
+              "id": 1027989,
+              "key": "ec285561-9281-4a61-85a7-e1283993170c",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "#### Note\nDijkstra's algorithm can solve the single-source shortest path only when the edges have non-negative weights. In other words, Dijkstra's algorithm **can not** work if:\n1. There are edges with negative weights.\n2. There are negative cycles (in directed graphs). A negative cycle is one that has negative weights. It can reduce the cost of the \"shortest path\" every time the cycle is traversed. However, the algorithm works fine with positive cycles.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 825895,
+          "key": "0afe7a4b-b473-4679-922a-b604dbe79a11",
+          "title": "Diijkstra's Algorithm Exercise",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "0afe7a4b-b473-4679-922a-b604dbe79a11",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 843767,
+              "key": "bdd458ee-cd97-44e8-ab57-fdae749736ae",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r818024c831558xJUPYTERbo7otze1",
+              "pool_id": "jupyter",
+              "view_id": "jupyter-vsz63",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/graph/dijkstra.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 849823,
+          "key": "1fd80a97-7a51-412d-97ea-201b4ccaab31",
+          "title": "Prim’s Algorithm - Connecting Islands",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "1fd80a97-7a51-412d-97ea-201b4ccaab31",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 849824,
+              "key": "ec1284cc-f346-4326-9276-a2987ee347e3",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r818024c831558xJUPYTERbo7otze1",
+              "pool_id": "jupyter",
+              "view_id": "jupyter-rjay3",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/graph/Connecting-Islands.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

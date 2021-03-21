@@ -1,0 +1,196 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.320
+Now, let's go ahead and define has_left_child and has_right_child.
+
+00:00:04.320 --> 00:00:09.450
+We just used the code we already generated earlier,
+
+00:00:09.450 --> 00:00:16.755
+and let's add on has_left_child and has_right_child.
+
+00:00:16.755 --> 00:00:21.135
+So let's think about it. When you look at a tree node,
+
+00:00:21.135 --> 00:00:23.595
+let's go back to the visual at the very top.
+
+00:00:23.595 --> 00:00:27.960
+So Apple, it has a left child and it has a right child.
+
+00:00:27.960 --> 00:00:31.220
+Banana has a left child set to dates,
+
+00:00:31.220 --> 00:00:32.690
+and its right child,
+
+00:00:32.690 --> 00:00:34.370
+it would be set to none,
+
+00:00:34.370 --> 00:00:36.055
+meaning it doesn't have anything,
+
+00:00:36.055 --> 00:00:37.800
+it doesn't have a right child.
+
+00:00:37.800 --> 00:00:40.310
+So it could either be none or not none.
+
+00:00:40.310 --> 00:00:43.280
+So that's how we tell whether it has a child or not.
+
+00:00:43.280 --> 00:00:45.530
+Going back to task five,
+
+00:00:45.530 --> 00:00:50.655
+this means that if the left pointer is not none,
+
+00:00:50.655 --> 00:00:52.350
+then that means it's something.
+
+00:00:52.350 --> 00:00:55.965
+It's some node, some none null value.
+
+00:00:55.965 --> 00:00:58.140
+So that means that it has a left child,
+
+00:00:58.140 --> 00:01:00.015
+It will return true.
+
+00:01:00.015 --> 00:01:06.290
+Otherwise, that means that the left pointer here is actually set to none,
+
+00:01:06.290 --> 00:01:08.665
+so we're going to return false.
+
+00:01:08.665 --> 00:01:12.230
+Notice that this is fine,
+
+00:01:12.230 --> 00:01:14.450
+but it's slightly inefficient.
+
+00:01:14.450 --> 00:01:16.235
+When you get into coding interviews,
+
+00:01:16.235 --> 00:01:18.035
+you'll be asked sometimes,
+
+00:01:18.035 --> 00:01:19.940
+instead of writing an if else block,
+
+00:01:19.940 --> 00:01:22.210
+how can you write it all in one line?
+
+00:01:22.210 --> 00:01:24.540
+So what you'll notice here is that,
+
+00:01:24.540 --> 00:01:26.280
+what is this conditional doing.
+
+00:01:26.280 --> 00:01:28.545
+Self.left does not equal none.
+
+00:01:28.545 --> 00:01:31.475
+That's actually returning a Boolean value.
+
+00:01:31.475 --> 00:01:35.495
+This is going to evaluate to either a true or a false.
+
+00:01:35.495 --> 00:01:38.810
+In this case, when it is true,
+
+00:01:38.810 --> 00:01:40.445
+it goes down to here.
+
+00:01:40.445 --> 00:01:42.445
+Then what does it do?
+
+00:01:42.445 --> 00:01:44.330
+It returns true because
+
+00:01:44.330 --> 00:01:49.115
+this function has_left_child is also trying to return a Boolean either true or false.
+
+00:01:49.115 --> 00:01:53.355
+So similarly, when this expression evaluates to false,
+
+00:01:53.355 --> 00:01:55.440
+then we jump to the else block.
+
+00:01:55.440 --> 00:01:57.105
+Then what is the action we take?
+
+00:01:57.105 --> 00:01:58.995
+We're returning false.
+
+00:01:58.995 --> 00:02:03.265
+So notice, what we can actually do here is we can skip this step,
+
+00:02:03.265 --> 00:02:04.810
+make it a little bit more efficient,
+
+00:02:04.810 --> 00:02:10.590
+and then just say return whether self.left is not equal to none.
+
+00:02:10.590 --> 00:02:12.075
+So there you go.
+
+00:02:12.075 --> 00:02:15.295
+We can do the same here for checking if it has a right child.
+
+00:02:15.295 --> 00:02:19.390
+If the right child's pointer is not none,
+
+00:02:19.390 --> 00:02:21.075
+that means it has a right child.
+
+00:02:21.075 --> 00:02:24.510
+Otherwise, it doesn't and it would return false.
+
+00:02:24.510 --> 00:02:26.865
+So let's just check this out.
+
+00:02:26.865 --> 00:02:30.929
+We have three nodes that will create,
+
+00:02:30.929 --> 00:02:35.820
+and then we'll also check if node0 a has a left child or a right child.
+
+00:02:35.820 --> 00:02:36.935
+So at this point,
+
+00:02:36.935 --> 00:02:41.020
+these are all separate nodes and nothing has been added as a child to another.
+
+00:02:41.020 --> 00:02:48.095
+Then here, we're going to add node1 as a left child and node2 as the right child.
+
+00:02:48.095 --> 00:02:50.780
+So it's going to be there's an apple and then on the left,
+
+00:02:50.780 --> 00:02:52.280
+there's banana, and on the right,
+
+00:02:52.280 --> 00:02:57.935
+there's an orange, and then we'll check again using these functions that we just defined.
+
+00:02:57.935 --> 00:02:59.045
+Does it have a left child,
+
+00:02:59.045 --> 00:03:00.425
+does it have a right child.
+
+00:03:00.425 --> 00:03:05.000
+So you can see beforehand when before we add the children,
+
+00:03:05.000 --> 00:03:06.485
+the answer is false,
+
+00:03:06.485 --> 00:03:08.075
+and then after we add the children,
+
+00:03:08.075 --> 00:03:11.160
+the answer is true. So it works.
+

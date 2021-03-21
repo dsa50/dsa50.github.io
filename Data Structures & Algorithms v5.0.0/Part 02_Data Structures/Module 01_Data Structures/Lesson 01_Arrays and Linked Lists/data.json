@@ -1,0 +1,921 @@
+{
+  "data": {
+    "lesson": {
+      "id": 843995,
+      "key": "19408d10-198c-4fc9-82a4-cb3a94f7a900",
+      "title": "Arrays and Linked Lists",
+      "semantic_type": "Lesson",
+      "is_public": true,
+      "version": "1.0.0",
+      "locale": "en-us",
+      "summary": "Learn about Arrays and Linked Lists",
+      "lesson_type": "Classroom",
+      "display_workspace_project_only": false,
+      "resources": {
+        "files": [
+          {
+            "name": "Videos Zip File",
+            "uri": "https://zips.udacity-data.com/19408d10-198c-4fc9-82a4-cb3a94f7a900/843995/1556058606420/Arrays+and+Linked+Lists+Videos.zip"
+          },
+          {
+            "name": "Transcripts Zip File",
+            "uri": "https://zips.udacity-data.com/19408d10-198c-4fc9-82a4-cb3a94f7a900/843995/1556058603795/Arrays+and+Linked+Lists+Subtitles.zip"
+          }
+        ],
+        "google_plus_link": null,
+        "career_resource_center_link": null,
+        "coaching_appointments_link": null,
+        "office_hours_link": null,
+        "aws_provisioning_link": null
+      },
+      "project": null,
+      "lab": null,
+      "concepts": [
+        {
+          "id": 825077,
+          "key": "75905eba-2c12-4977-8ab4-beabd3b346e4",
+          "title": "Collections",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "75905eba-2c12-4977-8ab4-beabd3b346e4",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 841504,
+              "key": "8686d76a-3458-4d49-9c7a-f1c85520911c",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Why data structures?\n*Data structures* are containers that organize and group data together in different ways. When you write code to solve a problem, there will always be data involved—and how you store or structure that data in the computer's memory can have a huge impact on what kinds of things you can do with it and how efficiently you can do those things. \n\nIn this section, we'll start out by reviewing some basic data structures that you're probably at least partly familiar with already.\n\nThen, as we go on in the course, we'll consider the pros and cons of using different structures when solving different types of problems.\n\nWe'll start with a discussion of a very general structure—a **collection**.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 825750,
+              "key": "00d3d254-2c18-44d7-af3d-bc44073946a6",
+              "title": "Collections",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "cZORvZq-tI0",
+                "china_cdn_id": "cZORvZq-tI0.mp4"
+              }
+            },
+            {
+              "id": 841506,
+              "key": "9bdf84f8-1134-4481-88e3-e638afd83437",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Properties of collections\nAs Brynn discussed, collections:\n* Don't have a particular order (so you can't say \"give me the 3rd element in this collection\")\n* Don't have to have objects of the same type",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 825078,
+          "key": "dc04ec0a-8602-4d61-8a77-0375e90f3ad9",
+          "title": "Lists (in general, not in Python)",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "dc04ec0a-8602-4d61-8a77-0375e90f3ad9",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 841513,
+              "key": "abefa159-f632-46f0-af30-9098b15196c9",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "  ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 825752,
+              "key": "31e76200-91f4-4964-91a3-23c7c4d0bcf9",
+              "title": "Lists",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "KUQSgUMtyv0",
+                "china_cdn_id": "KUQSgUMtyv0.mp4"
+              }
+            },
+            {
+              "id": 841512,
+              "key": "514eb109-d616-40c1-8f5c-8474f24d2711",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Properties of general lists\nAs Brynn described, lists:\n* Have an **order** (so you can say things like \"give me the 3rd item in the list\")\n* Have **no fixed length** (you can add or remove elements)",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 825079,
+          "key": "0ac74608-8e66-44c7-ad85-fa52a648eff6",
+          "title": "Arrays and Python Lists",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "0ac74608-8e66-44c7-ad85-fa52a648eff6",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 841514,
+              "key": "9b559a18-0484-44bd-ae25-836dcacc1bbb",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "  ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 825754,
+              "key": "28a0fa94-dac7-47ec-a082-6afc3ef3aef8",
+              "title": "Arrays",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "OnPP5xDmFv0",
+                "china_cdn_id": "OnPP5xDmFv0.mp4"
+              }
+            },
+            {
+              "id": 843899,
+              "key": "28870a14-1baa-4eca-a915-9a640125ee7f",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Arrays vs. lists (general) vs. Python lists\n\nThe distinction between arrays and lists can be a little confusing, especially because of how Python implements the data structure it calls a \"list\". Below, we'll go over some key points that should make this clearer.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 843893,
+              "key": "b00d2bfc-25e3-41a9-94fa-b1df77c1ad9c",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Arrays\n\nAn array has some things in common with a list. In both cases:\n* There is a collection of items\n* The items have an order to them\n\nBut as Brynn discussed in the video, one of the key differences is that *arrays have indices, while lists do not*.\n\nTo understand this, it helps to know how arrays are stored in memory. When an array is created, it is always given some initial size—that is, the number of elements it should be able to hold (and how large each element is). The computer then finds a block of memory and sets aside the space for the array.\n\nImportantly, the space that gets set aside is one, continuous block. That is, all of the elements of the array are *contiguous*, meaning that they are all next to one another in memory.\n\nAnother key characteristic of an array is that all of the elements are the same size.\n\nWhen we represent an array visually, we often draw it as a series of boxes that are all of the same size and all right next to one another:",
+              "instructor_notes": ""
+            },
+            {
+              "id": 843894,
+              "key": "c28bb426-09cb-4e18-be28-e18c40dc023f",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2019/April/5cb87ce7_array/array.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/c28bb426-09cb-4e18-be28-e18c40dc023f",
+              "caption": "",
+              "alt": "An empty array of ten elements, depicted as a series of boxes.",
+              "width": 500,
+              "height": 50,
+              "instructor_notes": null
+            },
+            {
+              "id": 843895,
+              "key": "4b78c733-24ea-44e5-8090-960029d1fdc2",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Because all of the elements are 1) next to one another and 2) the same size, this means that if we know the location of the first element, we can calculate the location of any other element.\n\nFor example, if the first element in the array is at memory location `00` and the elements are 24 bytes, then the next element would be at location 00 + 24 = `24`. And the one after that would be at 24 + 24 = `48`, and so on.\n\nSince we can easily calculate the location of any item in the array, we can assign each item an index and use that index to quickly and directly access the item.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 843896,
+              "key": "98ae1ed2-616c-46df-8c7c-e2166c846431",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2019/April/5cb88e00_array-with-indexes/array-with-indexes.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/98ae1ed2-616c-46df-8c7c-e2166c846431",
+              "caption": "",
+              "alt": "Array with indexes",
+              "width": 500,
+              "height": 138,
+              "instructor_notes": null
+            },
+            {
+              "id": 843897,
+              "key": "77d46ac7-022b-4b8b-aadf-759e6be7aaa4",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Lists\nIn contrast, the elements of a list may or may not be next to one another in memory! For example, later in this lesson we'll look at *linked lists*, where each list item points to the next list item—but where the items themselves may be scattered in different locations of memory. In this case, knowing the location of the first item in the list does not mean you can simply calculate the location of the other items. This means we cannot use indices to directly access the list items as we would in an array. We'll explore linked lists in more detail shortly.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 843898,
+              "key": "d3d68654-32ee-494f-a874-000341aac18b",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Python lists\n\nIn Python, we can create a list using square brackets `[ ]`. For example:\n\n```python\n>>> my_list = ['a', 'b', 'c']\n>>> my_list\n['a', 'b', 'c']\n```\n\nAnd then we can access an item in the list by providing an index for that item:\n\n```python\n>>> my_list[0]\n'a'\n>>> my_list[1]\n'b'\n>>> my_list[2]\n'c'\n```\n\nBut wait, didn't we just say that lists *don't* have indices!? This seems to directly contradict that distinction.\n\nThe reason for this confusion is simply one of terminology. The earlier description we gave of lists is correct *in general*—that is, usually when you hear someone refer to something as a \"list\", that is what they mean. However, in Python the term is used differently.\n\nWe will not get into all of the details, but the important thing you need to know for this course is the following: If you were to look under the hood, you would find that **a Python list is essentially implemented like an array** (specifically, it behaves like a *dynamic array*, if you're curious). In particular, **the elements of a Python list are contiguous in memory, and they can be accessed using an index.**\n\nIn addition to the underlying array, a Python list also includes some additional behavior. For example, you can use things like `pop` and `append` methods on a Python list to add or remove items. Using those methods, you can essentially utilize a Python list like a stack (which is another type of data structure we'll discuss shortly).\n\nIn general, we will try to avoid using things like `pop` and `append`, because these are high-level language features that may not be available to you in other languages. In most cases, we will ignore the extra functionality that comes with Python lists, and instead use them **as if they were simple arrays**. This will allow you to see how the underlying data structures work, regardless of the language you are using to implement those structures.\n\nHere's the bottom line:\n* Python lists are essentially arrays, but also include additional high-level functionality\n* During this course, we will generally ignore this high-level functionality and treat Python lists as if they were simple arrays\n\nThis approach will allow you to develop a better understanding for the underlying data structures.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 833243,
+          "key": "8ab61284-f1a9-4af4-8ea2-03646ce6daa8",
+          "title": "Strings",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "8ab61284-f1a9-4af4-8ea2-03646ce6daa8",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 833244,
+              "key": "d50edbaa-70eb-426c-b5b6-c76c03e98ccf",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r818024c833243xJUPYTERf5h19ymp",
+              "pool_id": "jupyter",
+              "view_id": "jupyter-q8qv9",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/strings/Strings.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 825081,
+          "key": "3236f168-4944-4c0d-a4b4-b9bcacdad12d",
+          "title": "Linked Lists Introduction",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "3236f168-4944-4c0d-a4b4-b9bcacdad12d",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 825756,
+              "key": "853f8fdc-5f15-4b62-b140-557cff7e6765",
+              "title": "Linked Lists Introduction",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "zxkpZrozDUk",
+                "china_cdn_id": "zxkpZrozDUk.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 825082,
+          "key": "52610423-7662-4bc3-9e42-4500df1dc02c",
+          "title": "Linked Lists Continued",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "52610423-7662-4bc3-9e42-4500df1dc02c",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 825760,
+              "key": "14872a00-6181-47ff-8833-18eb43f73366",
+              "title": "Linked Lists Continued",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "ZONGA5wmREI",
+                "china_cdn_id": "ZONGA5wmREI.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 842260,
+          "key": "8d2dc89b-b716-49e7-947f-5bba1165a09e",
+          "title": "Implement a Linked List",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "8d2dc89b-b716-49e7-947f-5bba1165a09e",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 842276,
+              "key": "41f89189-3b97-4e4d-a197-23ad1d041763",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r818024c833243xJUPYTERf5h19ymp",
+              "pool_id": "jupyter",
+              "view_id": "jupyter-7q6rk",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/linked_lists/Implementing and traversing a linked list.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 833591,
+          "key": "2dfc494d-a55b-4ebf-8524-6640d60a983a",
+          "title": "Types of Linked Lists",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "2dfc494d-a55b-4ebf-8524-6640d60a983a",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 833592,
+              "key": "efdbe6a2-820f-451e-9fa3-e151d689e12b",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r818024c833243xJUPYTERf5h19ymp",
+              "pool_id": "jupyter",
+              "view_id": "jupyter-xhf8s",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/linked_lists/Linked Lists Basics.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 833594,
+          "key": "c734f458-b781-4523-a8d8-602c0db68ab5",
+          "title": "Linked List Practice",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "c734f458-b781-4523-a8d8-602c0db68ab5",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 833595,
+              "key": "9da1856d-a064-4954-8463-491283ca0ae6",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r818024c833243xJUPYTERf5h19ymp",
+              "pool_id": "jupyter",
+              "view_id": "jupyter-6ocjk",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/linked_lists/Linked List Practice.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 833596,
+          "key": "2b49cd13-0b2f-40c4-93d3-28c389ba04eb",
+          "title": "Reverse a Linked List",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "2b49cd13-0b2f-40c4-93d3-28c389ba04eb",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 833597,
+              "key": "e5a9b668-9191-411d-ba54-99b64917ebfc",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r818024c833243xJUPYTERf5h19ymp",
+              "pool_id": "jupyter",
+              "view_id": "jupyter-1hl3a",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/linked_lists/Reverse a Linked List.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 837278,
+          "key": "913b116d-fc91-49d2-b513-8d6ad5e4a311",
+          "title": "Loop Detection",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "913b116d-fc91-49d2-b513-8d6ad5e4a311",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 837279,
+              "key": "b9f7bfcc-596c-43aa-8be4-a088ea75592c",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r818024c833243xJUPYTERf5h19ymp",
+              "pool_id": "jupyter",
+              "view_id": "jupyter-vizfj",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/linked_lists/Detecting Loops.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 847931,
+          "key": "bea6122a-153a-47fc-b485-f03c36ac4d0b",
+          "title": "Flatten a Nested Linked List",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "bea6122a-153a-47fc-b485-f03c36ac4d0b",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 848020,
+              "key": "330968e0-3c9e-474b-ae90-4a7be7be0ba5",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r818024c833243xJUPYTERf5h19ymp",
+              "pool_id": "jupyter",
+              "view_id": "jupyter-7igk8",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/linked_lists/Flattening a nested linked list.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 849866,
+          "key": "b4e8ca20-ca79-4620-891e-3e96487191aa",
+          "title": "Add One",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "b4e8ca20-ca79-4620-891e-3e96487191aa",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 849872,
+              "key": "12e9ba24-0dd1-43ab-926b-1d04048d2cb2",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r818024c833243xJUPYTERf5h19ymp",
+              "pool_id": "jupyter",
+              "view_id": "jupyter-6mtz8",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/arrays/Add-One.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 849867,
+          "key": "a4553606-ca39-4195-ba1f-9baece9f06e2",
+          "title": "Duplicate Number",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "a4553606-ca39-4195-ba1f-9baece9f06e2",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 849871,
+              "key": "b13debc9-4753-4beb-8263-74f267dca646",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r818024c833243xJUPYTERf5h19ymp",
+              "pool_id": "jupyter",
+              "view_id": "jupyter-hlab6",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/arrays/Duplicate-Number.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 849873,
+          "key": "5fd50771-8ed3-445c-9894-323e4347dd29",
+          "title": "Max Sum Subarray",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "5fd50771-8ed3-445c-9894-323e4347dd29",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 849891,
+              "key": "44b44f9c-0801-4e7b-9874-7afc3193d540",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r818024c833243xJUPYTERf5h19ymp",
+              "pool_id": "jupyter",
+              "view_id": "jupyter-39yts",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/arrays/Max-Sum-Subarray.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 849876,
+          "key": "b0087574-4516-47c2-9411-2cc2278ff44a",
+          "title": "Pascal's Triangle",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "b0087574-4516-47c2-9411-2cc2278ff44a",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 849877,
+              "key": "8b15c371-96dc-423e-9356-15483308dae6",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r818024c833243xJUPYTERf5h19ymp",
+              "pool_id": "jupyter",
+              "view_id": "jupyter-2fibe",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/arrays/Pascal's-Triangle.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 849878,
+          "key": "ccb06e89-9a3d-4f54-8e7c-a1d93be24342",
+          "title": "Even After Odd",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "ccb06e89-9a3d-4f54-8e7c-a1d93be24342",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 849886,
+              "key": "0c6b5778-5f0b-4f39-a528-77ad87c2db9d",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r818024c833243xJUPYTERf5h19ymp",
+              "pool_id": "jupyter",
+              "view_id": "jupyter-9o4y2",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/linked_lists/Even-After-Odd-Nodes.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 849887,
+          "key": "f8b4c2ed-684c-4723-ad3e-d548577c639f",
+          "title": "Skip i, delete j",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "f8b4c2ed-684c-4723-ad3e-d548577c639f",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 849888,
+              "key": "a9eee78c-66a9-4ffc-94d4-e574e6175601",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r818024c833243xJUPYTERf5h19ymp",
+              "pool_id": "jupyter",
+              "view_id": "jupyter-fmjcp",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/linked_lists/Skip-i-delete-j.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 849889,
+          "key": "bc870475-fb68-4dc0-b66d-cbf99ed666bb",
+          "title": "Swap Nodes",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "bc870475-fb68-4dc0-b66d-cbf99ed666bb",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 849890,
+              "key": "878464aa-6a33-40bb-a5df-5e9e8c991181",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r818024c833243xJUPYTERf5h19ymp",
+              "pool_id": "jupyter",
+              "view_id": "jupyter-ypzkc",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/linked_lists/Swap-Nodes.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 844061,
+          "key": "2d341f21-a816-4341-b063-f6197f7af1c3",
+          "title": "Interlude",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "2d341f21-a816-4341-b063-f6197f7af1c3",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 844062,
+              "key": "10ecfdc2-9d22-40b0-9d3c-3d160cf85a3a",
+              "title": "MV 06 Our Goal Is To Help You Meet Your Goals V1",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "-pSppDzJRu8",
+                "china_cdn_id": "-pSppDzJRu8.mp4"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "_deprecated": [
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.340
+Okay, so now we're going to write some code.
+
+00:00:02.340 --> 00:00:04.380
+Remember, we want to do Breadth Research.
+
+00:00:04.380 --> 00:00:06.990
+So it's apple, banana, cherry, and dates.
+
+00:00:06.990 --> 00:00:09.330
+To do that, we want to implement a queue.
+
+00:00:09.330 --> 00:00:13.125
+So to do that, I'm going to actually import deck from collections,
+
+00:00:13.125 --> 00:00:14.745
+which is a double ended queue.
+
+00:00:14.745 --> 00:00:16.815
+I'm going to use the appendleft,
+
+00:00:16.815 --> 00:00:21.330
+and the pop functions of it to do enqueue and dequeue.
+
+00:00:21.330 --> 00:00:24.370
+So here's some examples of how this works.
+
+00:00:24.370 --> 00:00:25.890
+But to make it easier to work with,
+
+00:00:25.890 --> 00:00:27.840
+I'm just going to create my own class queue,
+
+00:00:27.840 --> 00:00:29.775
+and it will also use a deck.
+
+00:00:29.775 --> 00:00:32.250
+So when I enqueue, I'm going to use a pen left.
+
+00:00:32.250 --> 00:00:34.590
+When I dequeue, I'm going to use pop.
+
+00:00:34.590 --> 00:00:38.895
+But I just also want to double-check to make sure the queue isn't empty when I'm popping.
+
+00:00:38.895 --> 00:00:43.135
+This is to help me when I call print on my queue object,
+
+00:00:43.135 --> 00:00:46.165
+that it will print out what's inside of the queue.
+
+00:00:46.165 --> 00:00:47.975
+So if we run this,
+
+00:00:47.975 --> 00:00:50.135
+we can go ahead and see.
+
+00:00:50.135 --> 00:00:52.385
+If we create a queue object,
+
+00:00:52.385 --> 00:00:54.635
+we enqueue apple and banana and then cherry.
+
+00:00:54.635 --> 00:00:56.305
+We can see we have,
+
+00:00:56.305 --> 00:00:58.175
+apple was inserted first,
+
+00:00:58.175 --> 00:01:02.315
+so it's next in line to be dequeued and then followed by banana and cherry.
+
+00:01:02.315 --> 00:01:06.680
+Okay, so we add items to the top here and we remove items at the bottom.
+
+00:01:06.680 --> 00:01:08.914
+Also, if we dequeue,
+
+00:01:08.914 --> 00:01:11.510
+notice we dequeue apple.
+
+00:01:11.510 --> 00:01:16.050
+Now the queue just has banana and cherry.
+

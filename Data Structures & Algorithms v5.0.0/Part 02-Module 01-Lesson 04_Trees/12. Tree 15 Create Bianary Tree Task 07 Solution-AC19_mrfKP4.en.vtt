@@ -1,0 +1,55 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:05.895
+So let's try doing things both ways and discuss what we might think is better.
+
+00:00:05.895 --> 00:00:09.525
+So first, let's just take what we already have.
+
+00:00:09.525 --> 00:00:12.780
+Here, the first option is the constructor can
+
+00:00:12.780 --> 00:00:17.025
+take a node itself and then set the root to that node.
+
+00:00:17.025 --> 00:00:20.415
+Another option, option 2,
+
+00:00:20.415 --> 00:00:22.230
+it can take something that we assume is
+
+00:00:22.230 --> 00:00:25.935
+a value and then it'll create a new node based on that value,
+
+00:00:25.935 --> 00:00:28.020
+and then set that to the root node.
+
+00:00:28.020 --> 00:00:34.265
+So when you think about end user using your tree class to store their data,
+
+00:00:34.265 --> 00:00:38.690
+you could imagine that they probably don't really want to worry about what's
+
+00:00:38.690 --> 00:00:44.510
+internally inside your tree class and just be able to use it to put their data in there.
+
+00:00:44.510 --> 00:00:47.825
+So in that case, it probably would make more sense to
+
+00:00:47.825 --> 00:00:51.560
+have the values that the function is taken,
+
+00:00:51.560 --> 00:00:55.700
+the parameters be the values that the user wants to store,
+
+00:00:55.700 --> 00:00:57.890
+instead of assuming that they know how to create
+
+00:00:57.890 --> 00:01:00.620
+a new node class and then work with that.
+
+00:01:00.620 --> 00:01:04.350
+So I'd recommend writing it this way.
+

@@ -1,0 +1,31 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.075
+Now we're going to define the tree class.
+
+00:00:03.075 --> 00:00:08.770
+So you can start with pseudocode and just think that a tree contains a root node,
+
+00:00:08.770 --> 00:00:12.885
+and we'll also have a function that's going to get that root node.
+
+00:00:12.885 --> 00:00:14.865
+But now let's write it in Python.
+
+00:00:14.865 --> 00:00:18.435
+So we have a class tree, inherits from object,
+
+00:00:18.435 --> 00:00:21.330
+and let's define the constructor,
+
+00:00:21.330 --> 00:00:25.770
+and then it's going to set the root node is equal to none.
+
+00:00:25.770 --> 00:00:32.205
+Then let's define the get_root method that's going to return the root.
+
+00:00:32.205 --> 00:00:34.660
+All right, there you go.
+
