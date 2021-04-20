@@ -1,0 +1,345 @@
+{
+  "data": {
+    "lesson": {
+      "id": 824849,
+      "key": "5b27b2cf-9a9b-4d73-bd55-899a9731c864",
+      "title": "Introduction",
+      "semantic_type": "Lesson",
+      "is_public": true,
+      "version": "1.0.0",
+      "locale": "en-us",
+      "summary": "Welcome to the Data Structures and Algorithms nanodegree program!",
+      "lesson_type": "Classroom",
+      "display_workspace_project_only": false,
+      "resources": {
+        "files": [
+          {
+            "name": "Videos Zip File",
+            "uri": "https://zips.udacity-data.com/5b27b2cf-9a9b-4d73-bd55-899a9731c864/824849/1556058666693/Introduction+Videos.zip"
+          },
+          {
+            "name": "Transcripts Zip File",
+            "uri": "https://zips.udacity-data.com/5b27b2cf-9a9b-4d73-bd55-899a9731c864/824849/1556058664509/Introduction+Subtitles.zip"
+          }
+        ],
+        "google_plus_link": null,
+        "career_resource_center_link": null,
+        "coaching_appointments_link": null,
+        "office_hours_link": null,
+        "aws_provisioning_link": null
+      },
+      "project": null,
+      "lab": null,
+      "concepts": [
+        {
+          "id": 826050,
+          "key": "13036b92-b510-4d06-ae36-1358dd974ad4",
+          "title": "Welcome!",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "13036b92-b510-4d06-ae36-1358dd974ad4",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 826220,
+              "key": "0ef694cd-4e21-481d-b253-a50f74788ead",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Welcome!\n\nWelcome to the **Data Structures and Algorithms Nanodegree program**!\n\nAt its core, this program is about how to write code to **solve problems** and to do so **efficiently**.\n\nYou're probably well aware that computers can be used to solve all sorts of problems—from calculating the fastest route on a map, to sequencing the human genome. But there is almost always more than one way to solve a problem, and some ways can be dramatically more efficient than others. Two approaches may solve the same problem, but one may take milliseconds, while the other takes hours.\n\nHow do you look at a problem and identify different ways that you could solve it? And how do you know which approaches are more or less efficient? Will your solution run quickly or slowly? Will it take up a lot of space in the computer's memory, or only a little? Being able to answer these kinds of questions will make you a more effective developer—and also help you perform much better during technical interviews.\n\nThe key to mastering these skills is practice. Simply hearing about algorithms and data structures will not make you proficient at analyzing or implementing them in a real-world situation. For that reason, our goal in this program is not only to explain key concepts, but also to give you lots of chances to practice the key skills through hands-on exercises.\n\n# Overview\n\nHere's a brief overview of what we'll cover in the program.\n\n## 1. Welcome\n\nIn this section, we'll go over some important foundational topics. We'll review some basic Python concepts that you'll need, talk about how to solve problems, and then consider some of the fundamental ideas related to efficiency.\n\n## 2. Data Structures\n\nWhen you write code to solve a problem, there will always be _data_ involved—and how you store or structure that data in the computer's memory can have a huge impact on what kinds of things you can do with it and how efficiently you can do those things. In this section, we'll explore different data structures, and consider the pros and cons of using different structures when solving different types of problems.\n\n## 3. Basic Algorithms\n\nTo solve such problems, we need to come up with a very specific sequence of steps that will get us from whatever input we start with to the desired output. This kind of clear, highly specific procedure is called an **algorithm**. In this section, we'll get started with some elementary algorithms, such as binary search and mergesort.\n\n## 4. Advanced Algorithms\n\nIn this final part of the program, we'll dive into some more advanced topics—including greedy algorithms, graph algorithms, dynamic programming, and linear programming.\n\nLet's get started!",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 840609,
+          "key": "bb46687b-05ec-4f61-a5fe-995d73662130",
+          "title": "Support and Community",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "bb46687b-05ec-4f61-a5fe-995d73662130",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 843503,
+              "key": "a8e89b74-6d08-41b3-a2a8-8edd6fb280d1",
+              "title": "M1L1 MV 01 Intro In The First Five V1",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "magg5AVJRVA",
+                "china_cdn_id": "magg5AVJRVA.mp4"
+              }
+            },
+            {
+              "id": 840610,
+              "key": "970dfb13-40b1-4a6c-a951-1ccee96fc31f",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Support and community\n\nWe want you to have all of the support you need to succeed in this program. Here are the places to go when you have a question, get stuck, or just want to connect with others.\n\nTake a few minutes to check them out so you know what's available and how to access it!",
+              "instructor_notes": ""
+            },
+            {
+              "id": 844687,
+              "key": "2c35f87d-4ea8-45a2-b466-06cd0e68bd20",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Student Hub\n\nAs part of your Nanodegree program, you're now part of **Student Hub**, where you can chat with your classmates and mentor. Just look for this icon at the bottom of the menu (in the lower left corner):",
+              "instructor_notes": ""
+            },
+            {
+              "id": 844688,
+              "key": "18806fc3-c6cf-4782-b7b4-6487cc4721f4",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2018/November/5be88e8b_student-hub/student-hub.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/18806fc3-c6cf-4782-b7b4-6487cc4721f4",
+              "caption": "",
+              "alt": "Student hub icon",
+              "width": 250,
+              "height": 102,
+              "instructor_notes": null
+            },
+            {
+              "id": 840611,
+              "key": "2feb9e13-c368-4ee7-8484-2eaceafe05d2",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "In Student Hub, you'll be able to:\n\n- Collaborate directly with classmates working on the same projects.\n\n- Request direct support from a qualified mentor by @mentioning them.\n\n- Join fellow lifelong learners in informative group chats and interactive Ask-Me-Anythings (AMAs) with industry experts.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 840612,
+              "key": "8326cf06-b260-486d-9fe8-e0f15e5f6f61",
+              "title": "",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "8326cf06-b260-486d-9fe8-e0f15e5f6f61",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "Open **Student Hub** and create a profile.",
+                "Check out the **Data Structures and Algorithms** channel under **Communities**. This is a great place to chat, share problems and solutions, and help each other out.",
+                "Check out one of the channels listed under **Projects**. These channels are where you'll find mentors for each of the projects you'll be working on."
+              ],
+              "positive_feedback": "**Great!**",
+              "video_feedback": null,
+              "description": "Take a few minutes to set up your **Student Hub** profile and check out the channels there."
+            },
+            {
+              "id": 840613,
+              "key": "895400aa-d4dc-457f-875e-bd9b6a94eb36",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Knowledge\n\nYou now also have access to [Knowledge](https://knowledge.udacity.com/) — our question-and-answer platform. If you have a question, first try searching to see if one of your classmates has already asked about it and found an answer. If they haven't, post the question yourself!\n\nYou'll be able to access _Knowledge_ from anywhere in this program. Just look for this icon, in the lower left:",
+              "instructor_notes": ""
+            },
+            {
+              "id": 840614,
+              "key": "06be5113-94d3-41ec-b441-e40a5d2d1ac4",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2018/August/5b7da174_knowledge-icon-2/knowledge-icon-2.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/06be5113-94d3-41ec-b441-e40a5d2d1ac4",
+              "caption": "",
+              "alt": "The Knowledge icon.",
+              "width": 280,
+              "height": 146,
+              "instructor_notes": null
+            },
+            {
+              "id": 840615,
+              "key": "043b3da4-c893-4615-9512-8e9982b62198",
+              "title": "",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "043b3da4-c893-4615-9512-8e9982b62198",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "tasks": [
+                "Click on the link to **Knowledge** (in the lower left corner) or go to [knowledge.udacity.com](knowledge.udacity.com).",
+                "Under **Filter**, select *Data Structures and Algorithms Nanodegree*.",
+                "Click **Apply Filter**. You should see a whole bunch of questions and answers!"
+              ],
+              "positive_feedback": "Great!",
+              "video_feedback": null,
+              "description": "Go ahead and check out *Knowledge* now, so that you know how to get there when you're stuck on something!"
+            },
+            {
+              "id": 840616,
+              "key": "3bc8a411-d982-4751-8160-0c60a986e06f",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Support Email\n\nIt's always best to try _Knowledge_ —but if you've tried those and haven't gotten what you need, you can e-mail us directly at dsand-support@udacity.com.\n\nWe're a small team, so it may take us a little while to get back to you—but we always love to hear from you! 🙂",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 844624,
+          "key": "1d3e3599-e99a-487f-9522-2508ff6a58c8",
+          "title": "Notebooks and Workspaces",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "1d3e3599-e99a-487f-9522-2508ff6a58c8",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 844652,
+              "key": "542ace41-3ba8-4767-b61c-6e53bd575488",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Jupyter Notebooks\n\nIn this program, we'll be using a tool called *Jupyter Notebooks*. Basically, a notebook is a web application that allows you to combine explanatory text, math equations, code, and visualizations all in a single document.\n\nHere's what they look like:\n\n<video loop autoplay style=\"width: 100%\">\n<source src=\"https://s3.amazonaws.com/content.udacity-data.com/courses/ud1111/notebook+interface.mp4\" type=\"video/mp4\">\n</video>\n\n## Code cells\nAs you can see in the video above, you can enter code into a cell in the notebook. You can then run that cell (either by clicking the run button as shown above, or by pressing *Shift + Enter*). When you run a code cell, the output will be displayed below the cell.\n\nNotice that you can change the type of any cell to either *Code* cell or *Markdown* cell.\n\n## Markdown cells\n\nMarkdown cells are used for displaying explanations, images, equations, and so on, as shown below. Like the name implies, you can use [markdown](https://www.markdownguide.org/) to format the text in these cells.\n\n<video loop autoplay style=\"width:100%\">\n<source src=\"https://s3.amazonaws.com/content.udacity-data.com/courses/ud1111/Markdown+cells.mp4\" type=\"video/mp4\">\n</video>",
+              "instructor_notes": ""
+            },
+            {
+              "id": 844653,
+              "key": "d8448b69-1604-443b-a61a-4c8d6a5203f8",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Workspaces\nIn this program, we'll be running all of the Jupyter Notebooks inside Workspaces here in your classroom, so you don't need to install anything on your computer. Here's a workspace with a Jupyter Notebook inside it, so that you can try it out for yourself:",
+              "instructor_notes": ""
+            },
+            {
+              "id": 844670,
+              "key": "a05c0aba-4d54-4ae7-9fae-6905e36ff172",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r818024c844624xJUPYTERu4swf87a",
+              "pool_id": "jupyter",
+              "view_id": "jupyter-rkos3",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/Example notebook.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            },
+            {
+              "id": 844625,
+              "key": "c4cb3dec-4c03-481c-b2bb-cd3faddd8fbc",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## ⚠️ Important note\nIn the lower left corner of your notebook, you'll see there is a **Menu** button. If you click on this, you'll see an option to **Reset Data** (or sometimes **Get New Content**).\n\nIf you're having trouble with your workspace or have simply made changes you don't like and want to reset back to the way it was when you started, you can use this option—but **be careful**. Resetting the Workspace means you will lose any code you've been working on. And importantly, each course has a single shared workspace, so **resetting a workspace can reset notebooks on other pages within the same course**.\n\nSo if you have code you're working on that you want to save, we recommend that you make a local copy on your computer. You can either copy and paste your code, or you can download your entire notebook by going to **File > Download as**.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 850759,
+              "key": "878393f1-1ef0-4c2c-86b9-95030bbda7c7",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Jupyter Graffiti\n\nSome of the Jupyter notebooks in this course have a special additional feature called **Jupyter Graffiti**. Among other things, Graffiti makes it possible to provide audio walkthroughs of the code provided in the notebook. You'll see an example of a Jupyter Graffiti notebook on the next page, which includes some audio walkthroughs to show you how it works. Be sure to check it out!\n\nNote that some web browsers (including *Brave* and *Safari*) may be unable to handle the audio playback in Graffiti. Try it out on the next page and, if you are unable to hear the walkthrough, then try using [Chrome](https://www.google.com/chrome/) or [Firefox](https://www.mozilla.org/en-US/firefox/download/thanks/).",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 1007436,
+          "key": "4982910c-12a6-4f19-add2-2efda9b94c5c",
+          "title": "Graffiti Tutorial",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "4982910c-12a6-4f19-add2-2efda9b94c5c",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1007437,
+              "key": "02049948-3b00-4a0a-8636-f6f754f2269b",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r845402c1007436xJUPYTER6k4nkqef",
+              "pool_id": "jupyter",
+              "view_id": "jupyter-dg658",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/All%20About%20Graffiti.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "_deprecated": [
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "starter_files",
+      "reason": "prefer master_archive_id"
+    },
+    {
+      "name": "starter_files",
+      "reason": "prefer master_archive_id"
+    }
+  ]
+}

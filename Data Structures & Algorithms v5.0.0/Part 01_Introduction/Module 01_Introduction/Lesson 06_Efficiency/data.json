@@ -1,0 +1,1390 @@
+{
+  "data": {
+    "lesson": {
+      "id": 824851,
+      "key": "b5ed8170-8fce-463a-aefc-64272cb3852e",
+      "title": "Efficiency",
+      "semantic_type": "Lesson",
+      "is_public": true,
+      "version": "1.0.0",
+      "locale": "en-us",
+      "summary": "Understanding the importance of efficiency when working with data structures and algorithms. ",
+      "lesson_type": "Classroom",
+      "display_workspace_project_only": false,
+      "resources": {
+        "files": [
+          {
+            "name": "Videos Zip File",
+            "uri": "https://zips.udacity-data.com/b5ed8170-8fce-463a-aefc-64272cb3852e/824851/1556058769898/Efficiency+Videos.zip"
+          },
+          {
+            "name": "Transcripts Zip File",
+            "uri": "https://zips.udacity-data.com/b5ed8170-8fce-463a-aefc-64272cb3852e/824851/1556058766217/Efficiency+Subtitles.zip"
+          }
+        ],
+        "google_plus_link": null,
+        "career_resource_center_link": null,
+        "coaching_appointments_link": null,
+        "office_hours_link": null,
+        "aws_provisioning_link": null
+      },
+      "project": null,
+      "lab": null,
+      "concepts": [
+        {
+          "id": 824852,
+          "key": "d3ce9403-865d-418b-891e-9e39df6737b0",
+          "title": "Efficiency",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "d3ce9403-865d-418b-891e-9e39df6737b0",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 837573,
+              "key": "5ae192f8-7a04-44c3-bd38-f48fbdb349f8",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Efficiency\nWe said earlier that this Nanodegree program is about how to write code to **solve problems** and to do so **efficiently**.\n\nIn the last section, we looked at some basic aspects of solving problems—but we didn't really think too much about whether our solutions were *efficient*.\n\n## **Space** and **time**\nWhen we refer to the *efficiency* of a program, we aren't just thinking about its speed—we're considering both the **time** it will take to run the program *and* the amount of **space** the program will require in the computer's memory. Often there will be a trade-off between the two, where you can design a program that runs faster by selecting a data structure that takes up more space—or vice versa.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 832278,
+              "key": "ea7931ad-2146-40b0-be8d-ceca49febb12",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "  ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 825728,
+              "key": "d46c06e1-949c-426f-809d-66590b22e77d",
+              "title": "Efficiency",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "I-RASDPbDrI",
+                "china_cdn_id": "I-RASDPbDrI.mp4"
+              }
+            },
+            {
+              "id": 840259,
+              "key": "9add52e0-6cc1-4785-a379-85f912d77a5c",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Algorithms\n> An **algorithm** is essentially *a series of steps for solving a problem*. Usually, an algorithm takes some kind of input (such as an unsorted list) and then produces the desired output (such as a sorted list).\n\nFor any given problem, there are usually many different algorithms that will get you to exactly the same end result. But some will be much more efficient than others. To be an effective problem solver, you'll need to develop the ability to look at a problem and identify different algorithms that could be used—and then contrast those algorithms to consider which will be more or less efficient.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 837575,
+              "key": "fe6e0e0e-a231-4a2d-8199-80f89a0ad2b2",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## But computers are so fast!\n\nSometimes it seems like computers run programs so quickly that efficiency shouldn't really matter. And in some cases, this is true—one version of a program may take 10 times longer than another, but they both still run so quickly that it has no real impact.\n\nBut in other cases, a small difference in how your code is written—or a tiny change in the type of data structure you use—can mean the difference between a program that runs in a fraction of a millisecond and a program that takes hours (or even *years*!) to run.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 837574,
+              "key": "237be38a-5724-404f-b8ba-00c5cbd044b0",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "237be38a-5724-404f-b8ba-00c5cbd044b0",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "In thinking about the *efficiency* of a program, which is more important: The **time** the program will take to run, or the amount of **space** the program will require?",
+                "answers": [
+                  {
+                    "id": "a1552147728776",
+                    "text": "The **time complexity** of the problem is more important",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1552147757389",
+                    "text": "The **space complexity** of the problem is more important",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1552147846535",
+                    "text": "It really depends on the problem",
+                    "is_correct": true
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 824853,
+          "key": "9db9ea6f-ef9d-468a-ab32-aacafbc70764",
+          "title": "Quantifying Efficiency",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "9db9ea6f-ef9d-468a-ab32-aacafbc70764",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 837582,
+              "key": "a9b45df9-2be8-4ccd-99ea-60ffcc0ab0a1",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Quantifying efficiency\n\nIt's fine to say \"this algorithm is more efficient than that algorithm\", but can we be more specific than that? Can we quantify things and say *how much* more efficient the algorithm is?\n\nLet's look at a simple example, so that we have something specific to consider.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 837578,
+              "key": "7a1a31fb-3f9c-45c3-9d43-388997258731",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "7a1a31fb-3f9c-45c3-9d43-388997258731",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Here is a short (and rather silly) function written in Python:\n\n```python\ndef some_function(n):\n    for i in range(2):\n        n += 100\n    return n\n```\nWhat does it do?",
+                "answers": [
+                  {
+                    "id": "a1552152451281",
+                    "text": "Adds 2 to the given input.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1552152515008",
+                    "text": "Adds 200 to the given input.",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1552152519737",
+                    "text": "Adds 100 to the given input.",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 837579,
+              "key": "e429fb63-cbba-4135-a0d4-202fff64ed3b",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "e429fb63-cbba-4135-a0d4-202fff64ed3b",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Now how about this one?\n\n```python\ndef other_function(n):\n    for i in range(100):\n        n += 2\n    return n\n```\nWhat does it do?",
+                "answers": [
+                  {
+                    "id": "a1552152699494",
+                    "text": "Adds 2 to the given input.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1552152726979",
+                    "text": "Adds 200 to the given input.",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1552152728116",
+                    "text": "Adds 100 to the given input.",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 837580,
+              "key": "56056661-3961-43e3-ac4a-9d46f83eb50a",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "56056661-3961-43e3-ac4a-9d46f83eb50a",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "So these functions have exactly the same end result. But can you guess which one is more efficient?\n\nHere they are next to each other for comparison:\n\n```python\ndef some_function(n):\n    for i in range(2):\n        n += 100\n    return n\n\ndef other_function(n):\n    for i in range(100):\n        n += 2\n    return n\n```",
+                "answers": [
+                  {
+                    "id": "a1552152784183",
+                    "text": "`some_function` is more efficient",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1552152861734",
+                    "text": "`other_function` is more efficient",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1552152869293",
+                    "text": "They have exactly the same efficiency",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 837581,
+              "key": "14e7dc59-82db-4510-b736-8c5c70e66e29",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Although the two functions have the exact same end result, one of them iterates many times to get to that result, while the other iterates only a couple of times.\n\nThis was admittedly a rather impractical example (you could skip the `for` loop altogether and just add `200` to the input), but it nevertheless demonstrates one way in which efficiency can come up.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 837583,
+              "key": "1fe5e650-d670-4bfe-ab61-7b38296eb9d3",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Counting lines\n\nWith the above examples, what we basically did was count the number of lines of code that were executed. Let's look again at the first function:\n\n```python\ndef some_function(n):\n    for i in range(2):\n        n += 100\n    return n\n```\n\nThere are four lines in total, but the line inside the `for` loop will get run twice. So running this code will involve running *5 lines*.\n\nNow let's look at the second example:\n\n```python\ndef other_function(n):\n    for i in range(100):\n        n += 2\n    return n\n```\n\nIn this case, the code inside the loop runs 100 times. So running this code will involve running *103 lines*!\n\nCounting lines of code is *not* a perfect way to quantify efficiency, and we'll see that there's a lot more to it as we go through the program. But in this case, it's an easy way for us to approximate the difference in efficiency between the two solutions. We can see that if Python has to perform an addition operation 100 times, this will certainly take longer than if it only has to perform an addition operation twice!",
+              "instructor_notes": ""
+            },
+            {
+              "id": 832289,
+              "key": "f150c6fc-9022-498f-9ea4-405e357d9a21",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "  ",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 837584,
+          "key": "b48195a5-6e34-4987-a275-662b82788908",
+          "title": "Input Size and Efficiency",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "b48195a5-6e34-4987-a275-662b82788908",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 837631,
+              "key": "2551df85-f7aa-40b1-b9cb-e17f657d1a66",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Input size and efficiency",
+              "instructor_notes": ""
+            },
+            {
+              "id": 837627,
+              "key": "a38526d0-2b16-4fed-a9c0-8493465a6155",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "a38526d0-2b16-4fed-a9c0-8493465a6155",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Here's one of our functions from the last page:\n\n```python\ndef some_function(n):\n    for i in range(2):\n        n += 100\n    return n\n```\n\nSuppose we call this function and give it the value `1`, like this:\n\n```python\nsome_function(1)\n```\n\nAnd then we call it again, but give it the input `1000`:\n```python\nsome_function(1000)\n```\nWill this change the number of lines of code that get run?",
+                "answers": [
+                  {
+                    "id": "a1552154714489",
+                    "text": "Yes — `some_function(1000)` will involve running more lines of code.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1552154891521",
+                    "text": "Yes — `some_function(1)` will involve running more lines of code.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1552154918993",
+                    "text": "No — the same number of lines will run in both cases.",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 837628,
+              "key": "0947ed66-396d-456d-82d4-dca12232461f",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "0947ed66-396d-456d-82d4-dca12232461f",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Now, here's a new function:\n\n```python\ndef say_hello(n):\n    for i in range(n):\n        print(\"Hello!\")\n```\nSuppose we call it like this:\n```python\nsay_hello(3)\n```\nAnd then we call it like this:\n\n```python\nsay_hello(1000)\n```\nWill this change the number of lines of code that get run?",
+                "answers": [
+                  {
+                    "id": "a1552155001087",
+                    "text": "Yes — `say_hello(3)` will involve running more lines of code.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1552155292446",
+                    "text": "Yes — `say_hello(1000)` will involve running more lines of code.",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1552155298542",
+                    "text": "No — the same number of lines will run in both cases.",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 837633,
+              "key": "27ab7104-330b-452e-b6ed-b607362d3cb9",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "This highlights a key idea:\n\n>As the input to an algorithm increases, the time required to run the algorithm may also increase.\n\nNotice that we said *may* increase. As we saw with the above examples, input size sometimes affects the run-time of the program and sometimes doesn't—it depends on the program.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 837634,
+              "key": "b25e56f5-9eb0-44c5-94cf-c9314ff0e918",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## The rate of increase",
+              "instructor_notes": ""
+            },
+            {
+              "id": 837636,
+              "key": "c07fe6cb-8fe2-4196-91c0-8d0d272e92a6",
+              "title": "",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "c07fe6cb-8fe2-4196-91c0-8d0d272e92a6",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "Let's look again at this function from above:\n\n```python\ndef say_hello(n):\n    for i in range(n):\n        print(\"Hello!\")\n```\n\nBelow are some different function calls. Match each one with the number of lines of code that will get run."
+                },
+                "concepts_label": "Function call",
+                "answers_label": "How many lines get run?",
+                "concepts": [
+                  {
+                    "text": "`say_hello(1)`",
+                    "correct_answer": {
+                      "id": "a1552155950735",
+                      "text": "3"
+                    }
+                  },
+                  {
+                    "text": "`say_hello(2)`",
+                    "correct_answer": {
+                      "id": "a1552156029159",
+                      "text": "4"
+                    }
+                  },
+                  {
+                    "text": "`say_hello(3)`",
+                    "correct_answer": {
+                      "id": "a1552156036727",
+                      "text": "5"
+                    }
+                  },
+                  {
+                    "text": "`say_hello(4)`",
+                    "correct_answer": {
+                      "id": "a1552156048713",
+                      "text": "6"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1552155950735",
+                    "text": "3"
+                  },
+                  {
+                    "id": "a1552156048713",
+                    "text": "6"
+                  },
+                  {
+                    "id": "a1552156029159",
+                    "text": "4"
+                  },
+                  {
+                    "id": "a1552156036727",
+                    "text": "5"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 837637,
+              "key": "919918ac-2af2-4bae-9699-69edd2934573",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "919918ac-2af2-4bae-9699-69edd2934573",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Here's another question about that same function (from the above exercise). When we increase the size of the input `n` by 1, how many more lines of code get run?",
+                "answers": [
+                  {
+                    "id": "a1552156142422",
+                    "text": "When `n` goes up by 1, the number of lines run also goes up by 1.",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1552156180090",
+                    "text": "When `n` goes up by 1, the number of lines run goes up by 2.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1552156208209",
+                    "text": "When `n` goes up by 1, the number of lines run goes up by 4.",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 840274,
+              "key": "1346f98d-429e-416e-8355-222954e84300",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "So here's one thing that we know about this function: As the input increases, the number of lines executed also increases.\n\nBut we can go further than that! We can also say that *as the input increases, the number of lines executed increases by a proportional amount*. Increasing the input by 1 will cause 1 more line to get run. Increasing the input by 10 will cause 10 more lines to get run. Any change in the input is tied to a consistent, proportional change in the number of lines executed. This type of relationship is called a **linear relationship**, and we can see why if we graph it:",
+              "instructor_notes": ""
+            },
+            {
+              "id": 840273,
+              "key": "0ab045bc-dd0f-4f54-a0c6-b658e01ef7dd",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2019/March/5c911aa7_01-n-comparison-computational-complexity/01-n-comparison-computational-complexity.svg",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/0ab045bc-dd0f-4f54-a0c6-b658e01ef7dd",
+              "caption": "Derivative of [\"Comparison of computational complexity\"](https://commons.wikimedia.org/wiki/File:Comparison_computational_complexity.svg) by [Cmglee](https://commons.wikimedia.org/wiki/User:Cmglee). Used under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.en).",
+              "alt": "Graph showing a linear increase in computational complexity.",
+              "width": 350,
+              "height": 350,
+              "instructor_notes": null
+            },
+            {
+              "id": 840275,
+              "key": "9db9f63c-c226-4ce3-a348-5b0f7695db32",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "The horizontal axis, *n*, represents the size of the input (in this case, the number of times we want to print `\"Hello!\"`).\n\nThe vertical axis, *N*, represents the number of operations that will be performed. In this case, we're thinking of an \"operation\" as a single line of Python code (which is not the most accurate, but it will do for now).\n\nWe can see that if we give the function a larger input, this will result in more operations. And we can see the *rate* at which this increase happens—the rate of increase is *linear*. Another way of saying this is that the number of operations increases at a constant rate.\n\nIf that doesn't quite seem clear yet, it may help to contrast it with an alternative possibility—a function where the operations increase at a rate that is *not* constant.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 837638,
+              "key": "567eaacf-ecaf-4188-8765-16471a49afe6",
+              "title": "",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "567eaacf-ecaf-4188-8765-16471a49afe6",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "Now here's a slightly modified version of the `say_hello` function:\n\n```python\ndef say_hello(n):\n    for i in range(n):\n        for i in range(n):\n            print(\"Hello!\")\n```\nNotice that it has a *nested* loop (a `for` loop inside another `for` loop!).\n\nBelow are some function calls. Match each one with the number of times `\"Hello!\"` will get printed."
+                },
+                "concepts_label": "Function call",
+                "answers_label": "How many times will it print hello?",
+                "concepts": [
+                  {
+                    "text": "say_hello(1)",
+                    "correct_answer": {
+                      "id": "a1552156466082",
+                      "text": "1"
+                    }
+                  },
+                  {
+                    "text": "say_hello(2)",
+                    "correct_answer": {
+                      "id": "a1552156697601",
+                      "text": "4"
+                    }
+                  },
+                  {
+                    "text": "say_hello(3)",
+                    "correct_answer": {
+                      "id": "a1552156728495",
+                      "text": "9"
+                    }
+                  },
+                  {
+                    "text": "say_hello(4)",
+                    "correct_answer": {
+                      "id": "a1552156735360",
+                      "text": "16"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1552156735360",
+                    "text": "16"
+                  },
+                  {
+                    "id": "a1552156466082",
+                    "text": "1"
+                  },
+                  {
+                    "id": "a1552156728495",
+                    "text": "9"
+                  },
+                  {
+                    "id": "a1552156697601",
+                    "text": "4"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 837639,
+              "key": "ad14216f-e8d1-46e0-9c93-de66e75d2230",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "ad14216f-e8d1-46e0-9c93-de66e75d2230",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Looking at the `say_hello` function from the above exercise, what can we say about the relationship between the input, `n`, and the number of times the function will print `\"Hello!\"`?",
+                "answers": [
+                  {
+                    "id": "a1552156883255",
+                    "text": "The function will always print `\"Hello!\"` **the same number of times** (changing `n` doesn't make a difference).",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1552156958820",
+                    "text": "The function will print `\"Hello!\"` **exactly `n` times** (so `say_hello(2)` will print `\"Hello!\"` twice).",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1552156959308",
+                    "text": "The function will print `\"Hello!\"` **exactly `n`-squared times** (so `say_hello(2)` will print `\"Hello!\"` 2*2 or four times).",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 840281,
+              "key": "f0f8c1b8-dc6e-4043-998d-57237dd2b7cd",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Notice that when the input goes up by a certain amount, the number of operations goes up by the square of that amount. If the input is <span class=\"mathquill\">2</span>, the number of operations is <span class=\"mathquill\">2^2</span> or <span class=\"mathquill\">4</span>. If the input is <span class=\"mathquill\">3</span>, the number of operations is <span class=\"mathquill\">3^2</span> or <span class=\"mathquill\">9</span>.\n\nTo state this in general terms, if we have an input, <span class=\"mathquill\">n</span>, then the number of operations will be <span class=\"mathquill\">n^2</span>. This is what we would call a **quadratic** rate of increase.\n\nLet's compare that with the **linear** rate of increase. In that case, when the input is <span class=\"mathquill\">n</span>, the number of operations is also <span class=\"mathquill\">n</span>.\n\nLet's graph both of these rates so we can see them together:",
+              "instructor_notes": ""
+            },
+            {
+              "id": 840279,
+              "key": "fcc555f1-cd46-4d1d-a95f-1a2eada23862",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2019/March/5c9120f9_02-n-squared-comparison-computational-complexity/02-n-squared-comparison-computational-complexity.svg",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/fcc555f1-cd46-4d1d-a95f-1a2eada23862",
+              "caption": "Derivative of [\"Comparison of computational complexity\"](https://commons.wikimedia.org/wiki/File:Comparison_computational_complexity.svg) by [Cmglee](https://commons.wikimedia.org/wiki/User:Cmglee). Used under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.en).",
+              "alt": "Graph showing linear and quadratic relationships.",
+              "width": 350,
+              "height": 350,
+              "instructor_notes": null
+            },
+            {
+              "id": 840282,
+              "key": "76c21cba-8194-408b-809f-863b56db4ad8",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Our code with the nested `for` loop exhibits the quadratic <span class=\"mathquill\">n^2</span> relationship on the left.  Notice that this results in a *much* faster rate of increase. As we ask our code to print larger and larger numbers of `\"Hellos!\"`, the number of operations the computer has to perform shoots up very quickly—much more quickly than our other function, which shows a linear increase.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 837640,
+              "key": "7a11efe3-a7b2-4758-8ac4-4d8b3cafa915",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "This brings us to a second key point. We can add it to what we said earlier:\n\n>As the input to an algorithm increases, the time required to run the algorithm may also increase—**and different algorithms may increase at different *rates***.\n\nNotice that if `n` is very small, it doesn't really matter which function we use—but as we put in larger values for `n`, the function with the nested loop will quickly become far less efficient.\n\nWe've looked here only at a couple of different rates—linear and quadratic. But there are many other possibilities. Here we'll show some of the common types of rates that come up when designing algorithms:",
+              "instructor_notes": ""
+            },
+            {
+              "id": 840565,
+              "key": "abd8cc3f-d405-4791-8569-1160b805bbab",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2019/March/5c92f7e6_00-all-comparison-computational-complexity/00-all-comparison-computational-complexity.svg",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/abd8cc3f-d405-4791-8569-1160b805bbab",
+              "caption": "[\"Comparison of computational complexity\"](https://commons.wikimedia.org/wiki/File:Comparison_computational_complexity.svg) by [Cmglee](https://commons.wikimedia.org/wiki/User:Cmglee). Used under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.en).",
+              "alt": "Graph showing common types of relationships between efficiency and input size.",
+              "width": 350,
+              "height": 350,
+              "instructor_notes": null
+            },
+            {
+              "id": 840564,
+              "key": "d6334298-306d-4f38-ae96-8fd406ad5a83",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "We'll look at some of these other *orders* as we go through the class. But for now, notice how dramatic a difference there is here between them! Hopefully you can now see that this idea of the *order* or *rate of increase* in the run-time of an algorithm is an essential concept when designing algorithms.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 837645,
+              "key": "45755520-202e-4f1a-8d91-7c67b5bc1f56",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Order\nWe should note that when people refer to the *rate of increase* of an algorithm, they will sometimes instead use the term *order*. Or to put that another way:\n\n> The *rate of increase* of an algorithm is also referred to as the **order** of the algorithm.\n\nFor example, instead of saying \"this relationship has a linear rate of increase\", we could instead say, \"the *order* of this relationship is linear\".\n\nOn the next page, we'll introduce something called *Big O Notation*, and you'll see that the \"O\" in the name refers to the **o**rder of the rate of increase.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 837641,
+          "key": "9efdb7e7-166f-45f1-836b-af3587032a10",
+          "title": "Big O Notation (1/2)",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "9efdb7e7-166f-45f1-836b-af3587032a10",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 837643,
+              "key": "df8772df-6423-4e4e-8cd7-e5a2510c5e43",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Big O Notation\n\nWhen describing the efficiency of an algorithm, we could say something like \"the run-time of the algorithm increases linearly with the input size\". This can get wordy and it also lacks precision. So as an alternative, mathematicians developed a form of notation called **big O notation**.\n\nThe \"O\" in the name refers to the *order* of the function or algorithm in question. And that makes sense, because big O notation is used to describe the order—or rate of increase—in the run-time of an algorithm, in terms of the input size (`n`).\n\nIn this next video, Brynn will show some different examples of what the notation would actually look like in practice. This likely won't \"click\" for you right away, but don't worry—once you've gotten some experience applying it to real problems, it will be much more concrete.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 837642,
+              "key": "90ce9521-cd6c-4ad9-9722-01ec348ebb44",
+              "title": "Notation Intro V3",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "QF4hPt1WHog",
+                "china_cdn_id": "QF4hPt1WHog.mp4"
+              }
+            },
+            {
+              "id": 837649,
+              "key": "500cfb31-436d-42d1-b9f0-f842ffe3906f",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "500cfb31-436d-42d1-b9f0-f842ffe3906f",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "When you see some Big O notation, such as **O(2n + 2)**, what does **n** refer to?",
+                "answers": [
+                  {
+                    "id": "a1552174315636",
+                    "text": "The amount of time (usually in milliseconds) your algorithm will take to run.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1552174344946",
+                    "text": "The amount of memory (usually in kilobytes) that your algorithm will require.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1552174349395",
+                    "text": "The length of the input to your algorithm.",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1552174357154",
+                    "text": "The length of the output from your algorithm.",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 837763,
+              "key": "4b82880b-e45c-4c8b-bbd3-33c55ccc6f9f",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "4b82880b-e45c-4c8b-bbd3-33c55ccc6f9f",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Here's the cipher pseudocode Brynn showed in the video:\n\n```text\nfunction decode(input):\n    create output string\n    for each letter in input:\n        get new_letter from letter's location in cipher\n        add new_letter to output\n    return output\n```\n\nBrynn estimated the efficiency as **O(2n + 2)**. Suppose the input string is `\"jzqh\"`. What is `n` in this case?",
+                "answers": [
+                  {
+                    "id": "a1552226010830",
+                    "text": "1",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1552226025529",
+                    "text": "2",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1552226026505",
+                    "text": "3",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1552226027487",
+                    "text": "4",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1552226037128",
+                    "text": "5",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 837648,
+              "key": "aa4ad89a-3dcd-455c-b932-dd8af906c8eb",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "aa4ad89a-3dcd-455c-b932-dd8af906c8eb",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Which of these is the same as **O(1)?**",
+                "answers": [
+                  {
+                    "id": "a1552174201212",
+                    "text": "**O(0n + 1)**",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1552174251337",
+                    "text": "**O(n + 1))**",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1552174267450",
+                    "text": "**O(n)**",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1552174279282",
+                    "text": "**O(n + 0)**",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 840566,
+              "key": "5f2b7355-cfe5-4afd-b2b1-99d646c0bf20",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "5f2b7355-cfe5-4afd-b2b1-99d646c0bf20",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Here's one of the functions we looked at on the last page:\n\n```python\ndef say_hello(n):\n    for i in range(n):\n        print(\"Hello!\")\n```\n\nWhich of these would best approximate the efficiency using big O notation?",
+                "answers": [
+                  {
+                    "id": "a1553136445278",
+                    "text": " <span class=\"mathquill\">n</span>",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1553136626664",
+                    "text": " <span class=\"mathquill\">n^2</span>",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1553136671589",
+                    "text": " <span class=\"mathquill\">log(n)</span>",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1553136677654",
+                    "text": " <span class=\"mathquill\">2^n</span>",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1553136701470",
+                    "text": " <span class=\"mathquill\">{\\sqrt n}</span>",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 840567,
+              "key": "654ebd73-c7c4-4bc0-a7af-e266061354dc",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "654ebd73-c7c4-4bc0-a7af-e266061354dc",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Here's the other function we looked at on the last page:\n\n```python\ndef say_hello(n):\n    for i in range(n):\n        for i in range(n):\n            print(\"Hello!\")\n```\n\nAgain, which of these would best approximate the efficiency using big O notation?",
+                "answers": [
+                  {
+                    "id": "a1553136810449",
+                    "text": " <span class=\"mathquill\">n</span>",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1553136863423",
+                    "text": " <span class=\"mathquill\">n^2</span>",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1553136867847",
+                    "text": " <span class=\"mathquill\">log(n)</span>",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1553136873496",
+                    "text": " <span class=\"mathquill\">2^n</span>",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1553136879992",
+                    "text": " <span class=\"mathquill\">{\\sqrt n}</span>",
+                    "is_correct": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 824854,
+          "key": "61b081ca-59c9-49f9-89db-8698bfbbe348",
+          "title": "Big O Notation (2/2)",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "61b081ca-59c9-49f9-89db-8698bfbbe348",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 837762,
+              "key": "c650c066-dd89-4130-89e0-9711af1df357",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Big O Notation (2/2)",
+              "instructor_notes": ""
+            },
+            {
+              "id": 840617,
+              "key": "1f061d5e-d5de-4608-ae34-f05d50ea582d",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "In the examples we've looked at here, we've been approximating efficiency by counting the number of lines of code that get executed. But when we are thinking about the run-time of a program, what we really care about is how fast the computer's processor is, and how many operations we're asking the processor to perform. Different lines of code may demand very different numbers of operations from the computer's processor. For now, counting lines will work OK as an approximation, but as we go through the course you'll see that there's a lot more going on under the surface.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 832287,
+              "key": "a546d121-3464-41cc-8a57-2d4ef2401e88",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "  ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 825742,
+              "key": "06838f78-e298-47dc-a8b5-f89c75cbd382",
+              "title": "Notation continued",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "ZeGnkrKZWBQ",
+                "china_cdn_id": "ZeGnkrKZWBQ.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 824855,
+          "key": "11383d41-c99e-4e6d-8536-fa8bc6f79834",
+          "title": "Worst Case and Approximation",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "11383d41-c99e-4e6d-8536-fa8bc6f79834",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 840834,
+              "key": "89be8672-4f74-43ca-b63d-5bf0341cf414",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Worst Case and Approximation",
+              "instructor_notes": ""
+            },
+            {
+              "id": 840835,
+              "key": "7fcba4ff-8ceb-423b-a250-651e9b587213",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Suppose that we analyze an algorithm and decide that it has the following relationship between the input size, `n`, and the number of operations needed to carry out the algorithm:\n\n<span class=\"mathquill\">N = n^2 +5 </span>\n\nWhere <span class=\"mathquill\">n</span> is the input size and <span class=\"mathquill\">N</span> is the number of operations required.\n\nFor example, if we gave this algorithm an input of <span class=\"mathquill\">2</span>, the number of required operations would be <span class=\"mathquill\">2^2 +5 </span> or simply <span class=\"mathquill\">9</span>.\n\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 840836,
+              "key": "0b80a817-3a4f-4e71-87c3-adebf557567a",
+              "title": "",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "0b80a817-3a4f-4e71-87c3-adebf557567a",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "Below are some other possible values for the input (<span class=\"mathquill\">n</span>). For each input, what does <span class=\"mathquill\">n^2 + 5</span> evaluate to?"
+                },
+                "concepts_label": "Input",
+                "answers_label": "Number of operations",
+                "concepts": [
+                  {
+                    "text": "5",
+                    "correct_answer": {
+                      "id": "a1553275991460",
+                      "text": "30"
+                    }
+                  },
+                  {
+                    "text": "10",
+                    "correct_answer": {
+                      "id": "a1553276153526",
+                      "text": "105"
+                    }
+                  },
+                  {
+                    "text": "25",
+                    "correct_answer": {
+                      "id": "a1553276157013",
+                      "text": "630"
+                    }
+                  },
+                  {
+                    "text": "100",
+                    "correct_answer": {
+                      "id": "a1553276162365",
+                      "text": "10005"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1553276162365",
+                    "text": "10005"
+                  },
+                  {
+                    "id": "a1553276157013",
+                    "text": "630"
+                  },
+                  {
+                    "id": "a1553276153526",
+                    "text": "105"
+                  },
+                  {
+                    "id": "a1553275991460",
+                    "text": "30"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 840837,
+              "key": "ec8f0137-3fac-48c3-9f34-17565278f4fd",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "The thing to notice in the above exercise, is this: In <span class=\"mathquill\">n^2 + 5</span>, the <span class=\"mathquill\">5</span> has very little impact on the total efficiency—especially as the input size gets larger and larger. Asking the computer to do 10,005 operations vs. 10,000 operations makes little difference. Thus, it is the <span class=\"mathquill\">n^2</span> that we really care about the most, and the <span class=\"mathquill\">+ 5</span> makes little difference.\n\nMost of the time, when analyzing the efficiency of an algorithm, the most important thing to know is the *order*. In other words, we care a lot whether the algorithm's time-complexity has a *linear* order or a *quadratic* order (or some other order). This means that very often (in fact, most of the time) when you are asked to analyze an algorithm, you can do so by making an *approximation* that significantly simplifies things. In this next video, Brynn will discuss this concept and show how it's used with Big O Notation.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 832288,
+              "key": "2ebee9dc-6321-42aa-9006-2d65b594a626",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "  ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 825744,
+              "key": "7c6ce8e8-e74c-4218-8c2d-a6fc5756de73",
+              "title": "Worst Case And Approximation V2",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "zOenWuEDhFo",
+                "china_cdn_id": "zOenWuEDhFo.mp4"
+              }
+            },
+            {
+              "id": 825745,
+              "key": "eb743800-4706-4c8e-8567-8fcf78ce48ad",
+              "title": "Worst Case And Approximation 2 V1",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "OM7s9pb2TMU",
+                "china_cdn_id": "OM7s9pb2TMU.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 824856,
+          "key": "dc60993a-7823-4560-8e91-d6bbc9132a83",
+          "title": "Efficiency Practice",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "dc60993a-7823-4560-8e91-d6bbc9132a83",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 830396,
+              "key": "5722c50f-160a-4774-8b53-bbc1d989bc19",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r818024c824856xJUPYTERofjpyt1o",
+              "pool_id": "jupyter",
+              "view_id": "jupyter-pvsvf",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/Efficiency.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            },
+            {
+              "id": 841150,
+              "key": "b09d2dd6-322b-44e1-a13f-7689fe9656e3",
+              "title": "Efficiency Quiz 1",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "b09d2dd6-322b-44e1-a13f-7689fe9656e3",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "What is the run time analysis of the following code:\n\n```\ndef main(x,y):\n\n    if True:\n        z = x + y\n\n   for i in range(10):\n        z+=i\n\n  return z\n``` ",
+                "answers": [
+                  {
+                    "id": "a1553287714614",
+                    "text": "O(log(n))",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1553287846991",
+                    "text": "O(n)",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1553287863489",
+                    "text": "O(n^2)",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1553287888933",
+                    "text": "O(1)",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 841172,
+              "key": "bb692e85-bea2-4cd5-93b7-b743a0fe2a46",
+              "title": "Efficiency Quiz 2",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "bb692e85-bea2-4cd5-93b7-b743a0fe2a46",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "What is the run time analysis of the following code:\n\n```\ndef main(list_1,list_2):\n\n\tcount = 0\n\n\tfor item_1 in list_1:\n\t\tfor item_2 in list_2:\n\t\t\tif item_1 == item_2:\n\t\t\t\tcount+=1\n\n\treturn count\n``` ",
+                "answers": [
+                  {
+                    "id": "a1553292836723",
+                    "text": "O(n)",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1553293251622",
+                    "text": "O(log(n))",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1553293252253",
+                    "text": "O(n^2)",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1553293252764",
+                    "text": "O(1)",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 841211,
+              "key": "b705c63d-3cc3-4788-ad21-7766860cc793",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "b705c63d-3cc3-4788-ad21-7766860cc793",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "What is the simplification of this run time analysis: `4n^2 + 3n + 7` ?",
+                "answers": [
+                  {
+                    "id": "a1553530793802",
+                    "text": "4n^2+3n",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1553530852626",
+                    "text": "4n^2 + 3n + 7",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1553530853256",
+                    "text": "4n^2",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1553530881554",
+                    "text": "n^2",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 841210,
+              "key": "b4dbd20f-222b-4290-881e-a8110c53fff8",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Resources\n\n[Big-O Cheatsheet](http://bigocheatsheet.com)\n\n[Python Complexities](https://wiki.python.org/moin/TimeComplexity)",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 826413,
+          "key": "09af2846-2d8a-4688-870e-89fb57e7c74c",
+          "title": "Space Complexity",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "09af2846-2d8a-4688-870e-89fb57e7c74c",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 840831,
+              "key": "c5da03c9-d184-4f89-93f4-dc6eed92567f",
+              "title": "Worst Case And Approximation 3 V1",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "HXeqNa7RMVQ",
+                "china_cdn_id": "HXeqNa7RMVQ.mp4"
+              }
+            },
+            {
+              "id": 840104,
+              "key": "ac302ec7-f3ef-4167-b7bc-8a13dca65009",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Space Complexity Examples\n\nWhen we refer to *space complexity*, we are talking about how efficient our algorithm is in terms of memory usage. This comes down to the datatypes of the variables we are using and their allocated space requirements. In Python, it's less clear how to do this due to the underlying data structures using more memory for house keeping functions (as the language is actually written in C).\n\nFor example, in C/C++, an integer type takes up 4 bytes of memory to store the value, but in Python 3 an integer takes 14 bytes of space. Again, this extra space is used for housekeeping functions in the Python language. \n\nFor the examples of this lesson we will avoid this complexity and assume the following sizes:\n\n| Type |\tStorage size\t| \n|---|---|\n| char | 1 byte |\n| bool | 1 byte |\n| int | 4 bytes |\n| float | 4 bytes | \n| double | 8 bytes | \n\nIt is also important to note that we will be focusing on just the data space being used and not any of the environment or instructional space. ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 840924,
+              "key": "5816c558-d5d2-4989-b040-23203d4e3fed",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "---\n#### Example 1\n\n```python\n\ndef our_constant_function():\n\n    x = 3 # Type int\n    y = 345 # Type int\n    z = 11 # Type int\n\n    answer = x+y+z\n\n    return answer\n```\n\nSo in this example we have four integers (`x`, `y`, `z` and `answer`) and therefore our space complexity will be `4*4 = 16 bytes`. This is an example of constant space complexity, since the amount of space used does not change with input size.\n\n#### Example 2\n\n```python\n\ndef our_linear_function(n):\n    \n    n = n # Type int\n    counter = 0 # Type int\n    list_ = [] # Assume that the list is empty (i.e., ignore the fact that there is actually meta data stored with Python lists)\n\n    while counter < n:\n        list_.append(counter)\n        counter = counter + 1\n    \n    return list_\n\n```\n\nSo in this example we have two integers (`n` and `counter`) and an expanding list, and therefore our space complexity will be `4*n + 8` since we have an expanding integer list and two integer data types. This is an example of linear space complexity.",
+              "instructor_notes": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "_deprecated": [
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "starter_files",
+      "reason": "prefer master_archive_id"
+    }
+  ]
+}
