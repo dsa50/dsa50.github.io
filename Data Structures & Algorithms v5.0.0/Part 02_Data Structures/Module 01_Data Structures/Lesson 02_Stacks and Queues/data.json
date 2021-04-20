@@ -1,0 +1,783 @@
+{
+  "data": {
+    "lesson": {
+      "id": 843996,
+      "key": "99bd7ee4-31b7-4801-a211-dbc35fbe1945",
+      "title": "Stacks and Queues",
+      "semantic_type": "Lesson",
+      "is_public": true,
+      "version": "1.0.0",
+      "locale": "en-us",
+      "summary": "Build Stacks and Queues",
+      "lesson_type": "Classroom",
+      "display_workspace_project_only": false,
+      "resources": {
+        "files": [
+          {
+            "name": "Videos Zip File",
+            "uri": "https://zips.udacity-data.com/99bd7ee4-31b7-4801-a211-dbc35fbe1945/843996/1556058729739/Stacks+and+Queues+Videos.zip"
+          },
+          {
+            "name": "Transcripts Zip File",
+            "uri": "https://zips.udacity-data.com/99bd7ee4-31b7-4801-a211-dbc35fbe1945/843996/1556058727538/Stacks+and+Queues+Subtitles.zip"
+          }
+        ],
+        "google_plus_link": null,
+        "career_resource_center_link": null,
+        "coaching_appointments_link": null,
+        "office_hours_link": null,
+        "aws_provisioning_link": null
+      },
+      "project": null,
+      "lab": null,
+      "concepts": [
+        {
+          "id": 825084,
+          "key": "8ef5800d-9e6e-44e2-850c-8396cc0a1fe2",
+          "title": "Stacks Introduction",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "8ef5800d-9e6e-44e2-850c-8396cc0a1fe2",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 825762,
+              "key": "93c57973-fdf7-4401-887d-24493bc735c9",
+              "title": "Pilhas",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "DQoCO8aGcNc",
+                "china_cdn_id": "DQoCO8aGcNc.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 825085,
+          "key": "250bff4a-3fec-4597-89b1-cfb4aa3c394d",
+          "title": "Stacks Details",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "250bff4a-3fec-4597-89b1-cfb4aa3c394d",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 825764,
+              "key": "a52bc995-fdfb-4aba-8dc6-391652cec26b",
+              "title": "Detalhes das pilhas",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "HpaVHzDeZC4",
+                "china_cdn_id": "HpaVHzDeZC4.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 842676,
+          "key": "95eadc74-8501-4d7d-a5a3-f69fde339ebf",
+          "title": "Implement a Stack Using an Array",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "95eadc74-8501-4d7d-a5a3-f69fde339ebf",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 842677,
+              "key": "ed22d2bd-4463-416b-ab75-32ba7b7d3f19",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r818024c833243xJUPYTERf5h19ymp",
+              "pool_id": "jupyter",
+              "view_id": "jupyter-zens6",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/stack/Implement a stack using an array.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 842830,
+          "key": "47883bae-cf2b-4f97-9af9-5ed66bac7cf4",
+          "title": "Implement a Stack Using a Linked List",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "47883bae-cf2b-4f97-9af9-5ed66bac7cf4",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 842847,
+              "key": "228fb041-ff63-497a-a038-784e648a958d",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r818024c833243xJUPYTERf5h19ymp",
+              "pool_id": "jupyter",
+              "view_id": "jupyter-fwtm5",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/stack/Implement a stack using a linked list.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 837282,
+          "key": "27d4578b-4683-42ae-a98c-9ced413813c1",
+          "title": "Build a Stack",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "27d4578b-4683-42ae-a98c-9ced413813c1",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 837283,
+              "key": "bde9ea59-4ec3-4926-83d1-4d6b47a3e209",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r818024c833243xJUPYTERf5h19ymp",
+              "pool_id": "jupyter",
+              "view_id": "jupyter-5i3f4",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/stack/python_stack_practice.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 837288,
+          "key": "fffed464-5e89-4085-b1ec-461709c1183c",
+          "title": "Practice: Balanced Parentheses",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "fffed464-5e89-4085-b1ec-461709c1183c",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 837289,
+              "key": "c9153a7f-6fea-4fdc-b82c-071d576b0ada",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r818024c833243xJUPYTERf5h19ymp",
+              "pool_id": "jupyter",
+              "view_id": "jupyter-2goe4",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/stack/Balanced Parentheses Exercise - Stacks.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 842310,
+          "key": "6f74e785-1d6f-49dc-995a-3937d4446a5c",
+          "title": "Reverse Polish Notation",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "6f74e785-1d6f-49dc-995a-3937d4446a5c",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 842322,
+              "key": "6b6d7ba2-74eb-44c7-a2ba-31520d54bf82",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r818024c833243xJUPYTERf5h19ymp",
+              "pool_id": "jupyter",
+              "view_id": "jupyter-p3gw3",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/stack/Reverse Polish notation.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 842311,
+          "key": "044e941b-536c-4bf1-a5f0-37bca3b084ac",
+          "title": "Reverse a Stack",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "044e941b-536c-4bf1-a5f0-37bca3b084ac",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 842323,
+              "key": "d9738c5f-85be-42b3-9c27-557a0e3f3297",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r818024c833243xJUPYTERf5h19ymp",
+              "pool_id": "jupyter",
+              "view_id": "jupyter-et76n",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/stack/Reverse a stack.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 842312,
+          "key": "40860c53-79ad-4775-b853-30664f7f924a",
+          "title": "Minimum Bracket Reversals",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "40860c53-79ad-4775-b853-30664f7f924a",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 842324,
+              "key": "674f0fc5-01e8-4e33-afb9-8751d990f732",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r818024c833243xJUPYTERf5h19ymp",
+              "pool_id": "jupyter",
+              "view_id": "jupyter-91a6d",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/stack/Minimum bracket reversals.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 825088,
+          "key": "d843f1de-4093-4008-b740-ca72290f1c01",
+          "title": "Queues",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "d843f1de-4093-4008-b740-ca72290f1c01",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 825766,
+              "key": "cb498cb8-7d52-4b17-93c5-1a580ebe067e",
+              "title": "Filas",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "XAbzlilAHZw",
+                "china_cdn_id": "XAbzlilAHZw.mp4"
+              }
+            },
+            {
+              "id": 842183,
+              "key": "e5c83f68-5c46-4638-adec-ebf6933dc5c3",
+              "title": "",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "e5c83f68-5c46-4638-adec-ebf6933dc5c3",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "Here are some terms related to queues—see if you can match them up with what they mean."
+                },
+                "concepts_label": "Term",
+                "answers_label": "Meaning",
+                "concepts": [
+                  {
+                    "text": "add an element to the back/tail of the queue",
+                    "correct_answer": {
+                      "id": "a1554559654644",
+                      "text": "enqueue"
+                    }
+                  },
+                  {
+                    "text": "first (oldest) element added to the queue",
+                    "correct_answer": {
+                      "id": "a1554559775788",
+                      "text": "head"
+                    }
+                  },
+                  {
+                    "text": "a double-ended queue (and pronounced \"deck\")",
+                    "correct_answer": {
+                      "id": "a1554559803060",
+                      "text": "deque"
+                    }
+                  },
+                  {
+                    "text": "remove an element from the front of the queue",
+                    "correct_answer": {
+                      "id": "a1554559910163",
+                      "text": "dequeue"
+                    }
+                  },
+                  {
+                    "text": "last (newest) element added to the queue",
+                    "correct_answer": {
+                      "id": "a1554559970349",
+                      "text": "tail"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1554559910163",
+                    "text": "dequeue"
+                  },
+                  {
+                    "id": "a1554559654644",
+                    "text": "enqueue"
+                  },
+                  {
+                    "id": "a1554559970349",
+                    "text": "tail"
+                  },
+                  {
+                    "id": "a1554559775788",
+                    "text": "head"
+                  },
+                  {
+                    "id": "a1554559803060",
+                    "text": "deque"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 842686,
+          "key": "35c8b4db-ff07-4264-b48e-ed523c3e51b1",
+          "title": "Build a Queue Using an Array",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "35c8b4db-ff07-4264-b48e-ed523c3e51b1",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 842687,
+              "key": "e7b8d311-9117-4db5-99ac-21873adb8381",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r818024c833243xJUPYTERf5h19ymp",
+              "pool_id": "jupyter",
+              "view_id": "jupyter-waujm",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/queue/Build a queue using an array.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 842831,
+          "key": "7f6084c7-7512-4e23-88e0-245d09fb7db1",
+          "title": "Build a Queue Using a Linked List",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "7f6084c7-7512-4e23-88e0-245d09fb7db1",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 842848,
+              "key": "33f2f347-9624-4758-85f3-159909559e67",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r818024c833243xJUPYTERf5h19ymp",
+              "pool_id": "jupyter",
+              "view_id": "jupyter-tc3nw",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/queue/Build a queue using a linked list.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 837300,
+          "key": "8721f131-71aa-4ac2-b87e-5bad1e81c7aa",
+          "title": "Build a Queue Using a Stack",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "8721f131-71aa-4ac2-b87e-5bad1e81c7aa",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 837301,
+              "key": "09dc0671-56e8-40f6-8313-b7a6a35b1d38",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r818024c833243xJUPYTERf5h19ymp",
+              "pool_id": "jupyter",
+              "view_id": "jupyter-ebuy0",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/queue/Build a Queue Using a Stack.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 837298,
+          "key": "2e126bc2-e363-4f1d-a612-ecb800887ed4",
+          "title": "Build a Queue Using High-Level Python",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "2e126bc2-e363-4f1d-a612-ecb800887ed4",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 837299,
+              "key": "1b3b8ebc-9bd4-4d83-b909-123ba3d5bb52",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r818024c833243xJUPYTERf5h19ymp",
+              "pool_id": "jupyter",
+              "view_id": "jupyter-zvoc4",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/queue/Build a Queue Using High-Level Python.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 842314,
+          "key": "74617f0f-786d-4058-bc69-c88d97f54692",
+          "title": "Reverse a Queue",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "74617f0f-786d-4058-bc69-c88d97f54692",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 842325,
+              "key": "8d9b12c8-6eeb-427d-a5f2-6ac56c24ebed",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r818024c833243xJUPYTERf5h19ymp",
+              "pool_id": "jupyter",
+              "view_id": "jupyter-1lpic",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/queue/Reverse a queue.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 844063,
+          "key": "ff9d700c-1e57-4eb2-aecc-41811c7cba29",
+          "title": "Interlude",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "ff9d700c-1e57-4eb2-aecc-41811c7cba29",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 844064,
+              "key": "5fce257e-fc83-4c71-b16d-ea6b9f420ee3",
+              "title": "Random Story",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "l_tnEtFCXnc",
+                "china_cdn_id": "l_tnEtFCXnc.mp4"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "_deprecated": [
+    {
+      "name": "starter_files",
+      "reason": "prefer master_archive_id"
+    },
+    {
+      "name": "starter_files",
+      "reason": "prefer master_archive_id"
+    },
+    {
+      "name": "starter_files",
+      "reason": "prefer master_archive_id"
+    },
+    {
+      "name": "starter_files",
+      "reason": "prefer master_archive_id"
+    },
+    {
+      "name": "starter_files",
+      "reason": "prefer master_archive_id"
+    },
+    {
+      "name": "starter_files",
+      "reason": "prefer master_archive_id"
+    },
+    {
+      "name": "starter_files",
+      "reason": "prefer master_archive_id"
+    },
+    {
+      "name": "starter_files",
+      "reason": "prefer master_archive_id"
+    },
+    {
+      "name": "starter_files",
+      "reason": "prefer master_archive_id"
+    },
+    {
+      "name": "starter_files",
+      "reason": "prefer master_archive_id"
+    },
+    {
+      "name": "starter_files",
+      "reason": "prefer master_archive_id"
+    },
+    {
+      "name": "starter_files",
+      "reason": "prefer master_archive_id"
+    }
+  ]
+}

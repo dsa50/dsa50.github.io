@@ -1,0 +1,557 @@
+{
+  "data": {
+    "lesson": {
+      "id": 825070,
+      "key": "b24e0f2b-815d-46c5-96dc-d74ef2294c12",
+      "title": "Maps and Hashing",
+      "semantic_type": "Lesson",
+      "is_public": true,
+      "version": "1.0.0",
+      "locale": "en-us",
+      "summary": "Explore the concepts of maps and hashes. ",
+      "lesson_type": "Classroom",
+      "display_workspace_project_only": false,
+      "resources": {
+        "files": [
+          {
+            "name": "Videos Zip File",
+            "uri": "https://zips.udacity-data.com/b24e0f2b-815d-46c5-96dc-d74ef2294c12/825070/1556058742824/Maps+and+Hashing+Videos.zip"
+          },
+          {
+            "name": "Transcripts Zip File",
+            "uri": "https://zips.udacity-data.com/b24e0f2b-815d-46c5-96dc-d74ef2294c12/825070/1556058739834/Maps+and+Hashing+Subtitles.zip"
+          }
+        ],
+        "google_plus_link": null,
+        "career_resource_center_link": null,
+        "coaching_appointments_link": null,
+        "office_hours_link": null,
+        "aws_provisioning_link": null
+      },
+      "project": null,
+      "lab": null,
+      "concepts": [
+        {
+          "id": 825161,
+          "key": "0aec70fb-5071-479d-91fd-0a81fb129818",
+          "title": "Introduction to Maps",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "0aec70fb-5071-479d-91fd-0a81fb129818",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 825794,
+              "key": "8653df9b-a66b-4a99-a7c7-a0a8315a4203",
+              "title": "Introduction to Maps",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "JEw3iQAnGKQ",
+                "china_cdn_id": "JEw3iQAnGKQ.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 825162,
+          "key": "53440981-a714-407f-8b36-6bd5a6e0e962",
+          "title": "Sets and Maps",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "53440981-a714-407f-8b36-6bd5a6e0e962",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 825796,
+              "key": "3f9a9fc3-e228-4cc7-ace8-061c59b2e648",
+              "title": "Sets and Maps",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "gmIb-qZhTDQ",
+                "china_cdn_id": "gmIb-qZhTDQ.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 841675,
+          "key": "380c024d-0c64-4d6a-beb2-cfb191a124be",
+          "title": "Exploring the Map Concept",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "380c024d-0c64-4d6a-beb2-cfb191a124be",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 841676,
+              "key": "b3b2ead0-07c7-4cfc-ba5e-8a1ed76fc4a2",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r818024c833243xJUPYTERf5h19ymp",
+              "pool_id": "jupyter",
+              "view_id": "jupyter-mqifd",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/maps_hash/Introduction to Maps.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 825164,
+          "key": "c3bff2ec-f2be-496a-b557-31db248f0eea",
+          "title": "Introduction to Hashing",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "c3bff2ec-f2be-496a-b557-31db248f0eea",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 825798,
+              "key": "059ef11c-8a35-4b52-af3f-abb10d4afe66",
+              "title": "Introduction To Hashing",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "V3RZxUPJ_Ts",
+                "china_cdn_id": "V3RZxUPJ_Ts.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 825165,
+          "key": "191d64fb-62b4-4ba7-b2a6-2ba2ccb57d98",
+          "title": "Hashing",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "191d64fb-62b4-4ba7-b2a6-2ba2ccb57d98",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 825800,
+              "key": "0b89b0a4-2413-48a7-9ef3-eb91f0bc0b24",
+              "title": "Hashing",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "kCPFfHx_LgQ",
+                "china_cdn_id": "kCPFfHx_LgQ.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 825166,
+          "key": "d6398b64-1ca4-4073-81f1-109f775d43a6",
+          "title": "Collisions",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "d6398b64-1ca4-4073-81f1-109f775d43a6",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 825802,
+              "key": "a6424eee-f4e1-480f-8f7d-f45691517079",
+              "title": "Collisions",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "BUaWIjZ_ToY",
+                "china_cdn_id": "BUaWIjZ_ToY.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 825167,
+          "key": "432388fd-d88d-4646-b955-dfa4ed019595",
+          "title": "Hash Maps",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "432388fd-d88d-4646-b955-dfa4ed019595",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 825804,
+              "key": "f5b3d771-5010-4fde-a51b-04af46a89553",
+              "title": "Hash Maps",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "A-ahUVi8pYQ",
+                "china_cdn_id": "A-ahUVi8pYQ.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 842306,
+          "key": "8a30b719-1d4c-4815-b41c-8cc3ac6beb7a",
+          "title": "Hash Maps Notebook",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "8a30b719-1d4c-4815-b41c-8cc3ac6beb7a",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1028859,
+              "key": "b191fd50-aeb3-40c3-90f2-fea87d16552d",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "**Note**: Recently, we have updated the workspace (Jupyter notebook) for practice. Consider resetting it using the \"Menu --> Get New Content --> reset data\" option at the bottom left corner of the workspace to get the new content.  ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 842318,
+              "key": "ff73b4fb-e348-4ea9-90f1-d2c5736b1f9b",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r818024c833243xJUPYTERf5h19ymp",
+              "pool_id": "jupyter",
+              "view_id": "jupyter-m81e1",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/maps_hash/HashMap.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 825168,
+          "key": "34590620-99a5-4c73-ad62-5d87d7ddd12f",
+          "title": "String Keys",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "34590620-99a5-4c73-ad62-5d87d7ddd12f",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 825807,
+              "key": "1b53e595-3058-43be-94cc-7b9ee056c6d2",
+              "title": "String Keys",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "WyFwieF1NN4",
+                "china_cdn_id": "WyFwieF1NN4.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 842845,
+          "key": "ab553bb8-9560-4c74-8efb-62886324d908",
+          "title": "Caching - Staircase",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "ab553bb8-9560-4c74-8efb-62886324d908",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 842846,
+              "key": "84828f35-41c8-47bf-a26d-a977df38f890",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r818024c833243xJUPYTERf5h19ymp",
+              "pool_id": "jupyter",
+              "view_id": "jupyter-acn3b",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/maps_hash/Caching.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 841677,
+          "key": "c813c1ff-40fe-4250-b2b3-339aa87f5493",
+          "title": "String Key Hash Table",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "c813c1ff-40fe-4250-b2b3-339aa87f5493",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 841678,
+              "key": "463ab2bb-8bac-405f-b48e-3fd0f504c403",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r818024c833243xJUPYTERf5h19ymp",
+              "pool_id": "jupyter",
+              "view_id": "jupyter-26ep0",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/maps_hash/String Key Hash Table.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 842307,
+          "key": "7936c6fc-02c3-445a-9656-42c510f1355a",
+          "title": "Practice: Pair Sum to Target",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "7936c6fc-02c3-445a-9656-42c510f1355a",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 842319,
+              "key": "37d19ba5-308c-48f5-ab5e-8fd706c3e801",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r818024c833243xJUPYTERf5h19ymp",
+              "pool_id": "jupyter",
+              "view_id": "jupyter-vu677",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/maps_hash/Pair-Sum-to-target.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 842308,
+          "key": "0702e634-8d4c-485a-b514-7007d0d07827",
+          "title": "Practice: Longest Consecutive Subsequence",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "0702e634-8d4c-485a-b514-7007d0d07827",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1028860,
+              "key": "00a73a6c-848a-42bb-a9ce-73d3c57720da",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "**Note**: Recently, we have updated the workspace (Jupyter notebook) for practice. Consider resetting it using the \"Menu --> Get New Content --> reset data\" option at the bottom left corner of the workspace to get the new content.  ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 842320,
+              "key": "517aeabd-ad9b-43f5-aa06-2d6c58b01634",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r818024c833243xJUPYTERf5h19ymp",
+              "pool_id": "jupyter",
+              "view_id": "jupyter-3jdp0",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/maps_hash/Longest-Consecutive-Subsequence.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 844069,
+          "key": "9ff97830-4b82-43ae-95a7-724215bf746e",
+          "title": "Interlude",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "9ff97830-4b82-43ae-95a7-724215bf746e",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 844070,
+              "key": "56d73c1b-edc2-4be9-95a5-e3bdf6979b77",
+              "title": "MV When Those Around You Dont Believe In You V1",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "-vKspTOIXY0",
+                "china_cdn_id": "-vKspTOIXY0.mp4"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "_deprecated": [
+    {
+      "name": "starter_files",
+      "reason": "prefer master_archive_id"
+    },
+    {
+      "name": "starter_files",
+      "reason": "prefer master_archive_id"
+    },
+    {
+      "name": "starter_files",
+      "reason": "prefer master_archive_id"
+    },
+    {
+      "name": "starter_files",
+      "reason": "prefer master_archive_id"
+    },
+    {
+      "name": "starter_files",
+      "reason": "prefer master_archive_id"
+    },
+    {
+      "name": "starter_files",
+      "reason": "prefer master_archive_id"
+    }
+  ]
+}
