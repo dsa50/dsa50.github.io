@@ -1,0 +1,49 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.400
+Hi, I'm back again.
+
+00:00:02.400 --> 00:00:05.905
+Just wanted to stress the importance of the material you're about to learn.
+
+00:00:05.905 --> 00:00:07.900
+Using a data structure that employs
+
+00:00:07.900 --> 00:00:11.500
+a hash function allows you to do look ups in constant time.
+
+00:00:11.500 --> 00:00:13.595
+Let that sink in for a second.
+
+00:00:13.595 --> 00:00:15.610
+With everything you've learned so far,
+
+00:00:15.610 --> 00:00:17.770
+you need to do look ups in linear time.
+
+00:00:17.770 --> 00:00:19.765
+In a list or a set,
+
+00:00:19.765 --> 00:00:23.125
+you need to look through every element to find the one you're looking for.
+
+00:00:23.125 --> 00:00:27.835
+Stacks and queues let you look up the oldest or newest elements immediately,
+
+00:00:27.835 --> 00:00:32.080
+and priority queues will let you find the highest priority element quickly.
+
+00:00:32.080 --> 00:00:34.120
+But if you want any other element,
+
+00:00:34.120 --> 00:00:36.445
+you've got to do a linear time search.
+
+00:00:36.445 --> 00:00:39.280
+The ability to do constant time look ups will make
+
+00:00:39.280 --> 00:00:42.540
+almost any algorithm you write instantly faster.
+
