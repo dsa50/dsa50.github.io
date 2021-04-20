@@ -1,0 +1,362 @@
+{
+  "data": {
+    "lesson": {
+      "id": 825830,
+      "key": "266c368c-92dd-46c3-bd74-dab505a547bc",
+      "title": "Dynamic Programming ",
+      "semantic_type": "Lesson",
+      "is_public": true,
+      "version": "1.0.0",
+      "locale": "en-us",
+      "summary": "Learn about dynamic programming and apply your learnings to challenging exercises. ",
+      "lesson_type": "Classroom",
+      "display_workspace_project_only": false,
+      "resources": {
+        "files": [
+          {
+            "name": "Videos Zip File",
+            "uri": "https://zips.udacity-data.com/266c368c-92dd-46c3-bd74-dab505a547bc/825830/1556779895090/Dynamic+Programming++Videos.zip"
+          },
+          {
+            "name": "Transcripts Zip File",
+            "uri": "https://zips.udacity-data.com/266c368c-92dd-46c3-bd74-dab505a547bc/825830/1556779889121/Dynamic+Programming++Subtitles.zip"
+          }
+        ],
+        "google_plus_link": null,
+        "career_resource_center_link": null,
+        "coaching_appointments_link": null,
+        "office_hours_link": null,
+        "aws_provisioning_link": null
+      },
+      "project": null,
+      "lab": null,
+      "concepts": [
+        {
+          "id": 847069,
+          "key": "6c141082-a298-4d92-869f-61580962720e",
+          "title": "Knapsack Problem",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "6c141082-a298-4d92-869f-61580962720e",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 847070,
+              "key": "f1deaf68-0b5f-435d-bcdc-08107756b0fb",
+              "title": "Problema da mochila",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "-xRKazHGtjU",
+                "china_cdn_id": "-xRKazHGtjU.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 847071,
+          "key": "45074b87-9afb-4426-95bc-ef45d486a08a",
+          "title": "Smarter Approach",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "45074b87-9afb-4426-95bc-ef45d486a08a",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 847072,
+              "key": "c9e1008c-a89d-45b4-bcd2-e7b575cab008",
+              "title": "Um algoritmo mais rápido",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "J7S3CHFBZJA",
+                "china_cdn_id": "J7S3CHFBZJA.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 847073,
+          "key": "2c3fdfba-c032-4da5-8f61-cb391ad9ea0b",
+          "title": "Dynamic Programming",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "2c3fdfba-c032-4da5-8f61-cb391ad9ea0b",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 847074,
+              "key": "b09b0b22-b7a0-4d83-a09c-33b01a1b4fbd",
+              "title": "Programação dinâmica",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "VQeFcG9pjJU",
+                "china_cdn_id": "VQeFcG9pjJU.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 847075,
+          "key": "2672f351-f011-4d53-aa0d-4dd14f65617a",
+          "title": "Knapsack Exercise",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "2672f351-f011-4d53-aa0d-4dd14f65617a",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1028855,
+              "key": "40bde474-dfd3-4afa-a41d-0dd7520a8af7",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "**Note**: Recently, we have updated the workspace (Jupyter notebook) for practice. Consider resetting it using the \"Menu --> Get New Content --> reset data\" option at the bottom left corner of the workspace to get the new content.  ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 847076,
+              "key": "2030280b-01ed-47db-a824-69c2044cac74",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r818024c831558xJUPYTERbo7otze1",
+              "pool_id": "jupyter",
+              "view_id": "jupyter-9z0c2",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/dynamic/knapsack_problem.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 847079,
+          "key": "1dad9974-7022-4c2a-b279-930f3243de4f",
+          "title": "Longest Common Subsequence Exercise",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "1dad9974-7022-4c2a-b279-930f3243de4f",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 847081,
+              "key": "08f9004c-980c-43e7-8434-831456babb2a",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r818024c831558xJUPYTERbo7otze1",
+              "pool_id": "jupyter",
+              "view_id": "jupyter-wem2w",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/dynamic/longest_common_subsequence.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 848432,
+          "key": "30fc55c2-9e9e-4a3b-99ea-d022538504f1",
+          "title": "Longest Palindromic Subsequence",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "30fc55c2-9e9e-4a3b-99ea-d022538504f1",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 848519,
+              "key": "2bd863be-4bd7-43db-a5fd-d9d0d5a0c34d",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r818024c831558xJUPYTERbo7otze1",
+              "pool_id": "jupyter",
+              "view_id": "jupyter-54eun",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/dynamic/Longest Palindromic Sequence.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 848433,
+          "key": "9e28cb0c-3b83-4467-815a-3ab01a446b00",
+          "title": "The Coin Change Problem",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "9e28cb0c-3b83-4467-815a-3ab01a446b00",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 848518,
+              "key": "e733f2f5-21c7-454f-bec1-901019ebb5bb",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r818024c831558xJUPYTERbo7otze1",
+              "pool_id": "jupyter",
+              "view_id": "jupyter-rnbpr",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/dynamic/Coin Change.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 848439,
+          "key": "cc382d94-27bd-48e2-8cc3-2176532d3c77",
+          "title": "Stock Prices",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "cc382d94-27bd-48e2-8cc3-2176532d3c77",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 848520,
+              "key": "54c9d612-58cb-4f8d-88ee-90436087becb",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r818024c831558xJUPYTERbo7otze1",
+              "pool_id": "jupyter",
+              "view_id": "jupyter-2c0l5",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/dynamic/Stock Prices.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "_deprecated": [
+    {
+      "name": "starter_files",
+      "reason": "prefer master_archive_id"
+    },
+    {
+      "name": "starter_files",
+      "reason": "prefer master_archive_id"
+    },
+    {
+      "name": "starter_files",
+      "reason": "prefer master_archive_id"
+    },
+    {
+      "name": "starter_files",
+      "reason": "prefer master_archive_id"
+    },
+    {
+      "name": "starter_files",
+      "reason": "prefer master_archive_id"
+    }
+  ]
+}
