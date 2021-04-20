@@ -1,0 +1,52 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.630
+Now we're going to practice how to implement breadth-first search encode.
+
+00:00:03.630 --> 00:00:08.055
+So as a reminder, breadth-first search is visiting the tree one level at a time.
+
+00:00:08.055 --> 00:00:09.570
+So if this was level zero,
+
+00:00:09.570 --> 00:00:11.175
+we'd visit this node,
+
+00:00:11.175 --> 00:00:12.765
+and if this was level one,
+
+00:00:12.765 --> 00:00:15.600
+these two nodes, we'd visit all of these first
+
+00:00:15.600 --> 00:00:19.320
+before moving on to the next level and visiting this one.
+
+00:00:19.320 --> 00:00:22.635
+I just want to mention that breadth-first search is quite useful.
+
+00:00:22.635 --> 00:00:24.240
+You'll see this again when you learn about
+
+00:00:24.240 --> 00:00:28.095
+graph data structures and learn about finding the shortest path.
+
+00:00:28.095 --> 00:00:30.345
+So let's walk through it conceptually,
+
+00:00:30.345 --> 00:00:32.865
+we start visiting the root node,
+
+00:00:32.865 --> 00:00:34.515
+then its left child,
+
+00:00:34.515 --> 00:00:37.785
+and then its right child before we move on to the next level,
+
+00:00:37.785 --> 00:00:40.425
+to visit this node here.
+
+00:00:40.425 --> 00:00:46.170
+Notice unlike DFS, we visited B and C before visiting D.
+

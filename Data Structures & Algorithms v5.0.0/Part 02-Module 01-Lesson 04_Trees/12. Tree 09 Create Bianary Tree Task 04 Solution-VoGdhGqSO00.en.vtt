@@ -1,0 +1,82 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.620
+So now let's add the getter and setters for the children.
+
+00:00:04.620 --> 00:00:08.995
+We'll go ahead and use what we've already created for the node.
+
+00:00:08.995 --> 00:00:12.515
+We want to define set_left_child,
+
+00:00:12.515 --> 00:00:14.165
+and I'll fix these later.
+
+00:00:14.165 --> 00:00:15.380
+Just setting it up.
+
+00:00:15.380 --> 00:00:23.400
+Set_right_child, get_left_child and get right child.
+
+00:00:23.400 --> 00:00:26.960
+So now we have these functions defined and let's go ahead and fix these.
+
+00:00:26.960 --> 00:00:29.495
+We want to set, the left child.
+
+00:00:29.495 --> 00:00:34.970
+It's going to be taking in some node that it will set it to and it's going to set
+
+00:00:34.970 --> 00:00:40.790
+the left self.left equal to that node that's passed in.
+
+00:00:40.790 --> 00:00:45.890
+Similarly, for set_right_child, it's going to take in some node and
+
+00:00:45.890 --> 00:00:51.095
+then it's going to set the right node pointer to that node.
+
+00:00:51.095 --> 00:00:53.270
+Now, to get the left child,
+
+00:00:53.270 --> 00:00:57.005
+we can just return self.left.
+
+00:00:57.005 --> 00:00:58.820
+Similarly. For the right child,
+
+00:00:58.820 --> 00:01:01.450
+we're going to return self.right.
+
+00:01:01.450 --> 00:01:06.105
+Awesome. Let's check if it works.
+
+00:01:06.105 --> 00:01:09.045
+So here we can check by creating three nodes.
+
+00:01:09.045 --> 00:01:10.830
+There's going to be node0, node1,
+
+00:01:10.830 --> 00:01:13.215
+and node2, they store value;
+
+00:01:13.215 --> 00:01:14.865
+apple, banana, and orange.
+
+00:01:14.865 --> 00:01:19.350
+Now, for node0, I will set this left child to node0,
+
+00:01:19.350 --> 00:01:22.815
+which is banana, and node0's right child,
+
+00:01:22.815 --> 00:01:25.985
+I will set to node2, which is orange.
+
+00:01:25.985 --> 00:01:29.835
+We'll just print it out to see if it works, and indeed,
+
+00:01:29.835 --> 00:01:34.630
+node0's left child is banana and node0's right child is orange.
+

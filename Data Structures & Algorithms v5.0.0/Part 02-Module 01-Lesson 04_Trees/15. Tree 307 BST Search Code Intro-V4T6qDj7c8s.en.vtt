@@ -1,0 +1,16 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.940
+Okay, now let's define a search function and it will
+
+00:00:02.940 --> 00:00:06.555
+return true if the node contains that value,
+
+00:00:06.555 --> 00:00:08.565
+otherwise it will return false.
+
+00:00:08.565 --> 00:00:12.730
+So go ahead and implement search right here.
+

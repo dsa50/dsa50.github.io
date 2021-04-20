@@ -1,0 +1,31 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.335
+Now let's set up a tree that we can traverse using breadth first search.
+
+00:00:04.335 --> 00:00:06.645
+So we're going to create a tree that looks like this.
+
+00:00:06.645 --> 00:00:09.960
+The root is apple, and then there is banana, cherry, and dates.
+
+00:00:09.960 --> 00:00:11.250
+So similar to before,
+
+00:00:11.250 --> 00:00:15.510
+we're going to define a node class and a tree class.
+
+00:00:15.510 --> 00:00:21.435
+Then we'll create a tree and then we'll set the root nodes,
+
+00:00:21.435 --> 00:00:22.785
+left child to banana,
+
+00:00:22.785 --> 00:00:24.510
+it's right child to cherry,
+
+00:00:24.510 --> 00:00:29.440
+and then we'll get banana's left child will be set to dates.
+

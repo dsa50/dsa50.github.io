@@ -1,0 +1,73 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.060
+Now we're going to look at searching inside a binary search tree.
+
+00:00:03.060 --> 00:00:05.685
+It's quite similar to what we did with insertion.
+
+00:00:05.685 --> 00:00:10.725
+We have a tree here, and we want to check if four exists in this tree.
+
+00:00:10.725 --> 00:00:13.665
+We'll start out by comparing it with the root.
+
+00:00:13.665 --> 00:00:15.735
+Here four is less than six,
+
+00:00:15.735 --> 00:00:17.980
+so we're going to traverse to the left.
+
+00:00:17.980 --> 00:00:19.880
+Now we compare it with three,
+
+00:00:19.880 --> 00:00:22.205
+four is greater than three, so we go right.
+
+00:00:22.205 --> 00:00:27.235
+Now four is not in the right subtree of three,
+
+00:00:27.235 --> 00:00:28.920
+and if it did exist in there,
+
+00:00:28.920 --> 00:00:31.560
+it would be in this right subtree.
+
+00:00:31.560 --> 00:00:33.735
+But since three doesn't have a right child,
+
+00:00:33.735 --> 00:00:35.685
+we know that four is not there,
+
+00:00:35.685 --> 00:00:42.240
+so we can return none or we can return false depending on the implementation choice.
+
+00:00:42.240 --> 00:00:43.685
+Here's a second example.
+
+00:00:43.685 --> 00:00:46.595
+We're going to search for seven to see if seven is in the tree.
+
+00:00:46.595 --> 00:00:50.675
+We'll start at the root. Seven is greater than six,
+
+00:00:50.675 --> 00:00:52.225
+so we'll traverse right.
+
+00:00:52.225 --> 00:00:53.990
+Now, seven equals seven,
+
+00:00:53.990 --> 00:00:58.310
+so we can return this node itself or true.
+
+00:00:58.310 --> 00:01:01.310
+The reason you may want to return this node is at my store
+
+00:01:01.310 --> 00:01:06.555
+some additional information that's not in this node that you searched for,
+
+00:01:06.555 --> 00:01:12.240
+and so you can return the node to extract some saved information in there.
+

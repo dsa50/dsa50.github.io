@@ -1,0 +1,115 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:05.835
+Now we're going to try to translate our algorithm from our visual into writing code.
+
+00:00:05.835 --> 00:00:11.130
+I recommend trying to write a little bit at a time without a for-loop yet.
+
+00:00:11.130 --> 00:00:14.835
+This will help you see what you're doing bit by bit.
+
+00:00:14.835 --> 00:00:18.180
+So we're going to create a list called visit_order and we're going to create
+
+00:00:18.180 --> 00:00:22.800
+a stack that's going to help us keep track and walk back our path.
+
+00:00:22.800 --> 00:00:25.710
+We'll start with the root node,
+
+00:00:25.710 --> 00:00:28.215
+which is apple right here.
+
+00:00:28.215 --> 00:00:30.585
+We're going to grab it and push it onto the stack.
+
+00:00:30.585 --> 00:00:32.190
+So as you can see,
+
+00:00:32.190 --> 00:00:34.140
+now we have apple on the stack.
+
+00:00:34.140 --> 00:00:38.160
+We take what's on the top of the stack and we're going to visit it.
+
+00:00:38.160 --> 00:00:41.490
+So we're appending it to the visit_order list.
+
+00:00:41.490 --> 00:00:45.940
+Now you can see that the visit order now contains apple.
+
+00:00:45.940 --> 00:00:47.955
+The stack contains apple.
+
+00:00:47.955 --> 00:00:51.600
+So now what do we do with the node at the top of the stack?
+
+00:00:51.600 --> 00:00:53.760
+We're going to check if it has a left child.
+
+00:00:53.760 --> 00:00:55.650
+So we write an if statement.
+
+00:00:55.650 --> 00:00:58.400
+If it has a left child, then what do we do?
+
+00:00:58.400 --> 00:01:02.675
+We want to get that left child and we want to push it onto the stack.
+
+00:01:02.675 --> 00:01:05.930
+So now we can see the left child that we found was banana.
+
+00:01:05.930 --> 00:01:08.045
+We pushed it on the stack on top of apple.
+
+00:01:08.045 --> 00:01:10.750
+Now the next step is, what's on the top of the stack?
+
+00:01:10.750 --> 00:01:14.540
+Banana. So we're going to visit it and to say we visited it,
+
+00:01:14.540 --> 00:01:17.020
+we're just appending it to this visit_order list.
+
+00:01:17.020 --> 00:01:20.705
+You can see now that when we visit Node banana,
+
+00:01:20.705 --> 00:01:23.750
+now we see that we visited banana after apple.
+
+00:01:23.750 --> 00:01:27.395
+Then again, we check the top of the stack is now banana,
+
+00:01:27.395 --> 00:01:29.560
+and so does it have a left child?
+
+00:01:29.560 --> 00:01:32.915
+It does and so we're going to grab it and push it onto the stack.
+
+00:01:32.915 --> 00:01:35.465
+So now you can see that we're repeating a pattern.
+
+00:01:35.465 --> 00:01:38.540
+So this is where we would eventually want to use a for-loop,
+
+00:01:38.540 --> 00:01:41.365
+but this is kind of a good way to get started.
+
+00:01:41.365 --> 00:01:44.945
+I walk through the entire tree traversal here.
+
+00:01:44.945 --> 00:01:47.765
+But if you feel like you get the idea and you want to
+
+00:01:47.765 --> 00:01:51.020
+go skip ahead to the function itself,
+
+00:01:51.020 --> 00:01:53.690
+then just skip ahead to here,
+
+00:01:53.690 --> 00:01:56.490
+pre-order traversal using a stack.
+

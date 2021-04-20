@@ -1,0 +1,22 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.545
+Now, let's set up this notebook so that we can implement some functions.
+
+00:00:04.545 --> 00:00:07.755
+First, we're going to define a node class,
+
+00:00:07.755 --> 00:00:09.015
+which we've seen before.
+
+00:00:09.015 --> 00:00:12.900
+Also, just for the sake of a print function for the tree,
+
+00:00:12.900 --> 00:00:16.890
+we're also going to use a queue so that we can traverse it breadth first search.
+
+00:00:16.890 --> 00:00:20.290
+All right. Now, let's continue on with the lesson.
+

@@ -1,0 +1,31 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.080 --> 00:00:03.225
+Now let's go add setters and getters.
+
+00:00:03.225 --> 00:00:06.910
+Let's first go ahead and just reuse what we already did.
+
+00:00:07.010 --> 00:00:11.190
+We want a get_value.
+
+00:00:11.190 --> 00:00:15.225
+I'll fill this in too. We also want a set_value.
+
+00:00:15.225 --> 00:00:17.550
+So notice here, we want to set it to something,
+
+00:00:17.550 --> 00:00:19.950
+so it's going to also need to take in a value.
+
+00:00:19.950 --> 00:00:22.635
+So to get value, we can return,
+
+00:00:22.635 --> 00:00:25.500
+self.value, and to set the value,
+
+00:00:25.500 --> 00:00:29.440
+we can say self.value is equal to value
+
