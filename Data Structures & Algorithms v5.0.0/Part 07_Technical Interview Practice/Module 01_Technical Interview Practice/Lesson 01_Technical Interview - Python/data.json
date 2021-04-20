@@ -1,0 +1,448 @@
+{
+  "data": {
+    "lesson": {
+      "id": 840599,
+      "key": "a5ab240e-4f8b-463e-861b-39ad7692ba53",
+      "title": "Technical Interview - Python",
+      "semantic_type": "Lesson",
+      "is_public": true,
+      "version": "1.0.0",
+      "locale": "en-us",
+      "summary": "Practice with five technical interviewing questions on topics discussed in the data structures and algorithms course and get a personalized review on both your code and solutions.",
+      "lesson_type": "Classroom",
+      "display_workspace_project_only": false,
+      "resources": {
+        "files": [
+          {
+            "name": "Videos Zip File",
+            "uri": "https://zips.udacity-data.com/a5ab240e-4f8b-463e-861b-39ad7692ba53/840599/1556139594925/Technical+Interview+-+Python+Videos.zip"
+          },
+          {
+            "name": "Transcripts Zip File",
+            "uri": "https://zips.udacity-data.com/a5ab240e-4f8b-463e-861b-39ad7692ba53/840599/1556139590912/Technical+Interview+-+Python+Subtitles.zip"
+          }
+        ],
+        "google_plus_link": null,
+        "career_resource_center_link": null,
+        "coaching_appointments_link": null,
+        "office_hours_link": null,
+        "aws_provisioning_link": null
+      },
+      "project": null,
+      "lab": null,
+      "concepts": [
+        {
+          "id": 35465,
+          "key": "77114606610923",
+          "title": "Interview Introduction",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "77114606610923",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 131763,
+              "key": "7711460661",
+              "title": "Interview Introduction",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "video": {
+                "youtube_id": "dRsHYt1Lddc",
+                "china_cdn_id": "dRsHYt1Lddc.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 88998,
+          "key": "77117105730923",
+          "title": "Clarifying the Question",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "77117105730923",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 131773,
+              "key": "7711710573",
+              "title": "Clarifying the Question",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "video": {
+                "youtube_id": "XvvKBmKC_84",
+                "china_cdn_id": "XvvKBmKC_84.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 21522,
+          "key": "77097603330923",
+          "title": "Confirming Inputs",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "77097603330923",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 120616,
+              "key": "7709760333",
+              "title": "Confirming Inputs",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "video": {
+                "youtube_id": "8lPTOG1yLsg",
+                "china_cdn_id": "8lPTOG1yLsg.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 53739,
+          "key": "77409685620923",
+          "title": "Test Cases",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "77409685620923",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 137675,
+              "key": "7740968562",
+              "title": "Test Cases",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "video": {
+                "youtube_id": "7CNatJ7PqZ4",
+                "china_cdn_id": "7CNatJ7PqZ4.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 19859,
+          "key": "77366994950923",
+          "title": "Brainstorming",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "77366994950923",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 21988,
+              "key": "7736699495",
+              "title": "Brainstorming",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "video": {
+                "youtube_id": "LJFYhMDCCsU",
+                "china_cdn_id": "LJFYhMDCCsU.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 22347,
+          "key": "77052606850923",
+          "title": "Runtime Analysis",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "77052606850923",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 137639,
+              "key": "7705260685",
+              "title": "Runtime Analysis",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "video": {
+                "youtube_id": "8bI9OgOB2qI",
+                "china_cdn_id": "8bI9OgOB2qI.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 21240,
+          "key": "77100304620923",
+          "title": "Coding",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "77100304620923",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 119874,
+              "key": "7710030462",
+              "title": "Coding",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "video": {
+                "youtube_id": "zhQYREUI8Z0",
+                "china_cdn_id": "zhQYREUI8Z0.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 21535,
+          "key": "79584207820923",
+          "title": "Coding 2",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "79584207820923",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 534856,
+              "key": "b7f3d4b7-d8a3-4b66-8781-1059e6a5b2d9",
+              "title": "Coding 2",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "qEteyPNRSwU",
+                "china_cdn_id": "qEteyPNRSwU.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 132593,
+          "key": "77154485990923",
+          "title": "Debugging",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "77154485990923",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 131706,
+              "key": "7715448599",
+              "title": "Debugging",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "video": {
+                "youtube_id": "Bz1tlvkql9Q",
+                "china_cdn_id": "Bz1tlvkql9Q.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 22320,
+          "key": "77237185420923",
+          "title": "Interview Wrap-Up",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "77237185420923",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 22040,
+              "key": "7723718542",
+              "title": "Interview Wrap-Up",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "[Career Resource Center](http://career.udacity.com/resource-center/)",
+              "video": {
+                "youtube_id": "sz4Ekcu9a_Q",
+                "china_cdn_id": "sz4Ekcu9a_Q.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 31487,
+          "key": "79358887230923",
+          "title": "Time for Live Practice with Pramp",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "79358887230923",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 96404,
+              "key": "7935888723",
+              "title": "Time for Live Practice",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "**What next?** <br>\n\nAs you have probably figured out by now, one of the best ways to learn something is to practice it. With interviewing, it’s great that you’ve worked through solutions on your own, but that’s not quite what you need to prepare for an interview.  Today you‘ll be able to schedule a **live mock interview** and be one step closer to a job you love. <br>\n\n<center><a href=\"https://www.pramp.com/promo/udacity\" target=\"_blank\"><button style=\"box-sizing: border-box; border-radius: 4px; background: #02B3E4; border: none; height: 44px; padding: 0 25px; color: white; cursor: pointer; font-family: Open Sans,sans-serif; display: inline-block; border: none; font-size: 12px; letter-spacing: 1px; font-weight: 600; text-transform: uppercase;\">Practice Interviewing with Pramp</button></a></center><br>\n\nPramp is a peer-to-peer mock interview platform for coding interviews, focused on questions regarding algorithms and data structures. It pairs software developers together for a practice interview, based on their background, availability and practicing needs. Pramp automates the whole process and takes care of scheduling, peer matching and interview prep content (i.e. interview questions and answers). A live practice session includes integrated HD video chat, collaborative code and support for 17 different programming languages.  <br>\n\n**The best part?**\n\nPramp has partnered with us to offer FREE, UNLIMITED practice interviews along with a streamlined on-boarding experience for Udacity students. We chose to work with Pramp because it felt most aligned with the Udacity community in that it's a safe environment for anyone to practice. <br>\n\nWe recommend that you complete at least 3 interviews with Pramp as you prepare for your interview.  <br>\n\nIf you have any questions or feedback about using Pramp for interview practice, email us! career-support@udacity.com. ",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 44707,
+          "key": "79621434400923",
+          "title": "Next Steps",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "79621434400923",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 97235,
+              "key": "7962143440",
+              "title": "Next Steps",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Congratulations on making it through the course! Here are some additional resources various Udacity staff members have recommended that you can use to prepare for your technical interviews (in order, with the most recommended at the top of each list): <br>\n\n## Websites: <br>\n\n* [HackerRank](https://www.hackerrank.com/): Website and community with programming challeges that you can go through for additional practice.\n* [Project Euler](https://projecteuler.net/): This website has a ton of logic problems that you can practice writing coded solutions to.\n* [Interview Cake](https://www.interviewcake.com/): Practice questions and some tutorials available.\n* [Interactive Python](http://interactivepython.org/runestone/static/pythonds/index.html): Loads of tutorials on pretty much every topic covered here and many more, along with Python examples and concept questions.\n* [Topcoder](https://www.topcoder.com/): New practice problems every day, and some tech companies use answers to those problems to find new potential hires.\n* [LeetCode](https://leetcode.com/): Practice problems, mock interviews, and articles about problems. \n* [BigO Cheat Sheet](http://bigocheatsheet.com/): Summary of efficiencies for most common algorithms and data structures.\n\n## Online Courses: <br>\n\n* [Intro to Algorithms](https://www.udacity.com/course/intro-to-algorithms--cs215) Course on Udacity: The course you just completed is essentially a prerequisite of the Intro to Algorithms course. Intro to Algorithms is largely about graph algorithms—you likely won't need most of them for interviews, but if you're interested in graph algorithms this is a great next step!\n\n## Books <br>\n\n* *Cracking the Coding Interview* by Gayle Laakmann McDowell\n* *Introduction to Algorithms* by Charles E. Leiserson, Clifford Stein, Ronald Rivest, and Thomas H. Cormen\n* *Programming Interviews Exposed* by John Morgan, Noah Kindler, and Eric Giguere\n* [Algorithms, 4th Edition](http://algs4.cs.princeton.edu/home/) by Robert Sedgewick and Kevin Wayne\n* Elements of Programming Interviews by Adnan Aziz\n\n## Github Repository (Collections of Problems) <br>\n\n* [The Coding Interview](https://github.com/mre/the-coding-interview)\n* [HTML5 Boilerplate Interview Questions](https://github.com/h5bp/Front-end-Developer-Interview-Questions)\n\n## Blog Posts <br>\n\n* [Five Essential Phone Screen Questions](https://sites.google.com/site/steveyegge2/five-essential-phone-screen-questions)",
+              "instructor_notes": null
+            }
+          ]
+        },
+        {
+          "id": 440897,
+          "key": "f6762ca1-c1b3-4439-bd68-1284d481b2fd",
+          "title": "Resources in Your Career Portal",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "f6762ca1-c1b3-4439-bd68-1284d481b2fd",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 440898,
+              "key": "3792efad-3140-43cc-8b40-e3988f7cc156",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Find More Resources in Your Career Portal\nThe Career Portal is your personalized job search guide. As you go through the lessons and projects in each Career Part, you can also explore additional career development resources, which are curated for your career path, in your Career Portal:",
+              "instructor_notes": ""
+            },
+            {
+              "id": 440910,
+              "key": "6ed12bc0-a84a-4978-9e23-814e535aa29b",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2017/October/59f8d814_screen-shot-2017-10-31-at-1.06.42-pm/screen-shot-2017-10-31-at-1.06.42-pm.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/6ed12bc0-a84a-4978-9e23-814e535aa29b",
+              "caption": "",
+              "alt": "career portal",
+              "width": 2682,
+              "height": 1322,
+              "instructor_notes": null
+            },
+            {
+              "id": 440902,
+              "key": "e0631e03-a276-47f1-be10-28f2dbe54f7a",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## How Do I Get To My Career Portal?\nTo access the Career Portal, look for the briefcase icon in your left-hand sidebar when you're logged into your [Udacity classroom](https://classroom.udacity.com/me).",
+              "instructor_notes": ""
+            },
+            {
+              "id": 440904,
+              "key": "1525db48-478e-49fb-bc98-e841118af20d",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2017/October/59f8d66e_career-portal-sidebar/career-portal-sidebar.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/1525db48-478e-49fb-bc98-e841118af20d",
+              "caption": "",
+              "alt": "Udacity classroom left-hand sidebar",
+              "width": 203,
+              "height": 281,
+              "instructor_notes": null
+            },
+            {
+              "id": 440905,
+              "key": "f2497279-9c5d-46d7-91ec-9ce21d7b39ea",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Unable to find your Career Portal?\nNot seeing the Career Portal icon? Write into [career-support@udacity.com](mailto:career-support@udacity.com) for help getting access.",
+              "instructor_notes": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "_deprecated": [
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    }
+  ]
+}

@@ -1,0 +1,295 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.370 --> 00:00:04.080
+So, I'm going to call my main function,
+
+00:00:04.080 --> 00:00:06.370
+islandCounter, and I'm taking in the matrix here.
+
+00:00:06.370 --> 00:00:12.550
+Now, what I first want to account for is the none.
+
+00:00:12.550 --> 00:00:18.429
+So, if my matrix is equal to
+
+00:00:18.429 --> 00:00:27.179
+none or if it is equal to the empty matrix.
+
+00:00:32.170 --> 00:00:38.010
+In this case, I just want to return zero right away.
+
+00:00:38.899 --> 00:00:42.774
+Now, if this is not the case,
+
+00:00:42.774 --> 00:00:48.850
+I'm just going to initialize my island's variable to zero which is the number of islands,
+
+00:00:48.850 --> 00:00:53.640
+and I'm going to want to do two for loops to loop through this.
+
+00:00:53.640 --> 00:01:00.320
+So, I want to know the number of rows and columns.
+
+00:01:14.829 --> 00:01:20.224
+So, this is actually going to be vice versa here.
+
+00:01:20.224 --> 00:01:24.129
+Okay. So, I'm going to write my for loop.
+
+00:01:46.010 --> 00:01:52.820
+Now, when I get here, I want to check if the element is equal to one
+
+00:01:52.819 --> 00:02:07.689
+and if it is, I'm going to
+
+00:02:07.689 --> 00:02:16.474
+increment my island's count.
+
+00:02:16.474 --> 00:02:18.370
+So, now what I need to do here is I need to
+
+00:02:18.370 --> 00:02:20.890
+do the breadth-first search I was talking about before.
+
+00:02:20.889 --> 00:02:26.259
+So, I'm just going to have a helper method to do that.
+
+00:02:30.919 --> 00:02:36.280
+To collect FindPartsOfIsland.
+
+00:02:43.659 --> 00:02:49.400
+So, I'm going to go ahead and define that down here.
+
+00:03:07.240 --> 00:03:11.790
+So, the first thing I want to do is I want to initialize a q.
+
+00:03:11.789 --> 00:03:19.179
+Why did you choose a q?
+
+00:03:19.180 --> 00:03:20.870
+Since we're using a breadth-first search here,
+
+00:03:20.870 --> 00:03:30.420
+I want to be able to use a q so when I add an element to the q,
+
+00:03:30.419 --> 00:03:32.379
+I want to be able to get the first element that I added.
+
+00:03:32.379 --> 00:03:35.914
+Yeah, that makes perfect sense.
+
+00:03:35.914 --> 00:03:38.514
+And I actually need to import this method here.
+
+00:03:38.514 --> 00:03:42.279
+This is from the questions framework.
+
+00:03:54.030 --> 00:04:03.439
+And then the first thing I'm going to do is I'm going to append my indexes here.
+
+00:04:03.439 --> 00:04:05.004
+So, another location.
+
+00:04:05.004 --> 00:04:08.759
+So, I'm going to append this to my q and
+
+00:04:16.589 --> 00:04:23.214
+now, I'm just doing a breadth-first search as well. It's empty.
+
+00:04:23.214 --> 00:04:30.194
+I'm going to keep searching for other things around so
+
+00:04:30.194 --> 00:04:40.290
+the length of the q does not equal zero.
+
+00:04:43.350 --> 00:04:46.775
+So, what I want to do here,
+
+00:04:46.774 --> 00:04:50.409
+is I want to look at the elements around it.
+
+00:04:50.410 --> 00:04:56.230
+So, we mentioned before that I needed to check if they are actually there.
+
+00:04:56.230 --> 00:05:00.145
+So, I'm going to write a helper method to do that too.
+
+00:05:00.144 --> 00:05:04.819
+Okay. So now that I'm checking if
+
+00:05:04.819 --> 00:05:08.144
+this is empty, I want to do something with this element here,
+
+00:05:08.144 --> 00:05:09.789
+but i'm also running out of space,
+
+00:05:09.790 --> 00:05:12.960
+I'm just going to draw a little arrow over here.
+
+00:05:12.959 --> 00:05:16.370
+And I just got this little section off
+
+00:05:16.370 --> 00:05:19.870
+here that I'm going to be using to finish this method here.
+
+00:05:19.870 --> 00:05:27.345
+So, what I want to do is I want to be able to get this element here from,
+
+00:05:27.345 --> 00:05:30.915
+let me make sure to go up a little bit higher,
+
+00:05:30.915 --> 00:05:36.090
+so I'll pop this element off the q.
+
+00:05:36.670 --> 00:05:39.770
+Then I want to be able to access
+
+00:05:39.769 --> 00:05:45.500
+these two variables so I'm just going to set them to a new one.
+
+00:05:52.449 --> 00:05:56.284
+Okay. So now that I'm here,
+
+00:05:56.285 --> 00:06:01.840
+I want to check if this element is equal to one,
+
+00:06:08.310 --> 00:06:14.980
+and if it is, I want to set it to two as I mentioned before.
+
+00:06:19.610 --> 00:06:25.560
+So, I'm going to use a helper method right here to check
+
+00:06:25.560 --> 00:06:29.860
+if these elements that are next to it are actually next to it,
+
+00:06:29.860 --> 00:06:33.889
+and then if they are, I'm going to add it to the q.
+
+00:06:33.889 --> 00:06:40.110
+So, I'm going to call that. [inaudible] this here.
+
+00:06:40.110 --> 00:06:42.694
+So, this method is going to be called,
+
+00:06:42.694 --> 00:06:52.079
+appendIf and I'm passing in the q,
+
+00:06:52.079 --> 00:06:59.724
+and I also need the row,
+
+00:06:59.725 --> 00:07:04.145
+column and both of these coordinates here.
+
+00:07:04.144 --> 00:07:15.074
+Okay. So, what I want to check here is if the x value is greater
+
+00:07:15.074 --> 00:07:22.504
+than or equal to zero and
+
+00:07:22.504 --> 00:07:29.194
+is less than the number of
+
+00:07:29.194 --> 00:07:36.894
+columns and if y is greater than or equal to zero,
+
+00:07:36.894 --> 00:07:46.099
+and if y is less than the number of rows.
+
+00:07:46.100 --> 00:07:48.629
+And then if all these conditions hold true,
+
+00:07:48.629 --> 00:07:51.930
+what I'm going to want to do is append.
+
+00:07:51.930 --> 00:07:53.819
+This is the q.
+
+00:07:53.819 --> 00:07:59.759
+We got columns there.
+
+00:07:59.759 --> 00:08:03.730
+So, I'm going to want to append right here,
+
+00:08:03.730 --> 00:08:07.080
+and just to make sure I'm appending it the right way,
+
+00:08:07.079 --> 00:08:10.584
+so I access the first element, y is right here.
+
+00:08:10.584 --> 00:08:13.310
+So that's how my helper method is going to work.
+
+00:08:13.310 --> 00:08:15.915
+So, after I do all of that there,
+
+00:08:15.915 --> 00:08:18.629
+so a method here, I'm running out of space right here.
+
+00:08:18.629 --> 00:08:21.649
+So, all this information here is just basically,
+
+00:08:21.649 --> 00:08:24.529
+I'm calling this method on all the elements around it.
+
+00:08:24.529 --> 00:08:34.769
+So, I'm going to appendIf and so what I need to do is pass the q,
+
+00:08:34.769 --> 00:08:41.069
+rows, columns and what I'm going to do is x plus one, y.
+
+00:08:41.070 --> 00:08:46.910
+So, it's going to be the elements to the right of it,
+
+00:08:47.009 --> 00:08:51.830
+and then this is going to be the element
+
+00:08:51.830 --> 00:09:23.810
+below it so left and on top. That looks like it.
+
+00:09:23.809 --> 00:09:26.774
+Well, that went pretty smoothly.
+
+00:09:26.774 --> 00:09:32.090
+Yes it did. After going through all the necessary steps before coding the solution,
+
+00:09:32.090 --> 00:09:34.470
+the actual coding is a lot easier than if
+
+00:09:34.470 --> 00:09:37.320
+he were to have just jumped in and coded from the beginning.
+
+00:09:37.320 --> 00:09:39.500
+The interviewee also made sure to let
+
+00:09:39.500 --> 00:09:42.164
+the interviewer know what he was doing when he was coding.
+
+00:09:42.164 --> 00:09:45.304
+But he didn't read out all this code as he was coding.
+
+00:09:45.304 --> 00:09:49.054
+We often see interviewees just reading out their code as they code,
+
+00:09:49.054 --> 00:09:53.444
+which can get annoying and does not really build understanding with the interviewer.
+
+00:09:53.445 --> 00:09:56.440
+Yep. This interviewee focused more on
+
+00:09:56.440 --> 00:09:59.580
+explaining the purpose of the code while he was writing.
+
+00:09:59.580 --> 00:10:02.280
+By talking out loud you give your interviewer
+
+00:10:02.279 --> 00:10:05.134
+the chance to jump in and help if your logic is wrong.
+
+00:10:05.134 --> 00:10:10.064
+You also proved your interviewer that you're actually thinking through all of your code.
+
+00:10:10.065 --> 00:10:14.440
+If you just write code you might be spitting out a memorized answer.
+
