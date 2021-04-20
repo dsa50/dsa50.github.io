@@ -1,0 +1,407 @@
+{
+  "data": {
+    "lesson": {
+      "id": 825824,
+      "key": "14e331fc-d4f7-48b0-aa98-a2ce78966748",
+      "title": "Faster Divide & Conquer Algorithms",
+      "semantic_type": "Lesson",
+      "is_public": true,
+      "version": "1.0.0",
+      "locale": "en-us",
+      "summary": "Go deeper into algorithms with faster divide and conquer algorithms. ",
+      "lesson_type": "Classroom",
+      "display_workspace_project_only": false,
+      "resources": {
+        "files": [
+          {
+            "name": "Videos Zip File",
+            "uri": "https://zips.udacity-data.com/14e331fc-d4f7-48b0-aa98-a2ce78966748/825824/1556779907864/Faster+Divide+%26+Conquer+Algorithms+Videos.zip"
+          },
+          {
+            "name": "Transcripts Zip File",
+            "uri": "https://zips.udacity-data.com/14e331fc-d4f7-48b0-aa98-a2ce78966748/825824/1556779902477/Faster+Divide+%26+Conquer+Algorithms+Subtitles.zip"
+          }
+        ],
+        "google_plus_link": null,
+        "career_resource_center_link": null,
+        "coaching_appointments_link": null,
+        "office_hours_link": null,
+        "aws_provisioning_link": null
+      },
+      "project": null,
+      "lab": null,
+      "concepts": [
+        {
+          "id": 825866,
+          "key": "f485c63b-ec44-4fe6-9a61-d9c7d60b4312",
+          "title": "Divide & Conquer",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "f485c63b-ec44-4fe6-9a61-d9c7d60b4312",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 826003,
+              "key": "e978f59d-7cb0-4654-a9ef-08997026fd42",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Divide and conquer\nIn this section, we'll discuss algorithms that use a strategy called **divide and conquer** to solve problems more efficiently. The name comes from the idea that the algorithm will break (or *divide*) the problem down into sub-problems that can be more easily solved (or *conquered*). Then, the solutions to these sub-problems are combined to yield an answer to the original problem.\n\nOver the next several videos, Eric will walk through an example—specifically, he'll demonstrate how to use a divide and conquer algorithm to efficiently find the median element out of a collection of unsorted numbers. Following this, you'll have the opportunity to do some hands-on work and solve several different problems using a divide-and-conquer approach.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 826012,
+              "key": "aca529d5-bc0e-45bd-91ba-8261dfe2ca8d",
+              "title": "04 Divide And Conquer 1 V2",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "x9LzFLGgH88",
+                "china_cdn_id": "x9LzFLGgH88.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 825867,
+          "key": "cf092ff4-c11c-4423-bfde-c2f20045fc69",
+          "title": "Median Problem",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "cf092ff4-c11c-4423-bfde-c2f20045fc69",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 826013,
+              "key": "bf830aef-3067-4275-92cc-5a202758c964",
+              "title": "Median V2",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "**Additional Read** - The problem of finding *k<sup>th</sup>* smallest element from an unsorted array is generally called as **k<sup>th</sup> order statistic**. The BFPRT (1973) solution mentioned above is widely known as **[Median of medians](https://en.wikipedia.org/wiki/Median_of_medians)**, that we will discuss in the next video.",
+              "video": {
+                "youtube_id": "rhCx4vVJOwc",
+                "china_cdn_id": "rhCx4vVJOwc.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 825868,
+          "key": "843559a4-5bf3-46f0-8bd2-12d0d1d05334",
+          "title": "Basic Approach",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "843559a4-5bf3-46f0-8bd2-12d0d1d05334",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 826015,
+              "key": "56db2621-22e5-44ca-b3a0-edc13b70673b",
+              "title": "Review of QuickSort to get high-level D&C algorithm idea",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "7DEYao1bEnE",
+                "china_cdn_id": "7DEYao1bEnE.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 825869,
+          "key": "3a0b82fa-cee2-4075-b15c-56d317e88fb0",
+          "title": "Search Example",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "3a0b82fa-cee2-4075-b15c-56d317e88fb0",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 826017,
+              "key": "c5d75d09-09f5-415c-877f-edb67df805fb",
+              "title": "Example Input and Pivot: Recursive Search",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "UCs8HY6-FB0",
+                "china_cdn_id": "UCs8HY6-FB0.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 825870,
+          "key": "c9d9a745-0f05-4706-aa5a-c47d3d5561fe",
+          "title": "D & C : High Level",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "c9d9a745-0f05-4706-aa5a-c47d3d5561fe",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 826019,
+              "key": "a8f3ea42-c9d0-4a1b-9c01-2b4045039658",
+              "title": "What's a good pivot -- yields linear run-time?",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "bw_bGIWQUII",
+                "china_cdn_id": "bw_bGIWQUII.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 825871,
+          "key": "f90cab94-23a7-480c-9b61-b97de3ffcd66",
+          "title": "D&C Recursive Pivot",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "f90cab94-23a7-480c-9b61-b97de3ffcd66",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 826022,
+              "key": "82340d07-2b3d-4d15-bc20-f79e010a783d",
+              "title": "More Reverse Engineering V2",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "fjR5Y8iuMfI",
+                "china_cdn_id": "fjR5Y8iuMfI.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 825873,
+          "key": "c58a9ed8-edc5-4185-85b5-c951f8361c2a",
+          "title": "Median: Pseudocode",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "c58a9ed8-edc5-4185-85b5-c951f8361c2a",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 826024,
+              "key": "1768139e-626d-4acb-b4c7-570b86ced97a",
+              "title": "D&C Median Algorithm: Pseudocode",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "Wk5hEuBMvQc",
+                "china_cdn_id": "Wk5hEuBMvQc.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 825876,
+          "key": "3daf3391-d1b3-4b7a-8723-48c71b14b440",
+          "title": "Median Running Time",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "3daf3391-d1b3-4b7a-8723-48c71b14b440",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 826026,
+              "key": "8dc797c7-a946-426d-98aa-a8e4341aba77",
+              "title": "Running Time V2",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "**Notes** - <br>\n1. The algorithm starts with an assumption that \"pivot p is good\" and in the end, it is able to solve the problem in O(n) time. **This proves that the assumption was correct.**<br>\n2. In step 2 shown in the video, even if we consider that it takes *O(k)* time for finding the median of a group (of size 5 elements), the overall algorithm will have an *O(n)* time complexity in the worst case.",
+              "video": {
+                "youtube_id": "7tUR8nHKpXs",
+                "china_cdn_id": "7tUR8nHKpXs.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 1020210,
+          "key": "c47fc85f-a315-4a96-852f-e091fc151cb2",
+          "title": "Practice - Kth Largest Element",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "c47fc85f-a315-4a96-852f-e091fc151cb2",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1028851,
+              "key": "8af32506-5bb2-41f5-9cb5-b333cdd85cd8",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "**Note**: This page contains a workspace (Jupyter notebook) that has been added recently. If the page doesn't load up, consider resetting it using the \"Menu --> Get New Content --> reset data\" option at the bottom left corner of the workspace to see the new content.  ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1020211,
+              "key": "df826787-df8d-4591-a7e1-c5b68a80291a",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r818024c842668xJUPYTERhd5czuc5",
+              "pool_id": "jupyter",
+              "view_id": "jupyter-74fdt",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/divideconquer/Kth Largest Element.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 1020579,
+          "key": "c731054d-dd1e-4ff6-8954-8cef1f20b229",
+          "title": "Practice - Maximum Sum Sub-Array",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "c731054d-dd1e-4ff6-8954-8cef1f20b229",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1028852,
+              "key": "e29690be-2ac8-417e-b185-e8e9951bf1ab",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "**Note**: This page contains a workspace (Jupyter notebook) that has been added recently. If the page doesn't load up, consider resetting it using the \"Menu --> Get New Content --> reset data\" option at the bottom left corner of the workspace to see the new content.  ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 1020580,
+              "key": "ba1edcf4-6f8e-4086-bb20-994942d3d32b",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r818024c842668xJUPYTERhd5czuc5",
+              "pool_id": "jupyter",
+              "view_id": "jupyter-4k2nu",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/divideconquer/Maximum Sum Sub-Array.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 1020577,
+          "key": "337a4f91-e53b-44ec-882c-8a4f330a1ee1",
+          "title": "Summary",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "337a4f91-e53b-44ec-882c-8a4f330a1ee1",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 1020578,
+              "key": "f2becc15-ac61-433a-8ff4-e6d5607da51d",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "  ## Summary\nDivide and Conquer approach is suitable to solve a **big (scale) problem** by breaking it into smaller sub-problems, where each sub-problem looks exactly similar to the original problem. In general, there are three phases:\n1. **Divide** - Break the given problem into smaller sub-problems\n2. **Conquer** - Solve each sub-problem using recursion. The smallest sub-problem (base case) would have a simple straightforward solution. \n3. **Combine** - This phase will automatically execute as a part of the recursion call stack, which combines the solution of smaller sub-problems to generate the final solution. \n\n\nQuicksort and Mergesort are a few examples that follow the Divide and Conquer approach. There are a few points to note while deciding if one should go for ***faster*** Divide and Conquer approach:\n1. The problem should be on a bigger scale. \n1. The sub-problem must look precisely similar to the original problem in hand.\n1. Use recursion to solve the problem. It means that the solution will be built for the smallest sub-problem (base case) first. \n1. There is a trade-off between memory usage and speed of execution. Recursion comes with a price of extra memory usage for executing the call stack. But, if you use multi-threading, you can compute the solution even much faster. \n1. In case if many sub-problems look precisely the same, then we don't want to re-execute the same again and again. In such cases, you can consider storing the results of the execution, and thus reuse them whenever required. This strategy is called **Memoization** (in Dynamic Programming approach).",
+              "instructor_notes": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "_deprecated": [
+    {
+      "name": "starter_files",
+      "reason": "prefer master_archive_id"
+    },
+    {
+      "name": "starter_files",
+      "reason": "prefer master_archive_id"
+    }
+  ]
+}

@@ -1,0 +1,1090 @@
+{
+  "data": {
+    "lesson": {
+      "id": 825822,
+      "key": "04407d33-d27a-4732-9e4a-df6fe788a569",
+      "title": "Basic Algorithms",
+      "semantic_type": "Lesson",
+      "is_public": true,
+      "version": "1.0.0",
+      "locale": "en-us",
+      "summary": "Start out with some elementary algorithms such as binary search, tries, heaps and more.",
+      "lesson_type": "Classroom",
+      "display_workspace_project_only": false,
+      "resources": {
+        "files": [
+          {
+            "name": "Videos Zip File",
+            "uri": "https://zips.udacity-data.com/04407d33-d27a-4732-9e4a-df6fe788a569/825822/1556779930330/Basic+Algorithms+Videos.zip"
+          },
+          {
+            "name": "Transcripts Zip File",
+            "uri": "https://zips.udacity-data.com/04407d33-d27a-4732-9e4a-df6fe788a569/825822/1556779924296/Basic+Algorithms+Subtitles.zip"
+          }
+        ],
+        "google_plus_link": null,
+        "career_resource_center_link": null,
+        "coaching_appointments_link": null,
+        "office_hours_link": null,
+        "aws_provisioning_link": null
+      },
+      "project": null,
+      "lab": null,
+      "concepts": [
+        {
+          "id": 825835,
+          "key": "9b80af2c-fbbe-458a-9c31-eec3a53c9346",
+          "title": "Binary Search",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "9b80af2c-fbbe-458a-9c31-eec3a53c9346",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 845103,
+              "key": "3063d339-e8ae-4398-b440-12d8f99770dc",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Binary search\n\nBinary search is probably one of the most common algorithms that we all use without even realizing we are using it.\n\nTo help build a little intuition for how it works, let's first look at a classic game where the most efficient way to win is to use binary search.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 845104,
+              "key": "983a8910-c692-423c-b21b-4209a47aef71",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r818024c842668xJUPYTERhd5czuc5",
+              "pool_id": "jupyter",
+              "view_id": "jupyter-7a072",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/basic/Guess the number.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            },
+            {
+              "id": 845105,
+              "key": "5edfd1a9-f6f5-486e-9de3-943912f4e00f",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Obviously, there is some randomness involved in this game, so in some cases you may run out of tries before guessing correctly. However, if you use a binary search strategy, you'll find the number efficiently and win most of the time.\n\nBut before we look further into binary search, let's first look at an alternative: *Linear search.*",
+              "instructor_notes": ""
+            },
+            {
+              "id": 845106,
+              "key": "be67c800-98e8-4425-89e2-9e8d1ed3af4d",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Linear search\n\nSuppose that you have a dictionary of words and that you need to look up a particular word in this dictionary. However, this dictionary is a pretty terrible dictionary, because the words are all in a scrambled order (and not alphabetical as they usually are). What search strategy would you use to find the definition you're looking for?\n\nBecause the words are in a random order, the best we can do is simply to go one by one, from the first page to the last page, in a sequential manner. Sounds tedious, right? This is called **linear search**. We have no idea about the order of the words, so we simply have to flip through the pages, one by one, until we find the word we are looking for.\n\nWith the example of the guessing game, you could use linear search there as well—by simply starting with 1 and guessing every number until you get to 100 (or rather, until you run out of tries and lose the game!).",
+              "instructor_notes": ""
+            },
+            {
+              "id": 845107,
+              "key": "be704c6a-bb8d-4e6f-b006-8650b287edcf",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "be704c6a-bb8d-4e6f-b006-8650b287edcf",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "What would the time complexity be for **linear search**?\n\n(Think about the worst case scenario, where the word you're looking for is on the last page of the dictionary.)",
+                "answers": [
+                  {
+                    "id": "a1556125405417",
+                    "text": " <span class=\"mathquill\">O(1)</span>",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1556125421167",
+                    "text": " <span class=\"mathquill\">O(n)</span>",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1556125594577",
+                    "text": " <span class=\"mathquill\">O(log(n))</span>",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1556125603426",
+                    "text": " <span class=\"mathquill\">O(n^2)</span>",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1556125604226",
+                    "text": " <span class=\"mathquill\">{O(2^n)}</span>",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1556125797925",
+                    "text": " <span class=\"mathquill\">{O(n!)}</span>",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 845112,
+              "key": "485603f1-d14c-4a43-827f-0d84a2fc797d",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Back to binary search\n\nNow let's consider a different scenario: Similar to the above, we have a dictionary and a word that we want to find in that dictionary. But this time, the dictionary is sorted in alphabetical order (just as you would expect from any decent dictionary). We still don't know what page our word is on, so we'll need to search for it—but the fact that the dictionary is sorted changes the strategy we should use.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 845188,
+              "key": "32295097-0adc-4928-8251-df74b6db4380",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "32295097-0adc-4928-8251-df74b6db4380",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "You're going to make your first guess about which page the word might be on. Then you'll open the dictionary and take a look to see if you're right.\n\nWhich page should you look at first? (Assuming you want to find the word as quickly as possible.)\n",
+                "answers": [
+                  {
+                    "id": "a1556129224992",
+                    "text": "A random page.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1556129279885",
+                    "text": "The first page.",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1556129280483",
+                    "text": "The middle page (halfway through the dictionary).",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1556129281060",
+                    "text": "The last page.",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 845191,
+              "key": "a27f8ba1-317a-4b8f-a735-23e67e00d7cb",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": ">**Note:** With a real dictionary, we might have some idea about the approximate location of a word. For example, if the word is \"aardvark\", we know it is going to be close to the beginning of the dictionary, while if it is \"zebra\", we know it will be close to the end. For the purposes of this example, we're going to ignore this kind of information.\n\nOf the above options, the best strategy we can take is to open the dictionary in the middle.\n\nThen, we do the following:\n* Compare the target word with the words on this page.\n* If the target word comes earlier (in terms of alphabetical order), then we discard the right half of the book. From now on, we will only search in the left half.\n* Similarly, if the word comes later than the words on this page, then we discard the left half of the book. From now on, we will only search in the right half.\n\nWhatever happens, we are guaranteed to be able to discard half of the search space in this first step alone.\n\nNext, we repeat this process. We take the remaining half of the dictionary and we open it to the middle page. We then discard the left or right half, and repeat again. We continue this process, eliminating half of the search space at each step, until we find the target word. This is *binary search*.\n\nNote that the word binary means \"having two parts\". Binary search means we are doing a search where, at each step, we divide the input into two parts. Also note that the data we are searching through has to be sorted.\n\nLet's see what this would look like on a real data structure, such as an array:",
+              "instructor_notes": ""
+            },
+            {
+              "id": 825972,
+              "key": "e35dafec-2724-4a80-8994-657fe4376d89",
+              "title": "Pesquisa binária",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "0VN5iwEyq4c",
+                "china_cdn_id": "0VN5iwEyq4c.mp4"
+              }
+            },
+            {
+              "id": 845194,
+              "key": "5344f333-f9ef-4bd8-b898-0b000b53e0b0",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "In summary:\n* Binary search is a search algorithm where we find the position of a target value by comparing the middle value with this target value.\n* If the middle value is equal to the target value, then we have our solution (we have found the position of our target value).\n* If the target value comes before the middle value, we look for the target value in the left half.\n* Otherwise, we look for the target value in the right half.\n* We repeat this process as many times as needed, until we find the target value.\n",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 845195,
+          "key": "639b8056-18b8-4c11-a995-6d2531759389",
+          "title": "Efficiency of Binary Search",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "639b8056-18b8-4c11-a995-6d2531759389",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 845202,
+              "key": "b745344e-b8d0-43ae-a2e9-96ed63a65a4e",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# TIme complexity of binary search\nHow do we calculate the time complexity for binary search?\n\nCheck out the video below to get the gist, and then we'll walk through the process step-by-step after.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 845763,
+              "key": "1ca50377-3bcd-4d65-9953-871779d1f92a",
+              "title": "Efficiency of binary search",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "7WbRB7dSyvc",
+                "china_cdn_id": "7WbRB7dSyvc.mp4"
+              }
+            },
+            {
+              "id": 845764,
+              "key": "511c989e-e9b1-4321-9c8e-7f2a37df6d20",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "As Brynn said in the video, we can approximate the efficiency of binary search by answering this question: *How many steps do we have to take in the worst-case scenario?*\n\nAt each step, we check the middle element—and then we can rule out about half of the numbers (discarding everything to either the left or right). So if we start with <span class=\"mathquill\">n</span> numbers, then after the first step we will have half that many, or <span class=\"mathquill\">\\frac{n}{2}</span> left that we still need to check.\n\n>**Note:** As Brynn showed, it won't always be *exactly* half the numbers that get discarded. If you have an even number of elements, you will have to check either the lower or higher of the middle two elements—and this means you'll rule out either half of the array, <span class=\"mathquill\">\\frac{n}{2}</span>, or one more than half the array, <span class=\"mathquill\">\\frac{n}{2}+1</span>. But when we calculate time complexity using big O notation, we tend to ignore such small details, because they have negligible impact on the efficiency. Usually, we are concerned with large input sizes—on the order of, say,  <span class=\"mathquill\">10^5</span>. Imagine an array of size  <span class=\"mathquill\">10^5</span>! It doesn’t really matter if each step rules out exactly half of the array, <span class=\"mathquill\">\\frac{10^5}{2}</span> or slightly more than half of the array, <span class=\"mathquill\">\\frac{10^5}{2}+1</span>. So to keep things simple here, we will ignore the <span class=\"mathquill\">+1</span>.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 845203,
+              "key": "f20184f9-0b91-4f58-be08-cacb79c96d06",
+              "title": "",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "f20184f9-0b91-4f58-be08-cacb79c96d06",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "The total number of integers in the array is  <span class=\"mathquill\">n</span>.\n\nAfter each step, we reduce the number of elements remaining that we need to search.\n\nHow many elements will we have left after each step?"
+                },
+                "concepts_label": "After this many steps...",
+                "answers_label": "We will have this many elements left to search...",
+                "concepts": [
+                  {
+                    "text": "0",
+                    "correct_answer": {
+                      "id": "a1556130524407",
+                      "text": " <span class=\"mathquill\">n</span>"
+                    }
+                  },
+                  {
+                    "text": "1",
+                    "correct_answer": {
+                      "id": "a1556130636373",
+                      "text": " <span class=\"mathquill\">\\frac{n}{2}</span>"
+                    }
+                  },
+                  {
+                    "text": "2",
+                    "correct_answer": {
+                      "id": "a1556130637206",
+                      "text": " <span class=\"mathquill\">\\frac{n}{4}</span>"
+                    }
+                  },
+                  {
+                    "text": "3",
+                    "correct_answer": {
+                      "id": "a1556130637742",
+                      "text": " <span class=\"mathquill\">\\frac{n}{8}</span>"
+                    }
+                  },
+                  {
+                    "text": "4",
+                    "correct_answer": {
+                      "id": "a1556130638710",
+                      "text": " <span class=\"mathquill\">\\frac{n}{16}</span>"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1556130637206",
+                    "text": " <span class=\"mathquill\">\\frac{n}{4}</span>"
+                  },
+                  {
+                    "id": "a1556130637742",
+                    "text": " <span class=\"mathquill\">\\frac{n}{8}</span>"
+                  },
+                  {
+                    "id": "a1556130524407",
+                    "text": " <span class=\"mathquill\">n</span>"
+                  },
+                  {
+                    "id": "a1556130636373",
+                    "text": " <span class=\"mathquill\">\\frac{n}{2}</span>"
+                  },
+                  {
+                    "id": "a1556130638710",
+                    "text": " <span class=\"mathquill\">\\frac{n}{16}</span>"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 845205,
+              "key": "cd2b7b8b-18c6-4d8e-a99d-28158f7d208c",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Here's what we're doing at each step:\n* In the first step, we discard half of the numbers—that is, <span class=\"mathquill\">\\frac{n}{2}</span> numbers.  So, the total number of remaining integers is also half, or <span class=\"mathquill\">\\frac{n}{2}</span>.\n\n* In the second step, we discard half of the numbers that were left with us from the first step. We had <span class=\"mathquill\">\\frac{n}{2}</span> integers, so we discard half of these numbers and hence are left with <span class=\"mathquill\">\\frac{n}{4}</span> integers. \n\n* Similarly, in the next step we again discard half of the numbers that were left in the last step. Thus, we are now left with <span class=\"mathquill\">\\frac{n}{8}</span> integers. \n\n* We'll continue this process until, in the final step, we will have only one integer left. We will compare with this integer and check whether this is our target.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 845766,
+              "key": "a88615ea-76d2-467c-ba36-98f2e8c265db",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "a88615ea-76d2-467c-ba36-98f2e8c265db",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "You probably saw from the above exercise that there is a pattern to the sequence. Which of these correctly describes the pattern?\n\n(Remember, each expression represents the number of elements left to search after we've completed one step.)",
+                "answers": [
+                  {
+                    "id": "a1556325679780",
+                    "text": "<span class=\"mathquill\">n, \\frac{n}{2}, \\frac{n}{4}, \\frac{n}{8}, \\frac{n}{16}, \\frac{n}{32}, \\frac{n}{64},  ... 2, 1</span>",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1556325722609",
+                    "text": "<span class=\"mathquill\">n, \\frac{n}{2}, \\frac{n}{8}, \\frac{n}{16}, \\frac{n}{32}, \\frac{n}{64}, \\frac{n}{128},  ... 2, 1</span>",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1556325723356",
+                    "text": "<span class=\"mathquill\">n,  \\frac{n}{32}, \\frac{n}{16}, \\frac{n}{8}, \\frac{n}{4}, \\frac{n}{2}, \\frac{n}{1},  ... 2, 1</span>",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1556325931493",
+                    "text": "<span class=\"mathquill\">n, \\frac{n}{64}, \\frac{n}{32}, \\frac{n}{16}, \\frac{n}{8}, \\frac{n}{4}, \\frac{n}{2}, \\frac{n}{1},  ... 2, 1</span>",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 845765,
+              "key": "de9f80ae-5c39-44d0-a303-963397896dd3",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "We start with  <span class=\"mathquill\">n</span>, which is the total number of indexes to search for our target number. And then, each time we check an index, we cut the search space in half.\n\n*Notice that this is the same as repeatedly multiplying by*  <span class=\"mathquill\">\\frac{1}{2}</span>.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 845767,
+              "key": "9d4e172a-fad0-4835-80cc-97512fefd69e",
+              "title": "",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "9d4e172a-fad0-4835-80cc-97512fefd69e",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "Let's try a concrete example. Suppose we have  <span class=\"mathquill\">n = 8</span>, meaning that we have an array with eight elements. And suppose that the target number is not even in the array, so we must proceed with the maximum number of steps (i.e., the worst-case scenario).\n\nIn that case, what will we get after each step?"
+                },
+                "concepts_label": "Steps",
+                "answers_label": "Remaining elements to search",
+                "concepts": [
+                  {
+                    "text": "Before any step (original array size)",
+                    "correct_answer": {
+                      "id": "a1556326164531",
+                      "text": " <span class=\"mathquill\">8</span>"
+                    }
+                  },
+                  {
+                    "text": "After the 1st step",
+                    "correct_answer": {
+                      "id": "a1556326228611",
+                      "text": " <span class=\"mathquill\">8 * \\frac{1}{2} = 4</span>"
+                    }
+                  },
+                  {
+                    "text": "After the 2nd step",
+                    "correct_answer": {
+                      "id": "a1556326229227",
+                      "text": " <span class=\"mathquill\">4 * \\frac{1}{2} = 2</span>"
+                    }
+                  },
+                  {
+                    "text": "After the 3rd step",
+                    "correct_answer": {
+                      "id": "a1556326330294",
+                      "text": " <span class=\"mathquill\">2 * \\frac{1}{2} = 1</span>"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1556326229227",
+                    "text": " <span class=\"mathquill\">4 * \\frac{1}{2} = 2</span>"
+                  },
+                  {
+                    "id": "a1556326228611",
+                    "text": " <span class=\"mathquill\">8 * \\frac{1}{2} = 4</span>"
+                  },
+                  {
+                    "id": "a1556326164531",
+                    "text": " <span class=\"mathquill\">8</span>"
+                  },
+                  {
+                    "id": "a1556326330294",
+                    "text": " <span class=\"mathquill\">2 * \\frac{1}{2} = 1</span>"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 845774,
+              "key": "3c3914fa-f0c3-4145-a7ec-be260ebb4d86",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "3c3914fa-f0c3-4145-a7ec-be260ebb4d86",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Instead of showing each step like this:  \n<span class=\"mathquill\">8 * \\frac{1}{2} = 4</span>  \n<span class=\"mathquill\">4 * \\frac{1}{2} = 2</span>  \n<span class=\"mathquill\">2 * \\frac{1}{2} = 1</span>  \n\nWe could simply write:  \n <span class=\"mathquill\">8 * \\frac{1}{2}*\\frac{1}{2}*\\frac{1}{2} = 1</span>\n\nWhich can be re-written in exponential notation as...",
+                "answers": [
+                  {
+                    "id": "a1556326603705",
+                    "text": " <span class=\"mathquill\">8 * \\frac{1}{2}^2 = 1</span>",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1556326747314",
+                    "text": " <span class=\"mathquill\">8 * \\frac{1}{2}^3 = 1</span>",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1556326748402",
+                    "text": " <span class=\"mathquill\">8 * \\frac{1}{3}^3 = 1</span>",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1556326749216",
+                    "text": " <span class=\"mathquill\">8 * \\frac{1}{3}^2 = 1</span>",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 845768,
+              "key": "829eeec4-bcf1-453b-92b4-0550ef7917cb",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Thus, with a starting array size of  <span class=\"mathquill\">n = 8</span>, it will take at most three steps to find the target number.\n\nSo that's a specific example, but let's see if we can come up with a general equation that models this.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 845800,
+              "key": "db86a6cb-883d-4cc2-ae5d-71ed47802e77",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "db86a6cb-883d-4cc2-ae5d-71ed47802e77",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Our equation above was  <span class=\"mathquill\">8 * \\frac{1}{2}^3 = 1</span>.\n\nLet's see if we can turn that into a general equation.\n\nWhich of these equations correctly models the relationship between the number of steps and the input size?\n\n(Where <span class=\"mathquill\">s</span> is the number of steps and  <span class=\"mathquill\">n</span> is the array size.)",
+                "answers": [
+                  {
+                    "id": "a1556332552837",
+                    "text": " <span class=\"mathquill\">3 * \\frac{s}{2}^n = 1</span>",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1556332714204",
+                    "text": " <span class=\"mathquill\">3 * \\frac{n}{2}^s = s</span>",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1556332714787",
+                    "text": " <span class=\"mathquill\">n * \\frac{1}{2}^s = 1</span>",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 845801,
+              "key": "c9152499-f712-4d20-b1a8-34687a3600b6",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Now, what we need to know for calculating efficiency is the *number of steps*,  <span class=\"mathquill\">s</span>. We can solve for that algebraically.\n\n>In case you want to follow the math, here are the steps:\n>\n ><span class=\"mathquill\">n * \\frac{1}{2}^s = 1</span>\n>\n>Use the properties of negative exponents to rearrange the fraction:\n>\n> <span class=\"mathquill\">n * 2^{-s} = 1</span>\n>\n>Divide both sides by <span class=\"mathquill\">{2^{-s}}</span>\n>\n><span class=\"mathquill\">\\frac{n * 2^{-s}}{2^{-s}} = \\frac{1}{2^{-s}}</span>\n>\n> <span class=\"mathquill\">n = \\frac{1}{2^{-s}}</span>\n>\n>Again use the properties of negative exponents to rearrange the fraction:\n>\n><span class=\"mathquill\">n = 2^s</span>\n>\n>Take the logarithm (base 2) of both side:\n>\n> <span class=\"mathquill\">log_2(n) = log_2(2^s)</span>\n>\n> <span class=\"mathquill\">log_2(n) = s</span>\n\nThe bottom line? The number of steps is equal to the logarithm of the input size:  \n<span class=\"mathquill\">s = log_2(n)</span>\n\nThis is the number of steps it will require to find the target number in the worst case scenario. In big-O notation, we would say that the time complexity is <span class=\"mathquill\">O(log_2(n))</span>.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 845804,
+              "key": "23c3eb3d-9eb3-4ef3-80a2-5e9d84a4ae85",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "If we look back at our comparison of computational complexities, we can see that this is extremely efficient:",
+              "instructor_notes": ""
+            },
+            {
+              "id": 845803,
+              "key": "7095a1d3-093b-4dfa-89e1-8987cce5342a",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2019/March/5c92f7e6_00-all-comparison-computational-complexity/00-all-comparison-computational-complexity.svg",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/7095a1d3-093b-4dfa-89e1-8987cce5342a",
+              "caption": "[\"Comparison of computational complexity\"](https://commons.wikimedia.org/wiki/File:Comparison_computational_complexity.svg) by [Cmglee](https://commons.wikimedia.org/wiki/User:Cmglee). Used under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.en).",
+              "alt": "Graph showing common types of relationships between efficiency and input size.",
+              "width": 350,
+              "height": 350,
+              "instructor_notes": null
+            },
+            {
+              "id": 845820,
+              "key": "809aa9cf-ff00-4de5-855f-6fcd6d1455f8",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "In fact, this efficiency is the second best on the graph, with only constant time complexity,  <span class=\"mathquill\">O(1)</span> performing better!\n\nEven as the input size grows very large, the number of steps required is still surprisingly small. \n\nGoing back to our guess-the-number game, you should now see why it's possible—using binary search—to correctly guess a number, out of 100. with only a handful of tries. If you like, go back and try inputs of 200 or even 1000. The algorithm will still perform quite well! (For an input of 1000, you might need slightly more than 7 tries.)",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 845818,
+          "key": "97eb5b12-2dba-4c17-b9dc-2e30b43d88de",
+          "title": "Binary Search Practice",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "97eb5b12-2dba-4c17-b9dc-2e30b43d88de",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 845819,
+              "key": "a052015a-aa4b-4837-a0a5-b4161c172cd8",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r818024c842668xJUPYTERhd5czuc5",
+              "pool_id": "jupyter",
+              "view_id": "jupyter-h4x03",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/basic/Binary search practice.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 843706,
+          "key": "c8beafab-f740-4ef6-875e-dfba919bfe6f",
+          "title": "Binary Search Variation",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "c8beafab-f740-4ef6-875e-dfba919bfe6f",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 843707,
+              "key": "0f03b30a-439b-4d7b-97ba-ea4c37a29d7f",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r818024c842668xJUPYTERhd5czuc5",
+              "pool_id": "jupyter",
+              "view_id": "jupyter-p7br4",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/basic/binary_search_variations.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 847700,
+          "key": "77f0797c-22e7-4f3f-9b88-ba065738859a",
+          "title": "Binary search: First and last indexes",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "77f0797c-22e7-4f3f-9b88-ba065738859a",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 847701,
+              "key": "1282fd18-06c5-4fc1-b175-ec7a79f42086",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r818024c842668xJUPYTERhd5czuc5",
+              "pool_id": "jupyter",
+              "view_id": "jupyter-6mawn",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/basic/First and last index.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 825841,
+          "key": "e79df31f-6b25-416b-b62d-a410f12a512d",
+          "title": "Tries",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "e79df31f-6b25-416b-b62d-a410f12a512d",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 846373,
+              "key": "6965d976-7a51-4b79-ba68-c98df639121e",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r818024c842668xJUPYTERhd5czuc5",
+              "pool_id": "jupyter",
+              "view_id": "jupyter-4omaz",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/trie/trie_introduction.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 825843,
+          "key": "a95843c8-15ec-47c7-bd92-c05bfbb2cec6",
+          "title": "Heaps",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "a95843c8-15ec-47c7-bd92-c05bfbb2cec6",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 825977,
+              "key": "62d65946-7d05-4f86-8621-0e1d3c95efa6",
+              "title": "Heaps",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "M3B0UJWS_ag",
+                "china_cdn_id": "M3B0UJWS_ag.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 825844,
+          "key": "1ed84554-6734-4154-a249-434ecc821347",
+          "title": "Heapify",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "1ed84554-6734-4154-a249-434ecc821347",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 825979,
+              "key": "445105cc-8001-4787-bc0c-1f9e23afe2c9",
+              "title": "Heapify",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "CAbDbiCfERY",
+                "china_cdn_id": "CAbDbiCfERY.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 825845,
+          "key": "6cfce511-3993-44b0-9f17-8e588bb486cb",
+          "title": "Heap Implementation",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "6cfce511-3993-44b0-9f17-8e588bb486cb",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 825981,
+              "key": "d2753fe6-a555-40e7-8503-b155181383ff",
+              "title": "Implementação de heap",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "2LAdml6_pDY",
+                "china_cdn_id": "2LAdml6_pDY.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 843113,
+          "key": "28b4b51f-ee80-42a3-894a-3e1e7e1a7aad",
+          "title": "Heaps Exercise",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "28b4b51f-ee80-42a3-894a-3e1e7e1a7aad",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 843115,
+              "key": "312eb9fa-660c-4f29-9704-be4b0e0c46b6",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r818024c842668xJUPYTERhd5czuc5",
+              "pool_id": "jupyter",
+              "view_id": "jupyter-aciqh",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/basic/heap_introduction.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 825848,
+          "key": "44261d52-a7f9-4f67-a309-151c9215047b",
+          "title": "Self-Balancing Tree",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "44261d52-a7f9-4f67-a309-151c9215047b",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 825983,
+              "key": "997553aa-49db-4ecb-85d6-592f03307f0b",
+              "title": "Árvores autobalanceadas",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "EHI548K3jiw",
+                "china_cdn_id": "EHI548K3jiw.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 825849,
+          "key": "03431c3f-0cb7-4f28-81f0-11a9659d0f25",
+          "title": "Red-Black Tree Insertion",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "03431c3f-0cb7-4f28-81f0-11a9659d0f25",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 825985,
+              "key": "e1caefe3-70b5-4386-af44-2161f2900d4f",
+              "title": "Árvores rubro-negras - Inserção",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "dIuWLtWnkgs",
+                "china_cdn_id": "dIuWLtWnkgs.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 825850,
+          "key": "b1e6f578-1918-4b4a-961c-1d246180532f",
+          "title": "Tree Rotations",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "b1e6f578-1918-4b4a-961c-1d246180532f",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 825987,
+              "key": "93b7178b-2b55-4358-9d78-3b8cc4b2bdf5",
+              "title": "Rotações de árvores",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "O5Yl-m0YbVA",
+                "china_cdn_id": "O5Yl-m0YbVA.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 848509,
+          "key": "a4b3ac2c-4a5b-4203-820e-03e02b9e36fe",
+          "title": "Build a Red-Black Tree",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "a4b3ac2c-4a5b-4203-820e-03e02b9e36fe",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 848517,
+              "key": "9881de40-f2cc-4bc6-a813-b76762f7cacd",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "r818024c842668xJUPYTERhd5czuc5",
+              "pool_id": "jupyter",
+              "view_id": "jupyter-qrn9x",
+              "gpu_capable": false,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "ports": [],
+                    "allowGrade": false,
+                    "allowSubmit": false,
+                    "defaultPath": "/notebooks/basic/RedBlackTreeWalkthrough.ipynb"
+                  },
+                  "kind": "jupyter"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            }
+          ]
+        },
+        {
+          "id": 844071,
+          "key": "d06a13bd-4a8c-441a-acec-5b3f252fe67d",
+          "title": "Interlude",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "d06a13bd-4a8c-441a-acec-5b3f252fe67d",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 844072,
+              "key": "b93103cb-ee12-4fea-9452-3705d0b7b2a5",
+              "title": "MV 12 Embrace The Struggle V2",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "SGcgOm5kiKU",
+                "china_cdn_id": "SGcgOm5kiKU.mp4"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "_deprecated": [
+    {
+      "name": "starter_files",
+      "reason": "prefer master_archive_id"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "starter_files",
+      "reason": "prefer master_archive_id"
+    },
+    {
+      "name": "starter_files",
+      "reason": "prefer master_archive_id"
+    },
+    {
+      "name": "starter_files",
+      "reason": "prefer master_archive_id"
+    },
+    {
+      "name": "starter_files",
+      "reason": "prefer master_archive_id"
+    },
+    {
+      "name": "starter_files",
+      "reason": "prefer master_archive_id"
+    },
+    {
+      "name": "starter_files",
+      "reason": "prefer master_archive_id"
+    }
+  ]
+}
