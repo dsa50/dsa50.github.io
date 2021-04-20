@@ -1,0 +1,333 @@
+<!-- udacity2.0 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Arrays and Python Lists</title>
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/plyr.css">
+  <link rel="stylesheet" href="../assets/css/katex.min.css">
+  <link rel="stylesheet" href="../assets/css/jquery.mCustomScrollbar.min.css">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="shortcut icon" type="image/png" href="../assets/img/udacimak.png" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <nav id="sidebar">
+  <div class="sidebar-header">
+    <h3>Arrays and Linked Lists</h3>
+  </div>
+
+  <ul class="sidebar-list list-unstyled CTAs">
+    <li>
+      <a href="../index.html" class="article">Back to Home</a>
+    </li>
+  </ul>
+
+  <ul class="sidebar-list list-unstyled components">
+    <li class="">
+      <a href="01. Collections.html">01. Collections</a>
+    </li>
+    <li class="">
+      <a href="02. Lists (in general, not in Python).html">02. Lists (in general, not in Python)</a>
+    </li>
+    <li class="">
+      <a href="03. Arrays and Python Lists.html">03. Arrays and Python Lists</a>
+    </li>
+    <li class="">
+      <a href="04. Strings.html">04. Strings</a>
+    </li>
+    <li class="">
+      <a href="05. Linked Lists Introduction.html">05. Linked Lists Introduction</a>
+    </li>
+    <li class="">
+      <a href="06. Linked Lists Continued.html">06. Linked Lists Continued</a>
+    </li>
+    <li class="">
+      <a href="07. Implement a Linked List.html">07. Implement a Linked List</a>
+    </li>
+    <li class="">
+      <a href="08. Types of Linked Lists.html">08. Types of Linked Lists</a>
+    </li>
+    <li class="">
+      <a href="09. Linked List Practice.html">09. Linked List Practice</a>
+    </li>
+    <li class="">
+      <a href="10. Reverse a Linked List.html">10. Reverse a Linked List</a>
+    </li>
+    <li class="">
+      <a href="11. Loop Detection.html">11. Loop Detection</a>
+    </li>
+    <li class="">
+      <a href="12. Flatten a Nested Linked List.html">12. Flatten a Nested Linked List</a>
+    </li>
+    <li class="">
+      <a href="13. Add One.html">13. Add One</a>
+    </li>
+    <li class="">
+      <a href="14. Duplicate Number.html">14. Duplicate Number</a>
+    </li>
+    <li class="">
+      <a href="15. Max Sum Subarray.html">15. Max Sum Subarray</a>
+    </li>
+    <li class="">
+      <a href="16. Pascal&#x27;s Triangle.html">16. Pascal&#x27;s Triangle</a>
+    </li>
+    <li class="">
+      <a href="17. Even After Odd.html">17. Even After Odd</a>
+    </li>
+    <li class="">
+      <a href="18. Skip i, delete j.html">18. Skip i, delete j</a>
+    </li>
+    <li class="">
+      <a href="19. Swap Nodes.html">19. Swap Nodes</a>
+    </li>
+    <li class="">
+      <a href="20. Interlude.html">20. Interlude</a>
+    </li>
+  </ul>
+
+  <ul class="sidebar-list list-unstyled CTAs">
+    <li>
+      <a href="../index.html" class="article">Back to Home</a>
+    </li>
+  </ul>
+</nav>
+
+    <div id="content">
+      <header class="container-fluild header">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="align-items-middle">
+                <button type="button" id="sidebarCollapse" class="btn btn-toggle-sidebar">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </button>
+
+                <h1 style="display: inline-block">03. Arrays and Python Lists</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="ud-atom">
+  <h3></h3>
+  <div>
+  
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>Arrays</p></h3>
+  <video controls>
+  <source src="03. Arrays-OnPP5xDmFv0.mp4" type="video/mp4">
+
+  <track default="false" kind="subtitles" srclang="zh-CN" src="03. Arrays-OnPP5xDmFv0.zh-CN.vtt" label="zh-CN">
+  <track default="true" kind="subtitles" srclang="en-US" src="03. Arrays-OnPP5xDmFv0.en-US.vtt" label="en-US">
+  <track default="false" kind="subtitles" srclang="ja-JP" src="03. Arrays-OnPP5xDmFv0.ja-JP.vtt" label="ja-JP">
+  <track default="false" kind="subtitles" srclang="pt-BR" src="03. Arrays-OnPP5xDmFv0.pt-BR.vtt" label="pt-BR">
+  <track default="true" kind="subtitles" srclang="en" src="03. Arrays-OnPP5xDmFv0.en.vtt" label="en">
+</video>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <h2 id="arrays-vs-lists-general-vs-python-lists">Arrays vs. lists (general) vs. Python lists</h2>
+<p>The distinction between arrays and lists can be a little confusing, especially because of how Python implements the data structure it calls a "list". Below, we'll go over some key points that should make this clearer.</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <h3 id="arrays">Arrays</h3>
+<p>An array has some things in common with a list. In both cases:</p>
+<ul>
+<li>There is a collection of items</li>
+<li>The items have an order to them</li>
+</ul>
+<p>But as Brynn discussed in the video, one of the key differences is that <em>arrays have indices, while lists do not</em>.</p>
+<p>To understand this, it helps to know how arrays are stored in memory. When an array is created, it is always given some initial size—that is, the number of elements it should be able to hold (and how large each element is). The computer then finds a block of memory and sets aside the space for the array.</p>
+<p>Importantly, the space that gets set aside is one, continuous block. That is, all of the elements of the array are <em>contiguous</em>, meaning that they are all next to one another in memory.</p>
+<p>Another key characteristic of an array is that all of the elements are the same size.</p>
+<p>When we represent an array visually, we often draw it as a series of boxes that are all of the same size and all right next to one another:</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/array.png" alt="" class="img img-fluid">
+    <figcaption class="figure-caption">
+      
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <p>Because all of the elements are 1) next to one another and 2) the same size, this means that if we know the location of the first element, we can calculate the location of any other element.</p>
+<p>For example, if the first element in the array is at memory location <code>00</code> and the elements are 24 bytes, then the next element would be at location 00 + 24 = <code>24</code>. And the one after that would be at 24 + 24 = <code>48</code>, and so on.</p>
+<p>Since we can easily calculate the location of any item in the array, we can assign each item an index and use that index to quickly and directly access the item.</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/array-with-indexes.png" alt="" class="img img-fluid">
+    <figcaption class="figure-caption">
+      
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <h3 id="lists">Lists</h3>
+<p>In contrast, the elements of a list may or may not be next to one another in memory! For example, later in this lesson we'll look at <em>linked lists</em>, where each list item points to the next list item—but where the items themselves may be scattered in different locations of memory. In this case, knowing the location of the first item in the list does not mean you can simply calculate the location of the other items. This means we cannot use indices to directly access the list items as we would in an array. We'll explore linked lists in more detail shortly.</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <h2 id="python-lists">Python lists</h2>
+<p>In Python, we can create a list using square brackets <code>[ ]</code>. For example:</p>
+<pre><code class="python language-python">&gt;&gt;&gt; my_list = ['a', 'b', 'c']
+&gt;&gt;&gt; my_list
+['a', 'b', 'c']</code></pre>
+<p>And then we can access an item in the list by providing an index for that item:</p>
+<pre><code class="python language-python">&gt;&gt;&gt; my_list[0]
+'a'
+&gt;&gt;&gt; my_list[1]
+'b'
+&gt;&gt;&gt; my_list[2]
+'c'</code></pre>
+<p>But wait, didn't we just say that lists <em>don't</em> have indices!? This seems to directly contradict that distinction.</p>
+<p>The reason for this confusion is simply one of terminology. The earlier description we gave of lists is correct <em>in general</em>—that is, usually when you hear someone refer to something as a "list", that is what they mean. However, in Python the term is used differently.</p>
+<p>We will not get into all of the details, but the important thing you need to know for this course is the following: If you were to look under the hood, you would find that <strong>a Python list is essentially implemented like an array</strong> (specifically, it behaves like a <em>dynamic array</em>, if you're curious). In particular, <strong>the elements of a Python list are contiguous in memory, and they can be accessed using an index.</strong></p>
+<p>In addition to the underlying array, a Python list also includes some additional behavior. For example, you can use things like <code>pop</code> and <code>append</code> methods on a Python list to add or remove items. Using those methods, you can essentially utilize a Python list like a stack (which is another type of data structure we'll discuss shortly).</p>
+<p>In general, we will try to avoid using things like <code>pop</code> and <code>append</code>, because these are high-level language features that may not be available to you in other languages. In most cases, we will ignore the extra functionality that comes with Python lists, and instead use them <strong>as if they were simple arrays</strong>. This will allow you to see how the underlying data structures work, regardless of the language you are using to implement those structures.</p>
+<p>Here's the bottom line:</p>
+<ul>
+<li>Python lists are essentially arrays, but also include additional high-level functionality</li>
+<li>During this course, we will generally ignore this high-level functionality and treat Python lists as if they were simple arrays</li>
+</ul>
+<p>This approach will allow you to develop a better understanding for the underlying data structures.</p>
+</div>
+
+</div>
+<div class="divider"></div>
+          </div>
+
+          <div class="col-12">
+            <p class="text-right">
+              <a href="04. Strings.html" class="btn btn-outline-primary mt-4" role="button">Next Concept</a>
+            </p>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <p class="text-center">
+                <a href="https://us-udacity.github.io/" target="_blank">【udacity2.0 】If you need more courses, please add wechat：udacity6</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+
+  <script src="../assets/js/jquery-3.3.1.min.js"></script>
+  <script src="../assets/js/plyr.polyfilled.min.js"></script>
+  <script src="../assets/js/bootstrap.min.js"></script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="../assets/js/katex.min.js"></script>
+  <script>
+    // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('03. Arrays and Python Lists')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+</body>
+
+</html>
