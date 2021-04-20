@@ -1,0 +1,31 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.655
+So for the quiz, your goal's to define the next day procedure
+
+00:00:02.655 --> 00:00:05.370
+that takes as input a valid date in the Gregorian calendar,
+
+00:00:05.370 --> 00:00:07.045
+which is encoded as three numbers;
+
+00:00:07.045 --> 00:00:08.745
+the year, the month and the day.
+
+00:00:08.745 --> 00:00:13.290
+And then returns the next day as a three tuple of the year, the month and the day.
+
+00:00:13.290 --> 00:00:14.797
+And to keep this simple,
+
+00:00:14.797 --> 00:00:18.250
+you should assume that all months have 30 days.
+
+00:00:18.250 --> 00:00:21.015
+This of course will not be correct in some cases,
+
+00:00:21.015 --> 00:00:23.400
+but will be a good start toward solving the
+

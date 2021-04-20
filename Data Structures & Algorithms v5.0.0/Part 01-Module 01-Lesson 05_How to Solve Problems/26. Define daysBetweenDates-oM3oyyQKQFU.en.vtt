@@ -1,0 +1,43 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.420
+So now, it's time to see if you can define a days between dates procedure,
+
+00:00:03.420 --> 00:00:07.440
+that would produce approximate correct results using the current next day procedure.
+
+00:00:07.440 --> 00:00:09.585
+If we had a correct next day procedure,
+
+00:00:09.585 --> 00:00:12.855
+your days between dates should produce exactly correct results.
+
+00:00:12.855 --> 00:00:14.970
+And I am going to suggest one thing as a hint,
+
+00:00:14.970 --> 00:00:17.430
+doing days between dates by itself is still going to
+
+00:00:17.430 --> 00:00:19.980
+be more complicated than we want one procedure to be.
+
+00:00:19.980 --> 00:00:22.800
+So, I'm going to encourage you to start by defining a helper procedure,
+
+00:00:22.800 --> 00:00:26.235
+and if you're following the problem solving strategy we've set out so far,
+
+00:00:26.235 --> 00:00:28.635
+you should test the helper procedure independently
+
+00:00:28.635 --> 00:00:31.465
+before you try to build the complete days between dates procedure.
+
+00:00:31.465 --> 00:00:33.630
+But I'm going to leave it up to you to figure out
+
+00:00:33.630 --> 00:00:36.090
+what would be a useful helper procedure, and how to
+

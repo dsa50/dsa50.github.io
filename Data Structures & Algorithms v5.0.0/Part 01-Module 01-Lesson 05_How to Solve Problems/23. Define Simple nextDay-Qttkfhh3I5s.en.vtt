@@ -1,0 +1,106 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.820
+So, here's my solution to implementing the next day.
+
+00:00:02.820 --> 00:00:04.620
+And you'll note that I start with a docstring,
+
+00:00:04.620 --> 00:00:07.860
+this is treated as a special common by most Python systems.
+
+00:00:07.860 --> 00:00:10.020
+And I've put in this morning to make sure that people
+
+00:00:10.020 --> 00:00:12.520
+realize this implementation is not actually correct.
+
+00:00:12.520 --> 00:00:14.010
+So, it shouldn't be used to schedule say,
+
+00:00:14.010 --> 00:00:16.935
+the apocalypse, but it's good for our testing for now.
+
+00:00:16.935 --> 00:00:18.270
+And the logic is quite simple,
+
+00:00:18.270 --> 00:00:19.620
+if the day is less than 30,
+
+00:00:19.620 --> 00:00:21.420
+since we're assuming all month to have 30 days.
+
+00:00:21.420 --> 00:00:22.725
+We increase the day by one,
+
+00:00:22.725 --> 00:00:26.530
+and I'm returning three tuple of the year, the month, and the day.
+
+00:00:26.530 --> 00:00:28.435
+Otherwise, we need to increase the month.
+
+00:00:28.435 --> 00:00:31.425
+So, we're going to advance to the next month. Reset the data one.
+
+00:00:31.425 --> 00:00:33.420
+If we're in December,
+
+00:00:33.420 --> 00:00:38.140
+then we need to increase the year by one and reset the date to January 1st.
+
+00:00:38.140 --> 00:00:39.735
+As with a larger problem,
+
+00:00:39.735 --> 00:00:41.430
+you should start this by thinking about
+
+00:00:41.430 --> 00:00:44.625
+some test cases and see that those behave as expected.
+
+00:00:44.625 --> 00:00:46.800
+We provided some, in the example,
+
+00:00:46.800 --> 00:00:47.940
+one nice thing you'll notice here,
+
+00:00:47.940 --> 00:00:52.530
+using the Python shell provided by Idol is that when I try to use next day,
+
+00:00:52.530 --> 00:00:54.150
+I see the docstring right here.
+
+00:00:54.150 --> 00:00:56.810
+And normally, we want docstrings that are descriptive here.
+
+00:00:56.810 --> 00:01:00.545
+The warning is very useful and I give a sample month, day and year.
+
+00:01:00.545 --> 00:01:02.475
+And I see that I get the right result.
+
+00:01:02.475 --> 00:01:05.813
+I should note that for some cases say January 30th,
+
+00:01:05.813 --> 00:01:08.375
+the day following January 30th should be January 31st.
+
+00:01:08.375 --> 00:01:13.170
+I'm going to get February 2nd because of this assumption about all months having 30 days.
+
+00:01:13.170 --> 00:01:16.505
+And we should try a more difficult case such as the end of the year.
+
+00:01:16.505 --> 00:01:18.420
+And here, I'll use December 31st,
+
+00:01:18.420 --> 00:01:20.040
+it would advance the year whether it's
+
+00:01:20.040 --> 00:01:22.890
+December 31st or December 30th because of that assumption.
+
+00:01:22.890 --> 00:01:24.180
+And we get January 1st.
+
